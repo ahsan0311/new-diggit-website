@@ -6,7 +6,7 @@ const NoMoreSilos = () => {
     <div className="no-more-silos-container">
       
       <div className="floating-image">
-        <img src="/assets/vector_3.png" alt="Floating Cube" />
+        <img src="https://diggitglobal.com/assets/images/vector_3.png" alt="Floating Cube" />
       </div>
 
       <section className="silos-section">
