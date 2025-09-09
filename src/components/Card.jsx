@@ -24,12 +24,12 @@ const Card = () => {
         <div className="vector-container">
           <img
             className="vector-img-1"
-            src="/assets/vector_1.png"
+            src="https://diggitglobal.com/assets/images/vector_1.png"
             alt="Vector 1"
           />
           <img
             className="vector-img-2"
-            src="/assets/vector_2.png"
+            src="https://diggitglobal.com/assets/images/vector_2.png"
             alt="Vector 2"
           />
         </div>

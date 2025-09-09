@@ -3,37 +3,37 @@ import React, { useState, useRef, useEffect } from "react";
 const tabsData = [
   {
     title: "AI & Machine Learning Solutions",
-    img: "/assets/icon_1.png",
+    img: "https://diggitglobal.com/assets/images/icon_1.png",
     content:
       "Our AI in business management tools use machine learning models to automate workflows, enhance decision-making, and deliver predictive insights, all customized for your operations. A core part of our agile software solutions approach.",
   },
   {
     title: "Cloud Computing",
-    img: "/assets/icon_2.png",
+    img: "https://diggitglobal.com/assets/images/icon_2.png",
     content:
       "Our cloud solutions help you scale with confidence. From AWS and Azure deployments to serverless architectures and cloud-native development, we design, migrate, and maintain your cloud infrastructure for optimal performance.",
   },
   {
     title: "Custom Dashboard",
-    img: "/assets/icon_3.png",
+    img: "https://diggitglobal.com/assets/images/icon_3.png",
     content:
       "Gain visual clarity and operational insight with custom dashboards. From real-time performance tracking to interactive BI dashboards, we tailor visualizations for better decision-making and cross-functional monitoring.",
   },
   {
     title: "ERP & CRM Integrations",
-    img: "/assets/icon_4.png",
+    img: "https://diggitglobal.com/assets/images/icon_4.png",
     content:
       "Seamlessly connect your systems with powerful ERP & CRM integrations. Automate workflows, unify data, and improve customer engagement using platforms like Salesforce, Zoho, Hubspot, and custom API integrations.",
   },
   {
     title: "UI/UX Design",
-    img: "/assets/icon_5.png",
+    img: "https://diggitglobal.com/assets/images/icon_5.png",
     content:
       "Design experiences that delight users. We create intuitive interfaces, perform UX audits, and build interactive prototypes that blend functionality with visual appeal to enhance usability and engagement.",
   },
   {
     title: "Website Development",
-    img: "/assets/icon_5.png",
+    img: "https://diggitglobal.com/assets/images/icon_6.png",
     content:
       "Build fast, SEO-optimized websites that convert. Our responsive web development services include everything from landing pages to complex web apps, built using modern frameworks like React, Next.js, and more.",
   },

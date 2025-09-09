@@ -5,16 +5,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const cardsData = [
-  { img: "/assets/icon_7.png", title: "Healthcare & Wellness" },
-  { img: "/assets/icon_7.png", title: "Finance & Fintech" },
-  { img: "/assets/icon_7.png", title: "Logistics & Transportation" },
-  { img: "/assets/icon_7.png", title: "Hospitality & Travel" },
-  { img: "/assets/icon_7.png", title: "E-Commerce & Retail" },
-  { img: "/assets/icon_7.png", title: "Education & E-Learning" },
-  { img: "/assets/icon_7.png", title: "Real Estate & Property Tech" },
-  { img: "/assets/icon_7.png", title: "Automotive" },
-  { img: "/assets/icon_7.png", title: "Manufacturing" },
-  { img: "/assets/icon_7.png", title: "Media & Entertainment" },
+  { img: "https://diggitglobal.com/assets/images/icon_7.png", title: "Healthcare & Wellness" },
+  { img: "https://diggitglobal.com/assets/images/icon_8.png", title: "Finance & Fintech" },
+  { img: "https://diggitglobal.com/assets/images/icon_9.png", title: "Logistics & Transportation" },
+  { img: "https://diggitglobal.com/assets/images/icon_10.png", title: "Hospitality & Travel" },
+  { img: "https://diggitglobal.com/assets/images/icon_7.png", title: "E-Commerce & Retail" },
+  { img: "https://diggitglobal.com/assets/images/icon_8.png", title: "Education & E-Learning" },
+  { img: "https://diggitglobal.com/assets/images/icon_9.png", title: "Real Estate & Property Tech" },
+  { img: "https://diggitglobal.com/assets/images/icon_10.png", title: "Automotive" },
+  { img: "https://diggitglobal.com/assets/images/icon_7.png", title: "Manufacturing" },
+  { img: "https://diggitglobal.com/assets/images/icon_8.png", title: "Media & Entertainment" },
 ];
 
 export default function WhoWeBuildFor() {

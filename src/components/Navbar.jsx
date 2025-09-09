@@ -488,7 +488,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center">
           <img
-            src="/assets/Logo-diggit.png"
+            src="https://diggitglobal.com/assets/images/Logo-diggit.png"
             alt="Logo"
             className="w-[120px] h-[60px] object-contain"
           />
