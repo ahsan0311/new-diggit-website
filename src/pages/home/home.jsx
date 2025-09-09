@@ -34,7 +34,7 @@ const Home = () => {
             className="w-full h-full object-cover rounded-b-[4rem] md:rounded-none"
             poster="data:image/gif,AAAA"
           >
-            <source src="/assets/vecteezy_sunrise.mp4" type="video/mp4" />
+            <source src="https://diggitglobal.com/assets/images/vecteezy_sunrise.mp4" type="video/mp4" />
           </video>
         </div>
 
