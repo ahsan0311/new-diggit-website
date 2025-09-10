@@ -396,6 +396,7 @@ const tabData = [
     content: [
       {
         title: "Mobile App Development",
+        path: "/mobile-app",
         items: [
           {
           
@@ -567,22 +568,35 @@ export default function Navbar() {
 
             {/* Tab Content */}
             <div className="tab-content">
-              {currentTab.content.map((section, idx) => (
-                <div className="tab-section" key={idx}>
-                  <h3>{section.title}</h3>
-                  <div className="section-items">
-                    {section.items.map((item, i) => (
-                      <div className="tab-item" key={i}>
-                        <ul className="sub-list">
-                          {item.subItems.map((sub, si) => (
-                            <li key={si}>{sub}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
+            {currentTab.content.map((section, idx) => (
+  <div className="tab-section" key={idx}>
+    <h3>
+      {section.path ? (
+        <Link to={section.path} className="text-black">
+          {section.title}
+        </Link>
+      ) : (
+        section.title
+      )}
+    </h3>
+    <div className="section-items">
+      {section.items.map((item, i) => (
+        <div className="tab-item" key={i}>
+          <ul className="sub-list">
+            {item.subItems.map((sub, si) => (
+              <li key={si}>
+                <Link to="#" className="hover:text-blue-500">
+                  {sub}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+))}
+
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className=" bg-[#0a0a0a]  text-white px-8 md:px-16 py-12 w-full">
       <div className="max-w-[1300px] mx-auto">
         <img
-          src="/assets/Logo-diggit.png"
+          src="https://diggitglobal.com/assets/images/Logo-diggit.png"
           alt="DIGGIT Logo"
           className="w-[120px] mb-4"
         />
