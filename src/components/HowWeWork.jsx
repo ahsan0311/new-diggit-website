@@ -187,6 +187,7 @@ const Timeline = () => {
     absolute left-1/2 top-0 h-full w-1.5 -translate-x-1/2 
     transform origin-top overflow-hidden
     max-[853px]:left-[30px] max-[853px]:translate-x-0
+    max-[435px]:left-[20px]
     
     
 
@@ -253,9 +254,11 @@ const Timeline = () => {
         flex items-center justify-center
         w-28 h-28 rounded-full bg-black text-white text-3xl font-extrabold
         z-20 border-4 border-white shadow-xl
-        max-[853px]:left-[7px] max-[853px]:translate-x-0 
+        max-[853px]:left-[4px] max-[853px]:translate-x-0 
         max-[853px]:z-50
         max-[853px]:w-14 max-[853px]:h-14 max-[853px]:text-base
+        max-[435px]:w-12 max-[435px]:h-12 max-[435px]:text-[12px]
+        max-[435px]:left-[-1px]
         
       "
               >
@@ -272,6 +275,7 @@ const Timeline = () => {
     max-[553px]:w-[20px] max-[553px]:ml-auto max-[553px]:mr-3
     max-[553px]:justify-end max-[553px]:mt-[-70px]
     max-[435px]:ml-[-300px]
+    
   "
               >
                 <div
