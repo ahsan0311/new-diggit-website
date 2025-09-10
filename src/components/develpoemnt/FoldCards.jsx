@@ -97,7 +97,10 @@ export default function FoldCards() {
   return (
     <section ref={containerRef}  className="relative w-full max-w-7xl mx-auto pt-32">
      <div
-  className="relative w-full"
+  className="relative w-full max-[1300px]:max-w-6xl max-[1300px]:mx-auto max-[1156px]:max-w-5xl max-[1156px]:mx-auto
+  max-[1048px]:max-w-4xl max-[1048px]:mx-auto
+  max-[904px]:w-[97%] max-[904px]:mx-auto max-[904px]:m-10
+  "
     style={{ height: `${(cardsData.length - 1) * (60 + 50)}px` }}
 >
 
@@ -105,7 +108,7 @@ export default function FoldCards() {
           <div
             key={i}
             ref={(el) => (cardsRef.current[i] = el)}
-            className="absolute w-full h-[400px] rounded-xl shadow-xl px-10 py-6 text-white flex items-center justify-between border-2 border-gray-800 will-change-transform"
+            className="absolute w-full h-[400px] rounded-4xl  shadow-xl px-10 py-6 text-white flex items-center justify-between border-2 border-gray-800 will-change-transform"
             style={{
               backgroundColor: i % 2 === 0 ? "#000" : "#00317B",
               top: 0,
@@ -114,11 +117,14 @@ export default function FoldCards() {
             }}
           >
             <div className="w-1/2">
-              <h2 className="text-4xl font-bold mb-4">{card.title}</h2>
-              <p className="text-gray-300 text-lg">{card.description}</p>
+              <h2 className="text-4xl font-bold mb-4 max-[563px]:text-3xl max-[455px]:text-2xl">{card.title}</h2>
+              <p className="text-gray-300 text-lg max-[563px]:text-sm">{card.description}</p>
             </div>
             <div className="w-1/2 flex justify-center">
-              <img src={card.image} alt={card.title} className="w-[280px] h-auto object-contain" />
+              <img src={card.image} alt={card.title} className="w-[280px] h-auto object-contain max-[907px]:w-[200px] 
+              max-[563px]:w-[160px]
+              max-[490px]:w-[130px]
+              " />
             </div>
           </div>
         ))}

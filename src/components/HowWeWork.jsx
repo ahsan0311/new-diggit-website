@@ -186,7 +186,7 @@ const Timeline = () => {
             className="
     absolute left-1/2 top-0 h-full w-1.5 -translate-x-1/2 
     transform origin-top overflow-hidden
-    max-[853px]:left-[29px] max-[853px]:translate-x-0
+    max-[853px]:left-[30px] max-[853px]:translate-x-0
     
     
 
@@ -253,7 +253,8 @@ const Timeline = () => {
         flex items-center justify-center
         w-28 h-28 rounded-full bg-black text-white text-3xl font-extrabold
         z-20 border-4 border-white shadow-xl
-        max-[853px]:left-[30px] max-[853px]:translate-x-0 
+        max-[853px]:left-[7px] max-[853px]:translate-x-0 
+        max-[853px]:z-50
         max-[853px]:w-14 max-[853px]:h-14 max-[853px]:text-base
         
       "
