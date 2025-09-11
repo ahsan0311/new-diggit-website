@@ -5,37 +5,37 @@ const tabsData = [
     title: "AI & Machine Learning Solutions",
     img: "https://diggitglobal.com/assets/images/icon_1.png",
     content:
-      "Our AI in business management tools use machine learning models to automate workflows, enhance decision-making, and deliver predictive insights, all customized for your operations. A core part of our agile software solutions approach.",
+      " We develop intelligent AI solutions that simplify processes, automate repetitive tasks, and provide predictive insights tailored to your business needs. Our machine learning models enhance decision-making, boost efficiency, and form a key part of our agile, future-ready software development approach.",
   },
   {
     title: "Cloud Computing",
     img: "https://diggitglobal.com/assets/images/icon_2.png",
     content:
-      "Our cloud solutions help you scale with confidence. From AWS and Azure deployments to serverless architectures and cloud-native development, we design, migrate, and maintain your cloud infrastructure for optimal performance.",
+      "We design and deploy scalable cloud systems that grow with your business. From infrastructure setup to seamless application migration, our cloud solutions are secure, flexible, and cost-effective. Built as part of our Agile Software Solutions Stack, these services align closely with our Business Management Consulting goals, ensuring that technology not only supports but also accelerates your business growth.",
   },
   {
     title: "Custom Dashboard",
     img: "https://diggitglobal.com/assets/images/icon_3.png",
     content:
-      "Gain visual clarity and operational insight with custom dashboards. From real-time performance tracking to interactive BI dashboards, we tailor visualizations for better decision-making and cross-functional monitoring.",
+      "We provide visual clarity across every function of your business with real-time performance tracking and interactive BI dashboards. As a core part of dynamic software solutions and custom-integrated business systems, our dashboards transform complex data into simple, actionable insights that empower smarter decision-making.",
   },
   {
     title: "ERP & CRM Integrations",
     img: "https://diggitglobal.com/assets/images/icon_4.png",
     content:
-      "Seamlessly connect your systems with powerful ERP & CRM integrations. Automate workflows, unify data, and improve customer engagement using platforms like Salesforce, Zoho, Hubspot, and custom API integrations.",
+      "We unify your customer, sales, and operations data into one secure system, ensuring a seamless flow of information across departments. By connecting teams through our integrated business solutions, we eliminate data silos, improve collaboration, and help your business operate with clarity and efficiency.",
   },
   {
     title: "UI/UX Design",
     img: "https://diggitglobal.com/assets/images/icon_5.png",
     content:
-      "Design experiences that delight users. We create intuitive interfaces, perform UX audits, and build interactive prototypes that blend functionality with visual appeal to enhance usability and engagement.",
+      "We craft digital platforms that prioritize speed, simplicity, and seamless engagement. By transforming clunky tools into intuitive, user-friendly systems, our UI/UX design gives your business an often-overlooked edge, making every interaction smarter, smoother, and more impactful.",
   },
   {
     title: "Website Development",
     img: "https://diggitglobal.com/assets/images/icon_6.png",
     content:
-      "Build fast, SEO-optimized websites that convert. Our responsive web development services include everything from landing pages to complex web apps, built using modern frameworks like React, Next.js, and more.",
+      "We go beyond standard website development to create responsive, conversion-driven sites that truly represent your brand. Every website we build is designed for seamless performance across all devices and powered by agile software solutions, ensuring your online presence works as hard as your business does.",
   },
 ];
 

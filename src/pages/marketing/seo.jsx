@@ -8,9 +8,6 @@ import WorkCards from '../../components/develpoemnt/WorkCards'
 import AllCards from '../../components/develpoemnt/AllCards'
 import FAQSection from '../../components/develpoemnt/Faqs'
 import Contact from '../../components/Contact'
-import WhyWorkSection from '../../components/develpoemnt/WhyWorkSection'
-import NoMoreSilos from '../../components/NoMoreSilos'
-import InfoSection from '../../components/develpoemnt/InfoSection'
 
 const cardsForPage1 = [
   {
@@ -44,7 +41,7 @@ const cardsForPage1 = [
     image: "https://diggitglobal.com/assets/images/native_app_design.png",
   },
 ];
-const MobileApp = () => {
+const SeoMarketing = () => {
   return (
     <>
     <Hero/>
@@ -52,45 +49,7 @@ const MobileApp = () => {
     <FoldCards cardsData={cardsForPage1} containerHeight="600px"/>
     <BuildMy/>
     <LogoMarquee/>
-    <InfoSection
-      title="Industries We Work With"
-      paragraphs={[
-        `As a leading software development agency in Dubai, we build custom
-         platforms that support how modern businesses operate; whether
-         you're scaling up, simplifying systems, or starting from scratch.`,
-        `Our team delivers end-to-end custom software development services
-         across industries, using the right mix of strategy, tech, and 
-         clean design to build systems that work and grow with you.`,
-      ]}
-    />
     <AllCards/>
-    <NoMoreSilos/>
-     <WhyWorkSection
-        title="Why Work With Diggit"
-        description={
-          <>
-            We don’t just build websites. We build the stuff that makes work
-            easier - for your team,
-            <br /> your users, and your business.
-          </>
-        }
-        buttonText="Launch Your Site"
-        cards={[
-          {
-            title: "We Build Around You",
-            text: "From booking tools to dashboards, we design around how your business actually runs. Every project starts with your goals, not our tech stack.",
-          },
-          {
-            title: "Problem First, Platform Later",
-            text: "We write our own code and build our own systems. Whether it’s custom website services or enterprise web development, we skip the shortcuts and deliver sites that last.",
-          },
-          {
-            title: "Direct Access To The Team",
-            text: "No layers, no account managers translating requirements. You’ll work directly with the designers and developers building your product — quick calls, fast turnarounds, clear updates.",
-          },
-        ]}
-      />
-  
     <WorkCards/>
     <FAQSection/>
     <Contact/>
@@ -98,4 +57,4 @@ const MobileApp = () => {
   )
 }
 
-export default MobileApp
+export default SeoMarketing

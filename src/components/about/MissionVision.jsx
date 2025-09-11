@@ -20,9 +20,10 @@ const MissionVision = () => {
               Our Mission
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              To merge human expertise with machine intelligence, creating
-              smarter systems for better business. We help companies automate
-              what’s repeatable and grow without the usual tech hurdles.
+              To merge human expertise with intelligent technology, building
+              smarter systems that empower businesses to work efficiently and
+              grow with ease. We focus on automating repetitive processes so
+              teams can concentrate on what matters most—innovation and impact.
             </p>
           </div>
 
@@ -32,9 +33,10 @@ const MissionVision = () => {
               Our Vision
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              To become the go-to digital transformation company in Dubai for
-              businesses and redefine what modern business tools should look
-              like: intelligent, lean, and built around people, not platforms.
+              To be recognized as a trusted partner for digital transformation
+              worldwide, redefining what modern business tools should
+              be—intelligent, streamlined, and designed around people, not just
+              platforms.
             </p>
           </div>
         </div>

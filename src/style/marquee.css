@@ -1,0 +1,30 @@
+.slider-container .slick-slide > div {
+  margin: 0 20px; /* Spacing between logos */
+}
+
+.slider-container img {
+  height: 50px;
+  object-fit: contain;
+  width: auto;
+  display: block;
+  transition: height 0.3s ease;
+}
+
+/* Responsive image sizes */
+@media (max-width: 1000px) {
+  .slider-container img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container img {
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-container img {
+    height: 30px;
+  }
+}

@@ -20,18 +20,18 @@ export default function Contact() {
                 we’ll help you figure it out.
               </span>
             </p>
-            <button className="mt-6 px-6 py-3 bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:bg-blue-800 transition">
+            <button className="mt-6 px-6 py-3 bg-blue-800 text-white font-semibold rounded-4xl shadow-md hover:bg-blue-800 transition">
               Get Started
             </button>
           </div>
 
           {/* Bottom Black Box */}
-          <div className=" relative z-40 max-[770px]:bg-black  text-white max-[960px]:px-[8px] max-[1200px]:px-[30px] px-29 py-12 w-full 
+          <div className=" relative z-0 max-[770px]:bg-black  text-white max-[960px]:px-[8px] max-[1200px]:px-[30px] px-29 py-12 w-full 
           max-[770px]:flex max-[770px]:flex-col max-[770px]:items-center max-[770px]:justify-center 
           max-[770px]:mt-[300px]
          
           ">
-            <h2 className="text-6xl max-[1200px]:text-4xl font-bold text-blue-500 ">
+            <h2 className="text-6xl max-[1200px]:text-4xl font-bold text-blue-600 ">
               Get In Touch <br /> With Us Today!
             </h2>
             <p className="mt-4 text-lg font-bold text-gray-300 w-[40%] max-[770px]:w-full max-[770px]:text-center leading-relaxed">
@@ -108,7 +108,7 @@ export default function Contact() {
               ></textarea>
 
               <button
-                className="w-full bg-blue-700 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition 
+                className="w-full bg-blue-800 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition 
         max-[1000px]:py-3 max-[1000px]:text-sm"
               >
                 Get free consultation

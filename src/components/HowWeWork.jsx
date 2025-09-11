@@ -9,26 +9,26 @@ const steps = [
   {
     id: "01",
     title: "Discover",
-    desc: "We start by understanding your business inside and out: your goals, bottlenecks, and what success actually looks like. Our team brings real business management consulting services into play from day one.",
-    icon: <FaCompass className="text-blue-600 " />,
+    desc: "We begin by gaining a clear understanding of your business—your goals, challenges, and vision of success. From the start, our team takes a consultative approach to identify opportunities and uncover what truly drives your operations.",
+    icon: <FaCompass className="text-blue-800 " />,
   },
   {
     id: "02",
     title: "Build",
-    desc: "Our design and development teams bring your solution to life, tailoring every line of code and interface to your business. We combine dynamic software solutions, agile software solutions, and strong UX.",
-    icon: <FaCubes className="text-blue-600 " />,
+    desc: " Our development team transforms ideas into working solutions, customizing every feature and interface to match your business needs. Using agile practices and user-focused design, we deliver powerful software that’s scalable, efficient, and built to perform.",
+    icon: <FaCubes className="text-blue-800 " />,
   },
   {
     id: "03",
     title: "Strategize",
-    desc: "We define the tech roadmap, whether cloud architecture, AI systems, or dashboard integrations, built around your workflows. This is where business analysis, digital transformation and AI in business management come to life.",
-    icon: <FaPuzzlePiece className="text-blue-600 " />,
+    desc: "We craft a clear technology roadmap tailored to your workflows—whether it’s cloud architecture, AI solutions, or smart dashboard integrations. At this stage, business analysis meets digital transformation, ensuring every solution is aligned with your long-term growth.",
+    icon: <FaPuzzlePiece className="text-blue-800 " />,
   },
   {
     id: "04",
     title: "Launch",
-    desc: "We deploy your solution with precision, ensuring a smooth transition and providing ongoing support. Our team ensures your new system integrates seamlessly with your existing operations.",
-    icon: <FaRocket className="text-blue-600 " />,
+    desc: "Our partnership doesn’t end at deployment. We stay by your side to optimize, maintain, and enhance your systems as your business evolves. With ongoing support and continuous improvements, we make sure your technology keeps delivering long-term value and lasting results.",
+    icon: <FaRocket className="text-blue-800 " />,
   },
 ];
 
@@ -173,12 +173,12 @@ const Timeline = () => {
         {" "}
         <h2 className="text-5xl font-bold text-center text-blue-800 mb-6">
           {" "}
-          How We Work
+          Our Approach to Building Smarter Solutions
         </h2>
         <p className="text-gray-600 text-center max-w-3xl mx-auto mb-16 text-xl">
           {" "}
-          Our process is designed to deliver exceptional results through
-          collaboration and innovation
+         We don’t believe in generic software or one-size-fits-all systems. Instead, our process is designed to understand your unique goals, uncover the challenges slowing you down, and create customized solutions that integrate seamlessly into your business. The result? Technology that works the way you do—simple, scalable, and effective.
+
         </p>
         <div className="relative overflow-hidden  
      ">

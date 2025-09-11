@@ -1,18 +1,19 @@
 import React from "react";
+import { FaFacebookF,FaInstagram, FaLinkedinIn, FaTiktok, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className=" bg-[#0a0a0a]  text-white px-8 md:px-16 py-12 w-full">
       <div className="max-w-[1300px] mx-auto">
         <img
-          src="https://diggitglobal.com/assets/images/Logo-diggit.png"
+          src="/assets/logo.png"
           alt="DIGGIT Logo"
-          className="w-[120px] mb-4"
+          className="w-[150px] mb-4"
         />
       </div>
 
       <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row justify-between gap-12  ">
-        {/* Left Column */}
+        
         <div className="flex-2 ">
           <h2 className="text-4xl font-bold text-white">
             Empowering Your Business <br />
@@ -122,19 +123,19 @@ const Footer = () => {
 
           <div className="flex gap-3 mb-[-40px] max-[768px]:mb-[10px]">
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              I
+             <FaInstagram/>
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              F
+              <FaFacebookF/>
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              L
+              <FaLinkedinIn/>
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              T
+              <FaTwitter/>
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              S
+              <FaTiktok/>
             </div>
           </div>
         </div>

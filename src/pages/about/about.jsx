@@ -4,7 +4,6 @@ import MissionVision from '../../components/about/MissionVision'
 import OriginStory from '../../components/about/OriginStory'
 import AboutCard from '../../components/about/AboutCard'
 import Contact from '../../components/Contact'
-import Footer from '../../components/Footer'
 
 
 const About = () => {
@@ -16,7 +15,6 @@ const About = () => {
       <OriginStory/>
       <AboutCard/>
       <Contact/>
-      <Footer/>
     </section>
     </>
   )

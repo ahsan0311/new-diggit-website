@@ -45,11 +45,11 @@ export default function WhoWeBuildFor() {
       <div className="industries-section" ref={containerRef}>
         <div className="industries-content">
           <div className="industries-left" ref={stickyRef}>
-            <h2>Who We Build For</h2>
+            <h2>Who We Partner With</h2>
             <p>
-              We work best with teams who are scaling, evolving, and iterating on their work. If you're solving major problems and need the right team, we're your partners.
+              We collaborate with businesses that are ready to grow, streamline, or launch something new. If you’re focused on solving real challenges and need technology that adapts as you scale, we’re here to deliver tailored solutions and integrated systems built for your success.
             </p>
-            <button>Let's get to work</button>
+            <button className="bg-[#00317B] hover:bg-blue-700 text-white py-4 px-6 rounded-full text-xl transition duration-300">Let’s Build Something</button>
           </div>
 
           <div className="industries-scroll">

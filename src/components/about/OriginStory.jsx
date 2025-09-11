@@ -10,12 +10,12 @@ const OriginStory = () => {
             Our Origin Story
           </h2>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Most businesses don’t need more software. They need fewer tools that do more of the right work.
+           Most businesses don’t need endless tools—they need smarter ones that actually get the job done.
           </p>
           <p className="text-gray-700 text-lg leading-relaxed">
-            We started Diggit because we were tired of watching teams jump between tabs, patch together platforms, and call that “digital transformation.” Whether it’s building a smart eCommerce store, launching a mobile app, scaling SEO, or designing a clean, unified brand, our goal is always the same:{" "}
+           We started our journey after seeing too many teams waste time juggling disconnected platforms and calling it “digital transformation.” Our focus has always been simple: build solutions that matter. Whether it’s developing a smart eCommerce platform, creating a powerful mobile app, driving growth with SEO, or shaping a unified brand identity, our goal remains the same:{" "}
             <strong className="text-black font-semibold">
-              create things that actually contribute to business success.
+              deliver technology that truly fuels business success.
             </strong>
           </p>
 

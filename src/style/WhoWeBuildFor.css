@@ -26,7 +26,7 @@
 }
 
 .industries-left h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   color: #002d72;
   line-height: 1.2;
@@ -34,21 +34,13 @@
 }
 
 .industries-left p {
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 17px;
+  line-height: 1.7;
   color: #333;
+  margin-bottom: 10px;
 }
 
-.industries-left button {
-  margin-top: 30px;
-  padding: 14px 24px;
-  font-size: 17px;
-  background: #0055ff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
+
 
 .industries-scroll {
   flex: 1;

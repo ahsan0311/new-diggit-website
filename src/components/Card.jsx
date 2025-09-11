@@ -7,14 +7,16 @@ const Card = () => {
       <section className="py-20 px-4">
         <div className="text-left md:text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
-            Your Tools Weren't Built
+            Your Business Deserves Technology Built Around You
             <br />
             <span className="text-black">For You. Ours Are.</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl md:mx-auto mb-8">
-            You're growing, but your tech isn't keeping up. Generic clunky
-            tools, scattered systems, and one-size-fits-all software can slow
-            down your business when it should be scaling up.
+            Growth shouldn’t be held back by outdated tools and disjointed
+            systems. Off-the-shelf software often adds complexity instead of
+            solving problems. That’s why we create tailored solutions designed
+            to scale with your business, streamline workflows, and deliver real
+            results—without the clutter.
           </p>
           <p className="text-2xl font-semibold text-blue-600">
             We're here to fix that.

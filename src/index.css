@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@media screen and (max-width:776px ) {
+    .home-work-cl{
+    display: flex !important;
+    flex-direction: column !important;
+    position: unset;
+}
+
+.how_we_work_mob_app_img{
+    width: 100%;
+}
+
+.how_we_work_mob_app_img img{
+    position: unset;
+    width: 100%;
+}
+.how-we-work{
+    width: 100%;
+    margin-top: 50px;
+}
+}
