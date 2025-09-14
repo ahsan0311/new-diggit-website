@@ -9,6 +9,12 @@ import WebDevelopment from "../pages/development/webDevelopment";
 import SeoMarketing from "../pages/marketing/seo";
 import SocialMedia from "../pages/marketing/socialMedia";
 import EmailMarketing from "../pages/marketing/emailMarketing";
+import Devops_Automation from "../pages/branding/devops_Automation";
+import YearlyCloud from "../pages/branding/yearlyCloud";
+import VpsServer from "../pages/branding/providingVPS";
+import CloudSolution from "../pages/branding/cloudSolution";
+import Hosting from "../pages/branding/hosting";
+import Product from "../pages/product/product";
 
 
 const AppRoutes = () => {
@@ -29,6 +35,18 @@ const AppRoutes = () => {
       <Route path="/seo" element={<SeoMarketing />} />
       <Route path="/social-media" element={<SocialMedia />} />
       <Route path="/email-marketing" element={<EmailMarketing/>} />
+
+      {/* branding  */}
+      <Route path="/providing-vps-server" element={<VpsServer/>} />
+      <Route path="/yearly-cloud-plan" element={<YearlyCloud/>} />
+      <Route path="/cloud-solutions" element={<CloudSolution/>} />
+      <Route path="/devops-automations" element={<Devops_Automation/>} />
+      <Route path="/hosting-plans" element={<Hosting/>} />
+
+      <Route path="/product" element={<Product/>} />
+
+
+
 
       
 

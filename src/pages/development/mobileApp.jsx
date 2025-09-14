@@ -64,7 +64,7 @@ const MobileApp = () => {
       ]}
     />
     <AllCards/>
-    <NoMoreSilos/>
+    <NoMoreSilos heading='Ready to build a mobile app that looks good and works great?' buttonText="Scope Your App"/>
      <WhyWorkSection
         title="Why Work With Diggit"
         description={

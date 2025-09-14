@@ -104,7 +104,7 @@ const AllCards = () => {
 
       <div className="mb-6 flex justify-center mt-10">
         <button className="bg-black rounded-full px-6 md:px-8 py-3 md:py-4 text-amber-50 text-base md:text-lg font-sans font-[500] hover:bg-gray-800 transition">
-          Startup & Saas
+          Startups & Saas
         </button>
       </div>
     </>

@@ -1,30 +1,36 @@
 .slider-container .slick-slide > div {
-  margin: 0 20px; /* Spacing between logos */
+  margin: 0 20px; /* spacing between logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-container img {
-  height: 50px;
-  object-fit: contain;
-  width: auto;
+  width: 100px;   /* fix box width */
+  height: 50px;  /* fix box height */
+  object-fit: contain; /* maintain aspect ratio */
   display: block;
-  transition: height 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive image sizes */
+/* Responsive sizes */
 @media (max-width: 1000px) {
   .slider-container img {
+    width: 80px;
     height: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .slider-container img {
+    width: 70px;
     height: 35px;
   }
 }
 
 @media (max-width: 480px) {
   .slider-container img {
+    width: 60px;
     height: 30px;
   }
 }

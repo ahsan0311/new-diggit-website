@@ -285,7 +285,7 @@ const scrollTrigger = ScrollTrigger.create({
           <img
             src={card.image}
             alt={card.title}
-            className="w-[280px] h-auto object-contain max-[907px]:w-[200px] max-[563px]:w-[160px] max-[490px]:w-[130px]"
+            className="w-[180px] h-auto object-contain max-[907px]:w-[200px] max-[563px]:w-[160px] max-[490px]:w-[130px]"
           />
         </div>
       </div>

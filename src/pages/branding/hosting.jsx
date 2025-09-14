@@ -11,7 +11,7 @@ import SearchSection from "../../components/digitalMarketing/SearchSection";
 import NoMoreSilos from "../../components/NoMoreSilos";
 import InfoSection from "../../components/develpoemnt/InfoSection";
 
-const EmailMarketing = () => {
+const Hosting = () => {
   return (
     <>
       <Hero
@@ -150,4 +150,4 @@ Email Marketing"
   );
 };
 
-export default EmailMarketing;
+export default Hosting;

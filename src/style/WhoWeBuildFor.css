@@ -105,6 +105,9 @@
   margin: 0;
 }
 
+
+
+
 /* New breakpoint for 1168px and below */
 @media (max-width: 1168px) {
   .industries-content {

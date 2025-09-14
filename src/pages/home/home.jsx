@@ -94,13 +94,13 @@ const Home = () => {
         <Card />
       </section>
       <section>
-        <NoMoreSilos />
+        <NoMoreSilos paragraph="Join dozens of businesses working with our software development company to build smarter systems, faster workflows, and cleaner user experiences." />
       </section>
       <section>
         <WhoWeBuildFor />
       </section>
       <section>
-        <HowWeWork />
+        <HowWeWork  />
       </section>
 
       <section>

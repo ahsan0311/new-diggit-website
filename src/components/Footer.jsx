@@ -117,8 +117,9 @@ const Footer = () => {
               Contact
             </h3>
 
-            <p className="mb-1">+971-54-311-4790</p>
-            <p>info@diggitglobal.com</p>
+            <p className="mb-1">92 319 2033 051
+</p>
+            <p>Info@atsglobalsolutions.com </p>
           </div>
 
           <div className="flex gap-3 mb-[-40px] max-[768px]:mb-[10px]">
