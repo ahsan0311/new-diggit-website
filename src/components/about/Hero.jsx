@@ -64,7 +64,8 @@ const Hero = () => {
       </div>
 
       {/* Top Gradient */}
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-black/70 to-transparent z-10"></div>
+     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black to-transparent z-10"></div>
+
 
       {/* Bottom Gradient */}
       <div className="absolute bottom-[-40px] left-0 w-full h-[200px] z-10 pointer-events-none">

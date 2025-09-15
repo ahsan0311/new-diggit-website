@@ -59,9 +59,9 @@ const Product = () => {
   ];
 
   return (
-    <div>
+    <div >
       <Hero/>
-       <div>
+       <div >
       {products.map((product, index) => (
         <ProductCard key={index} product={product} />
       ))}

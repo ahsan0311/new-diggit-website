@@ -24,7 +24,7 @@ const PointOfSale = () => {
   ];
 
   return (
-    <div>
+    <div >
       <Hero/>
       {products.map((product, index) => (
         <ProductCard key={index} product={product} />
