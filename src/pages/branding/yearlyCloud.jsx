@@ -15,139 +15,137 @@ const YearlyCloud = () => {
   return (
     <>
       <Hero
-        smallHeading="Email Marketing Services"
-        mainHeading={<>in Dubai that Reach Inboxes</>}
+        smallHeading="Yearly Cloud Plans"
+        mainHeading={<>Secure, Scalable & Affordable</>}
         description={
           <>
-            Email still drives more ROI than most channels, when it’s done
-            right. Diggit offers comprehensive email <br /> campaign management
-            services for brands that prioritize results over reach. We help B2B
-            teams, <br /> brands, and sales-led businesses get more out of every
-            send, from Zoho CRM email marketing to <br /> complete campaign
-            strategy.
+            Get enterprise-grade cloud hosting without the enterprise cost. 
+            Diggit’s yearly cloud plans give you <br /> high performance, 
+            99.9% uptime, and seamless scalability — all at a predictable yearly price. <br />
+            Perfect for startups, SMBs, and enterprises that need reliable cloud infrastructure <br />
+            without hidden costs.
           </>
         }
-        buttonText="Start Email Marketing"
+        buttonText="Start Your Yearly Cloud Plan"
       />
-      <BuildMy heading="We Use the best in tech" showButton={false} />
+      <BuildMy heading="We Use the Best in Cloud Tech" showButton={false} />
 
       <LogoMarquee
-      logos={[
-          "https://diggitglobal.com/assets/images/logo_19.png",
-          "https://diggitglobal.com/assets/images/logo_20.png",
-          "https://diggitglobal.com/assets/images/logo_19.png",
-          "https://diggitglobal.com/assets/images/logo_20.png",
-          "https://diggitglobal.com/assets/images/logo_21.png",
+        logos={[
           "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
           "https://diggitglobal.com/assets/images/logo_21.png",
-          "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
           "https://diggitglobal.com/assets/images/logo_21.png",
-
+          "https://diggitglobal.com/assets/images/logo_19.png",
         ]}
         slidesToShow={6}
         speed={3000}
-       />
+      />
+
       <WhyWorkSection
-        title="Our Email Marketing Services"
+        title="Our Yearly Cloud Hosting Services"
         description={
           <>
-            We help businesses send better emails; the kind people actually
-            open, read, and click. Our top email marketing services in UAE{" "}
-            <br /> are built for results, right from strategy and copy to tech
-            setup and tracking.
+            We help businesses move to the cloud with ease. Our yearly plans 
+            give you <br /> reliable performance, security, and 24/7 support — 
+            all at a fixed cost so you can scale with confidence.
           </>
         }
-        buttonText="Launch an Email Compaign"
+        buttonText="Choose a Cloud Plan"
         cards={[
           {
-            title: "Email Strategy & Planning",
-            text: "We work with you to build a clear plan for what to send, when to send it, and who it’s for. Whether you're doing B2B email marketing campaigns or promoting a launch, we make sure your emails have a purpose.",
+            title: "Cloud Strategy & Planning",
+            text: "We design a clear cloud strategy that aligns with your business goals, ensuring cost-efficiency and smooth migration.",
           },
           {
-            title: "Email Copywriting & Design",
-            text: "We write clean, human emails that sound like you, not a robot. From subject line to CTA, we handle all the content, formatting, and visuals to make every send feel personal and professional.",
+            title: "High-Performance Hosting",
+            text: "Our servers are optimized for speed, uptime, and reliability, ensuring your apps and websites always perform at their best.",
           },
           {
-            title: "Email Campaign Management",
-            text: "We manage your email campaigns from start to finish. With our email campaign management services, you don’t have to worry about scheduling, segmenting, or tracking; we handle it all and keep it running smoothly.",
+            title: "Full Management & Monitoring",
+            text: "We manage your cloud infrastructure from deployment to monitoring, so you never worry about downtime or security issues.",
           },
           {
-            title: "B2B Email Marketing Services",
-            text: "We help B2B companies reach leads, clients, and partners with clear, helpful emails. From cold outreach to nurture flows, we make sure your B2B email marketing strategy builds trust.",
+            title: "Scalable Cloud Solutions",
+            text: "Scale your resources up or down based on your needs. Our yearly cloud plans grow with your business.",
           },
           {
-            title: "Personalized Email Marketing",
-            text: "We use smart segmentation and dynamic content to make sure your emails feel personal, even when they’re automated. That means more opens, better clicks, and fewer deletes.",
+            title: "Secure Cloud Environment",
+            text: "We implement top-tier security with firewalls, DDoS protection, and regular backups for complete peace of mind.",
           },
           {
-            title: "Lead Generation Through Email Marketing",
-            text: "We build email flows that turn interest into action. Whether you’re capturing leads through forms or CRMs, we help you stay in touch with the right people at the right time.",
+            title: "Cost-Effective Subscriptions",
+            text: "Save more with predictable yearly billing and avoid surprise expenses while enjoying enterprise-grade infrastructure.",
           },
           {
-            title: "CRM Integration & Automation",
-            text: "We connect your email platform to your CRM, so everything works together. From Zoho CRM email marketing to advanced setups in HubSpot or Adobe email marketing, we make automation feel natural.",
+            title: "Cloud Integration & Automation",
+            text: "We integrate your apps, databases, and services into the cloud with smart automation for better efficiency.",
           },
         ]}
       />
+
       <NoMoreSilos
-        heading="More Emails Won’t Help.
-Better Ones Will."
-        buttonText="Start a better email strategy"
+        heading="Stop Overpaying for Cloud. 
+Switch to a Smarter Yearly Plan."
+        buttonText="Get My Cloud Plan"
       />
+
       <InfoSection
-        title="S.E.N.D Framework for
-Email Marketing"
+        title="S.E.C.U.R.E Framework for Cloud Hosting"
         paragraphs={[
-          `Most email campaigns fall flat because they’re rushed, irrelevant, or forgotten. At Diggit, our email marketing services in UAE follow a smart, repeatable process that focuses on what matters: clarity, connection, and conversion.`,
+          `Most businesses overpay for the cloud or face downtime with unreliable providers. 
+          At Diggit, our yearly cloud solutions follow the S.E.C.U.R.E framework — Security, Efficiency, Cost Control, Uptime, Reliability, and Expansion.`
         ]}
       />
+
       <SearchSection
-        letters={["S", "E", "N", , "D"]}
-        heading="Set the Strategy"
-        paragraph="First, we figure out what the email is for. Do you want people to buy, sign up, learn something, or come back? We write every email with that goal in mind."
-        buttonText="Fixed My Email Funnel"
-        buttonLink="#growth"
+        letters={["S", "E", "C", "U", "R", "E"]}
+        heading="Security First"
+        paragraph="Your data and apps are protected with enterprise-level encryption, firewalls, and compliance standards."
+        buttonText="Protect My Cloud"
+        buttonLink="#plans"
         showParagraph={true}
       />
 
       <FAQSection
         faqs={[
           {
-            question: "What is Email marketing?",
+            question: "What are Yearly Cloud Plans?",
             answer:
-              "Email marketing means sending useful messages to your contacts, like updates, offers, or follow-ups. It’s a way to stay in touch and bring people back to your business.",
+              "Yearly cloud plans give you secure hosting, storage, and computing power with predictable yearly billing and no hidden costs.",
           },
           {
-            question: "Do you write and manage the emails?",
+            question: "Do you provide full management?",
             answer:
-              "Yes. With our complete email campaign management services, we write, design, schedule, and send everything for you, so you don’t have to worry about a thing.",
+              "Yes. We fully manage your cloud setup — from migration and deployment to security, monitoring, and scaling.",
           },
           {
-            question: "Can you help with B2B email campaigns?",
+            question: "Can I scale my resources anytime?",
             answer:
-              "Definitely. We run smart, clear B2B email marketing campaigns that build trust, warm up leads, and help close deals, without sounding like spam.",
+              "Absolutely. Even with yearly billing, you can scale up or down as needed. We make the cloud flexible for your business.",
           },
           {
-            question: "Will the emails match my brand voice?",
+            question: "Will my cloud setup be secure?",
             answer:
-              "Yes, we do. We offer SEO services in UAE for small businesses that fit your budget and help you grow. Whether you need local SEO services in Dubai or help with content and links, we’ve got you covered.",
+              "Yes. We provide enterprise-grade firewalls, DDoS protection, SSL, and daily backups for maximum security.",
           },
           {
-            question: "What tools do you work with?",
+            question: "Which cloud platforms do you support?",
             answer:
-              "Yes, we do. We offer SEO services in UAE for small businesses that fit your budget and help you grow. Whether you need local SEO services in Dubai or help with content and links, we’ve got you covered.",
+              "We work with AWS, Google Cloud, Microsoft Azure, and private cloud setups — giving you freedom of choice.",
           },
         ]}
       />
+
       <Contact
-        heading="We Can Make Your Emails Worth Opening Again."
-        highlightText="We help businesses turn email into a channel that supports leads, sales, and long-term trust. If you're ready to use it the right way, we’re here to help."
-        buttonText="Talk to an email marketing Expert"
+        heading="Switch to a Smarter Yearly Cloud Plan."
+        highlightText="We help businesses cut costs and scale smarter with reliable yearly cloud hosting. Get performance, security, and predictability — all in one plan."
+        buttonText="Talk to a Cloud Expert"
       />
     </>
   );
 };
+
 
 export default YearlyCloud;

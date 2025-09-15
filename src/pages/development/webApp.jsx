@@ -79,6 +79,7 @@ const WebApp = () => {
   return (
     <>
       <Hero
+      bgImage="https://diggitglobal.com/assets/images/web_dev_banner.png"
         smallHeading="The Website Development"
         mainHeading={
           <>

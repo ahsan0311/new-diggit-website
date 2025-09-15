@@ -20,22 +20,25 @@ const SearchSection = ({
   return (
     <section className="w-full text-center  px-4">
       {/* Letters with animation */}
-      <div className="flex justify-center gap-6 mb-12">
-        {letters.map((letter, idx) => (
-          <div
-            key={idx}
-            className={`w-14 h-14 rounded-full border-2 flex items-center justify-center text-xl font-bold
-              animate-pulse transition-all duration-700 ease-in-out
-              ${
-                activeIndex === idx
-                  ? "bg-gradient-to-tr from-sky-400 to-sky-600 text-white shadow-xl shadow-sky-400/60 border-sky-500 scale-110"
-                  : "border-sky-400 text-sky-500 bg-white"
-              }`}
-          >
-            {letter}
-          </div>
-        ))}
-      </div>
+      <div className="flex justify-center gap-4 sm:gap-6 mb-12 flex-wrap">
+  {letters.map((letter, idx) => (
+    <div
+      key={idx}
+      className={`w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 
+        rounded-full border-2 flex items-center justify-center 
+        text-lg sm:text-xl font-bold
+        animate-pulse transition-all duration-700 ease-in-out
+        ${
+          activeIndex === idx
+            ? "bg-gradient-to-tr from-sky-400 to-sky-600 text-white shadow-xl shadow-sky-400/60 border-sky-500 scale-110"
+            : "border-sky-400 text-sky-500 bg-white"
+        }`}
+    >
+      {letter}
+    </div>
+  ))}
+</div>
+
 
       {/* Content card */}
       <div className="max-w-3xl text-start mx-auto bg-gray-50 rounded-4xl shadow-sm px-8 py-10 mb-10">

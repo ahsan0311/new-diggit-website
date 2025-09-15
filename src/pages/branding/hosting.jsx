@@ -15,139 +15,132 @@ const Hosting = () => {
   return (
     <>
       <Hero
-        smallHeading="Email Marketing Services"
-        mainHeading={<>in Dubai that Reach Inboxes</>}
+        smallHeading="Cloud & VPS Hosting Services"
+        mainHeading={<>Reliable Hosting Plans for Every Business</>}
         description={
           <>
-            Email still drives more ROI than most channels, when it’s done
-            right. Diggit offers comprehensive email <br /> campaign management
-            services for brands that prioritize results over reach. We help B2B
-            teams, <br /> brands, and sales-led businesses get more out of every
-            send, from Zoho CRM email marketing to <br /> complete campaign
-            strategy.
+            Fast, secure, and scalable hosting solutions tailored to your needs. 
+            Diggit provides high-performance VPS and Cloud Hosting with 99.9% uptime, 
+            24/7 expert support, and flexible plans. Whether you’re a startup or an enterprise, 
+            we’ve got the right hosting solution for you.
           </>
         }
-        buttonText="Start Email Marketing"
+        buttonText="View Hosting Plans"
       />
-      <BuildMy heading="We Use the best in tech" showButton={false} />
+      <BuildMy heading="We Use the Best in Hosting Tech" showButton={false} />
 
       <LogoMarquee
-      logos={[
-          "https://diggitglobal.com/assets/images/logo_19.png",
-          "https://diggitglobal.com/assets/images/logo_20.png",
-          "https://diggitglobal.com/assets/images/logo_19.png",
-          "https://diggitglobal.com/assets/images/logo_20.png",
-          "https://diggitglobal.com/assets/images/logo_21.png",
+        logos={[
           "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
           "https://diggitglobal.com/assets/images/logo_21.png",
-          "https://diggitglobal.com/assets/images/logo_19.png",
-          "https://diggitglobal.com/assets/images/logo_20.png",
-          "https://diggitglobal.com/assets/images/logo_21.png",
-
+          "https://diggitglobal.com/assets/images/logo_22.png",
+          "https://diggitglobal.com/assets/images/logo_23.png",
         ]}
         slidesToShow={6}
         speed={3000}
-       />
+      />
+
       <WhyWorkSection
-        title="Our Email Marketing Services"
+        title="Our Hosting Services"
         description={
           <>
-            We help businesses send better emails; the kind people actually
-            open, read, and click. Our top email marketing services in UAE{" "}
-            <br /> are built for results, right from strategy and copy to tech
-            setup and tracking.
+            Choose from our flexible VPS and Cloud Hosting plans designed to keep your 
+            business online and running smoothly. From small businesses to enterprise-grade 
+            setups, we deliver performance, security, and scalability.
           </>
         }
-        buttonText="Launch an Email Compaign"
+        buttonText="Explore Hosting Plans"
         cards={[
           {
-            title: "Email Strategy & Planning",
-            text: "We work with you to build a clear plan for what to send, when to send it, and who it’s for. Whether you're doing B2B email marketing campaigns or promoting a launch, we make sure your emails have a purpose.",
+            title: "VPS Hosting",
+            text: "Dedicated resources, full control, and unmatched performance for growing businesses that need more than shared hosting.",
           },
           {
-            title: "Email Copywriting & Design",
-            text: "We write clean, human emails that sound like you, not a robot. From subject line to CTA, we handle all the content, formatting, and visuals to make every send feel personal and professional.",
+            title: "Cloud Hosting",
+            text: "Scalable, reliable, and built to handle traffic spikes. Pay only for what you use and grow without limits.",
           },
           {
-            title: "Email Campaign Management",
-            text: "We manage your email campaigns from start to finish. With our email campaign management services, you don’t have to worry about scheduling, segmenting, or tracking; we handle it all and keep it running smoothly.",
+            title: "Managed Hosting",
+            text: "Let our experts handle updates, backups, and server monitoring so you can focus on your business.",
           },
           {
-            title: "B2B Email Marketing Services",
-            text: "We help B2B companies reach leads, clients, and partners with clear, helpful emails. From cold outreach to nurture flows, we make sure your B2B email marketing strategy builds trust.",
+            title: "Business Hosting",
+            text: "Perfect for eCommerce stores, SaaS, and SMEs who need faster speeds and guaranteed uptime.",
           },
           {
-            title: "Personalized Email Marketing",
-            text: "We use smart segmentation and dynamic content to make sure your emails feel personal, even when they’re automated. That means more opens, better clicks, and fewer deletes.",
+            title: "Enterprise Hosting",
+            text: "Custom hosting solutions with advanced security, high availability, and dedicated support teams.",
           },
           {
-            title: "Lead Generation Through Email Marketing",
-            text: "We build email flows that turn interest into action. Whether you’re capturing leads through forms or CRMs, we help you stay in touch with the right people at the right time.",
-          },
-          {
-            title: "CRM Integration & Automation",
-            text: "We connect your email platform to your CRM, so everything works together. From Zoho CRM email marketing to advanced setups in HubSpot or Adobe email marketing, we make automation feel natural.",
+            title: "Reseller Hosting",
+            text: "Launch your own hosting business with our reseller plans, complete with white-label branding.",
           },
         ]}
       />
+
       <NoMoreSilos
-        heading="More Emails Won’t Help.
-Better Ones Will."
-        buttonText="Start a better email strategy"
+        heading="Stop Worrying About Downtime.
+Start Scaling with Confidence."
+        buttonText="Get a Hosting Plan"
       />
+
       <InfoSection
-        title="S.E.N.D Framework for
-Email Marketing"
+        title="Why Choose Diggit Hosting?"
         paragraphs={[
-          `Most email campaigns fall flat because they’re rushed, irrelevant, or forgotten. At Diggit, our email marketing services in UAE follow a smart, repeatable process that focuses on what matters: clarity, connection, and conversion.`,
+          `Our hosting infrastructure is built to deliver unmatched speed, uptime, and security. 
+           With data centers worldwide and 24/7 monitoring, we ensure your business stays online, 
+           no matter what.`,
         ]}
       />
+
       <SearchSection
-        letters={["S", "E", "N", , "D"]}
-        heading="Set the Strategy"
-        paragraph="First, we figure out what the email is for. Do you want people to buy, sign up, learn something, or come back? We write every email with that goal in mind."
-        buttonText="Fixed My Email Funnel"
-        buttonLink="#growth"
+        letters={["S", "A", "F", "E"]}
+        heading="Secure. Affordable. Fast. Easy."
+        paragraph="From startups to enterprises, we make hosting simple, scalable, and worry-free. Pick a plan that grows with your business."
+        buttonText="See Hosting Plans"
+        buttonLink="#plans"
         showParagraph={true}
       />
 
       <FAQSection
         faqs={[
           {
-            question: "What is Email marketing?",
+            question: "What type of hosting do you offer?",
             answer:
-              "Email marketing means sending useful messages to your contacts, like updates, offers, or follow-ups. It’s a way to stay in touch and bring people back to your business.",
+              "We offer VPS Hosting, Cloud Hosting, Managed Hosting, Reseller Hosting, and Enterprise-grade custom hosting solutions.",
           },
           {
-            question: "Do you write and manage the emails?",
+            question: "Do you provide 24/7 support?",
             answer:
-              "Yes. With our complete email campaign management services, we write, design, schedule, and send everything for you, so you don’t have to worry about a thing.",
+              "Yes, our hosting support team is available 24/7 to resolve technical issues and ensure smooth operations.",
           },
           {
-            question: "Can you help with B2B email campaigns?",
+            question: "Can I upgrade my hosting plan later?",
             answer:
-              "Definitely. We run smart, clear B2B email marketing campaigns that build trust, warm up leads, and help close deals, without sounding like spam.",
+              "Absolutely. Our hosting plans are fully scalable, so you can upgrade or downgrade based on your needs without downtime.",
           },
           {
-            question: "Will the emails match my brand voice?",
+            question: "Do you provide free SSL and backups?",
             answer:
-              "Yes, we do. We offer SEO services in UAE for small businesses that fit your budget and help you grow. Whether you need local SEO services in Dubai or help with content and links, we’ve got you covered.",
+              "Yes, all our hosting plans come with free SSL certificates and automated daily backups for added security.",
           },
           {
-            question: "What tools do you work with?",
+            question: "Where are your servers located?",
             answer:
-              "Yes, we do. We offer SEO services in UAE for small businesses that fit your budget and help you grow. Whether you need local SEO services in Dubai or help with content and links, we’ve got you covered.",
+              "We have multiple data centers worldwide, including UAE, Europe, and the US, to ensure fast and reliable performance globally.",
           },
         ]}
       />
+
       <Contact
-        heading="We Can Make Your Emails Worth Opening Again."
-        highlightText="We help businesses turn email into a channel that supports leads, sales, and long-term trust. If you're ready to use it the right way, we’re here to help."
-        buttonText="Talk to an email marketing Expert"
+        heading="Power Your Business with Reliable Hosting."
+        highlightText="Our VPS and Cloud Hosting plans are built for speed, security, and scalability. Start today and experience the difference."
+        buttonText="Talk to a Hosting Expert"
       />
     </>
   );
 };
+
 
 export default Hosting;

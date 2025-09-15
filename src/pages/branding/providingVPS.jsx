@@ -15,24 +15,24 @@ const VpsServer = () => {
   return (
     <>
       <Hero
-        smallHeading="Email Marketing Services"
-        mainHeading={<>in Dubai that Reach Inboxes</>}
+        smallHeading="VPS Server Services"
+        mainHeading={<>in Dubai that Power Performance</>}
         description={
           <>
-            Email still drives more ROI than most channels, when it’s done
-            right. Diggit offers comprehensive email <br /> campaign management
-            services for brands that prioritize results over reach. We help B2B
-            teams, <br /> brands, and sales-led businesses get more out of every
-            send, from Zoho CRM email marketing to <br /> complete campaign
-            strategy.
+            Speed, security, and reliability matter most when it comes to
+            hosting. Diggit provides powerful VPS server solutions in Dubai
+            designed for businesses that prioritize uptime and performance. From
+            startups to enterprises, our VPS hosting services ensure seamless
+            scalability, full control, and top-tier security — whether you need
+            managed VPS hosting or fully customized server setups.
           </>
         }
-        buttonText="Start Email Marketing"
+        buttonText="Start VPS Hosting"
       />
       <BuildMy heading="We Use the best in tech" showButton={false} />
 
       <LogoMarquee
-      logos={[
+        logos={[
           "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
           "https://diggitglobal.com/assets/images/logo_19.png",
@@ -44,108 +44,112 @@ const VpsServer = () => {
           "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
           "https://diggitglobal.com/assets/images/logo_21.png",
-
         ]}
         slidesToShow={6}
         speed={3000}
-       />
+      />
       <WhyWorkSection
-        title="Our Email Marketing Services"
+        title="Our VPS Server Services"
         description={
           <>
-            We help businesses send better emails; the kind people actually
-            open, read, and click. Our top email marketing services in UAE{" "}
-            <br /> are built for results, right from strategy and copy to tech
-            setup and tracking.
+            We help businesses run faster, safer, and smoother with reliable VPS
+            hosting. Our top VPS server services in UAE are built for
+            performance — from setup and configuration to full management and
+            ongoing support.
           </>
         }
-        buttonText="Launch an Email Compaign"
-        cards={[
-          {
-            title: "Email Strategy & Planning",
-            text: "We work with you to build a clear plan for what to send, when to send it, and who it’s for. Whether you're doing B2B email marketing campaigns or promoting a launch, we make sure your emails have a purpose.",
-          },
-          {
-            title: "Email Copywriting & Design",
-            text: "We write clean, human emails that sound like you, not a robot. From subject line to CTA, we handle all the content, formatting, and visuals to make every send feel personal and professional.",
-          },
-          {
-            title: "Email Campaign Management",
-            text: "We manage your email campaigns from start to finish. With our email campaign management services, you don’t have to worry about scheduling, segmenting, or tracking; we handle it all and keep it running smoothly.",
-          },
-          {
-            title: "B2B Email Marketing Services",
-            text: "We help B2B companies reach leads, clients, and partners with clear, helpful emails. From cold outreach to nurture flows, we make sure your B2B email marketing strategy builds trust.",
-          },
-          {
-            title: "Personalized Email Marketing",
-            text: "We use smart segmentation and dynamic content to make sure your emails feel personal, even when they’re automated. That means more opens, better clicks, and fewer deletes.",
-          },
-          {
-            title: "Lead Generation Through Email Marketing",
-            text: "We build email flows that turn interest into action. Whether you’re capturing leads through forms or CRMs, we help you stay in touch with the right people at the right time.",
-          },
-          {
-            title: "CRM Integration & Automation",
-            text: "We connect your email platform to your CRM, so everything works together. From Zoho CRM email marketing to advanced setups in HubSpot or Adobe email marketing, we make automation feel natural.",
-          },
-        ]}
+       buttonText="Get Your VPS Server"
+cards={[
+  {
+    title: "VPS Server Strategy & Planning",
+    text: "We work with you to design the right VPS hosting plan for your business. From resource allocation to scaling needs, we ensure your server setup matches your goals.",
+  },
+  {
+    title: "VPS Setup & Configuration",
+    text: "We handle full VPS setup — OS installation, security hardening, and performance optimization — so your server runs smooth, safe, and fast right from the start.",
+  },
+  {
+    title: "Managed VPS Hosting",
+    text: "We manage your VPS servers end-to-end. From monitoring to backups and updates, our managed VPS services let you focus on business while we handle the tech.",
+  },
+  {
+    title: "B2B VPS Solutions",
+    text: "We provide VPS solutions for B2B companies that need reliable, scalable infrastructure. From handling client apps to running business-critical systems, our VPS keeps you online and efficient.",
+  },
+  {
+    title: "Personalized VPS Plans",
+    text: "We customize VPS plans for your exact requirements — whether you need more CPU power, higher bandwidth, or enterprise-grade storage. Only pay for what you need.",
+  },
+  {
+    title: "VPS for Growth & Scalability",
+    text: "Our VPS hosting grows with you. From startups to enterprises, we ensure your server can handle increasing traffic, bigger databases, and evolving workloads.",
+  },
+  {
+    title: "VPS Integration & Automation",
+    text: "We integrate your VPS with CRMs, applications, and workflows for seamless operations. From APIs to cloud tools, our automation ensures efficiency and speed.",
+  },
+]}
+
       />
-      <NoMoreSilos
-        heading="More Emails Won’t Help.
-Better Ones Will."
-        buttonText="Start a better email strategy"
-      />
-      <InfoSection
-        title="S.E.N.D Framework for
-Email Marketing"
-        paragraphs={[
-          `Most email campaigns fall flat because they’re rushed, irrelevant, or forgotten. At Diggit, our email marketing services in UAE follow a smart, repeatable process that focuses on what matters: clarity, connection, and conversion.`,
-        ]}
-      />
-      <SearchSection
-        letters={["S", "E", "N", , "D"]}
-        heading="Set the Strategy"
-        paragraph="First, we figure out what the email is for. Do you want people to buy, sign up, learn something, or come back? We write every email with that goal in mind."
-        buttonText="Fixed My Email Funnel"
-        buttonLink="#growth"
-        showParagraph={true}
-      />
+     <NoMoreSilos
+  heading="It’s Not About More Servers. 
+It’s About the Right VPS."
+  buttonText="Start with VPS Today"
+/>
+
+     <InfoSection
+  title="S.C.A.L.E Framework for VPS Hosting"
+  paragraphs={[
+    `Most businesses struggle with hosting because of slow servers, limited scalability, or poor support. At Diggit, our VPS server services follow a smart, repeatable framework that focuses on what matters: speed, control, and growth.`,
+  ]}
+/>
+
+<SearchSection
+  letters={["S", "C", "A", "L", "E"]}
+  heading="Set the Foundation"
+  paragraph="First, we identify what your VPS needs to achieve. Do you want better performance, more security, easier scaling, or full control? We build every VPS solution with that goal in mind."
+  buttonText="Fix My Hosting"
+  buttonLink="#growth"
+  showParagraph={true}
+/>
+
 
       <FAQSection
-        faqs={[
-          {
-            question: "What is Email marketing?",
-            answer:
-              "Email marketing means sending useful messages to your contacts, like updates, offers, or follow-ups. It’s a way to stay in touch and bring people back to your business.",
-          },
-          {
-            question: "Do you write and manage the emails?",
-            answer:
-              "Yes. With our complete email campaign management services, we write, design, schedule, and send everything for you, so you don’t have to worry about a thing.",
-          },
-          {
-            question: "Can you help with B2B email campaigns?",
-            answer:
-              "Definitely. We run smart, clear B2B email marketing campaigns that build trust, warm up leads, and help close deals, without sounding like spam.",
-          },
-          {
-            question: "Will the emails match my brand voice?",
-            answer:
-              "Yes, we do. We offer SEO services in UAE for small businesses that fit your budget and help you grow. Whether you need local SEO services in Dubai or help with content and links, we’ve got you covered.",
-          },
-          {
-            question: "What tools do you work with?",
-            answer:
-              "Yes, we do. We offer SEO services in UAE for small businesses that fit your budget and help you grow. Whether you need local SEO services in Dubai or help with content and links, we’ve got you covered.",
-          },
-        ]}
-      />
-      <Contact
-        heading="We Can Make Your Emails Worth Opening Again."
-        highlightText="We help businesses turn email into a channel that supports leads, sales, and long-term trust. If you're ready to use it the right way, we’re here to help."
-        buttonText="Talk to an email marketing Expert"
-      />
+  faqs={[
+    {
+      question: "What is a VPS server?",
+      answer:
+        "A VPS (Virtual Private Server) is a hosting solution that gives you dedicated resources on a shared server. It’s faster, more secure, and more reliable than shared hosting while being more affordable than a dedicated server.",
+    },
+    {
+      question: "Do you manage the VPS for me?",
+      answer:
+        "Yes. With our managed VPS hosting services, we handle setup, monitoring, security updates, and optimization so you can focus on your business while we take care of the tech.",
+    },
+    {
+      question: "Can VPS hosting work for businesses?",
+      answer:
+        "Absolutely. VPS hosting is ideal for businesses of all sizes. Whether you run an eCommerce store, SaaS platform, or corporate website, our VPS solutions provide the speed and scalability you need.",
+    },
+    {
+      question: "Will my VPS be secure?",
+      answer:
+        "Yes, our VPS servers are built with strong firewalls, DDoS protection, and regular security updates. We make sure your data and applications stay safe around the clock.",
+    },
+    {
+      question: "What kind of VPS plans do you offer?",
+      answer:
+        "We offer flexible VPS hosting plans, including fully managed and self-managed options. Whether you need more storage, bandwidth, or processing power, we customize the plan to fit your needs.",
+    },
+  ]}
+/>
+
+<Contact
+  heading="We Can Make Your Hosting Hassle-Free."
+  highlightText="We help businesses move to reliable VPS hosting that ensures speed, security, and scalability. If you're ready for stress-free hosting, we’re here to help."
+  buttonText="Talk to a VPS Expert"
+/>
+
     </>
   );
 };

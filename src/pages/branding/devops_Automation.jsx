@@ -15,99 +15,97 @@ const Devops_Automation = () => {
   return (
     <>
       <Hero
-        smallHeading="Email Marketing Services"
-        mainHeading={<>in Dubai that Reach Inboxes</>}
+        smallHeading="DevOps & Automation Services"
+        mainHeading={<>Scale Faster. Deploy Smarter.</>}
         description={
           <>
-            Email still drives more ROI than most channels, when it’s done
-            right. Diggit offers comprehensive email <br /> campaign management
-            services for brands that prioritize results over reach. We help B2B
-            teams, <br /> brands, and sales-led businesses get more out of every
-            send, from Zoho CRM email marketing to <br /> complete campaign
-            strategy.
+            Manual deployments waste time and cause errors. Diggit’s DevOps & 
+            automation services <br /> streamline your CI/CD pipelines, 
+            infrastructure, and monitoring. <br />
+            We help engineering teams, startups, and enterprises <br /> 
+            automate workflows from code to cloud with zero hassle.
           </>
         }
-        buttonText="Start Email Marketing"
+        buttonText="Start DevOps Automation"
       />
-      <BuildMy heading="We Use the best in tech" showButton={false} />
+
+      <BuildMy heading="We Use the Best in DevOps Tech" showButton={false} />
 
       <LogoMarquee
-      logos={[
-          "https://diggitglobal.com/assets/images/logo_19.png",
-          "https://diggitglobal.com/assets/images/logo_20.png",
-          "https://diggitglobal.com/assets/images/logo_19.png",
-          "https://diggitglobal.com/assets/images/logo_20.png",
-          "https://diggitglobal.com/assets/images/logo_21.png",
+        logos={[
           "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
           "https://diggitglobal.com/assets/images/logo_21.png",
           "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
           "https://diggitglobal.com/assets/images/logo_21.png",
-
         ]}
         slidesToShow={6}
         speed={3000}
-       />
+      />
+
       <WhyWorkSection
-        title="Our Email Marketing Services"
+        title="Our DevOps & Automation Services"
         description={
           <>
-            We help businesses send better emails; the kind people actually
-            open, read, and click. Our top email marketing services in UAE{" "}
-            <br /> are built for results, right from strategy and copy to tech
-            setup and tracking.
+            We help businesses speed up releases, reduce downtime, and 
+            scale infrastructure with confidence. <br /> 
+            Our DevOps automation services cover everything from CI/CD 
+            to monitoring and security.
           </>
         }
-        buttonText="Launch an Email Compaign"
+        buttonText="Automate My Infrastructure"
         cards={[
           {
-            title: "Email Strategy & Planning",
-            text: "We work with you to build a clear plan for what to send, when to send it, and who it’s for. Whether you're doing B2B email marketing campaigns or promoting a launch, we make sure your emails have a purpose.",
+            title: "CI/CD Pipeline Setup",
+            text: "We design and implement CI/CD pipelines that automate your builds, tests, and deployments. Faster releases, fewer errors, and reliable rollouts."
           },
           {
-            title: "Email Copywriting & Design",
-            text: "We write clean, human emails that sound like you, not a robot. From subject line to CTA, we handle all the content, formatting, and visuals to make every send feel personal and professional.",
+            title: "Infrastructure as Code (IaC)",
+            text: "We build repeatable, version-controlled infrastructure using tools like Terraform, Ansible, and AWS CloudFormation for scalable environments."
           },
           {
-            title: "Email Campaign Management",
-            text: "We manage your email campaigns from start to finish. With our email campaign management services, you don’t have to worry about scheduling, segmenting, or tracking; we handle it all and keep it running smoothly.",
+            title: "Cloud Automation",
+            text: "Automate your cloud workloads with scripts and workflows. From auto-scaling to backup management, we make your cloud work smarter."
           },
           {
-            title: "B2B Email Marketing Services",
-            text: "We help B2B companies reach leads, clients, and partners with clear, helpful emails. From cold outreach to nurture flows, we make sure your B2B email marketing strategy builds trust.",
+            title: "Monitoring & Alerts",
+            text: "Stay ahead of issues with smart monitoring tools like Prometheus, Grafana, and ELK stack. We set up alerts to fix problems before users notice."
           },
           {
-            title: "Personalized Email Marketing",
-            text: "We use smart segmentation and dynamic content to make sure your emails feel personal, even when they’re automated. That means more opens, better clicks, and fewer deletes.",
+            title: "Containerization & Orchestration",
+            text: "We containerize your apps with Docker and orchestrate them using Kubernetes for faster scaling, better reliability, and easier management."
           },
           {
-            title: "Lead Generation Through Email Marketing",
-            text: "We build email flows that turn interest into action. Whether you’re capturing leads through forms or CRMs, we help you stay in touch with the right people at the right time.",
+            title: "Security Automation",
+            text: "Integrate automated security scans and compliance checks into your pipelines, ensuring safe and secure deployments every time."
           },
           {
-            title: "CRM Integration & Automation",
-            text: "We connect your email platform to your CRM, so everything works together. From Zoho CRM email marketing to advanced setups in HubSpot or Adobe email marketing, we make automation feel natural.",
+            title: "Custom Workflow Automation",
+            text: "Every team works differently. We create custom scripts and workflows to reduce manual tasks, save time, and improve efficiency."
           },
         ]}
       />
+
       <NoMoreSilos
-        heading="More Emails Won’t Help.
-Better Ones Will."
-        buttonText="Start a better email strategy"
+        heading="More Engineers Won’t Fix Slow Releases. Automation Will."
+        buttonText="Start Automating Now"
       />
+
       <InfoSection
-        title="S.E.N.D Framework for
-Email Marketing"
+        title="A.C.T Framework for DevOps Automation"
         paragraphs={[
-          `Most email campaigns fall flat because they’re rushed, irrelevant, or forgotten. At Diggit, our email marketing services in UAE follow a smart, repeatable process that focuses on what matters: clarity, connection, and conversion.`,
+          `Most DevOps setups fail because they’re ad-hoc, manual, or unscalable. At Diggit, 
+          we use the A.C.T framework — Automate, Containerize, Track — 
+          to ensure reliability, speed, and visibility across your infrastructure.`
         ]}
       />
+
       <SearchSection
-        letters={["S", "E", "N", , "D"]}
-        heading="Set the Strategy"
-        paragraph="First, we figure out what the email is for. Do you want people to buy, sign up, learn something, or come back? We write every email with that goal in mind."
-        buttonText="Fixed My Email Funnel"
+        letters={["A", "C", "T"]}
+        heading="Automate First"
+        paragraph="We start by automating repetitive tasks like testing, deployments, and monitoring so your team can focus on building, not fixing."
+        buttonText="Fix My DevOps Pipeline"
         buttonLink="#growth"
         showParagraph={true}
       />
@@ -115,36 +113,37 @@ Email Marketing"
       <FAQSection
         faqs={[
           {
-            question: "What is Email marketing?",
+            question: "What is DevOps automation?",
             answer:
-              "Email marketing means sending useful messages to your contacts, like updates, offers, or follow-ups. It’s a way to stay in touch and bring people back to your business.",
+              "DevOps automation means using tools and scripts to reduce manual work in software development and IT operations. It covers CI/CD, monitoring, and infrastructure setup."
           },
           {
-            question: "Do you write and manage the emails?",
+            question: "Do you set up CI/CD pipelines?",
             answer:
-              "Yes. With our complete email campaign management services, we write, design, schedule, and send everything for you, so you don’t have to worry about a thing.",
+              "Yes. We build and optimize CI/CD pipelines for reliable, repeatable deployments with tools like GitHub Actions, Jenkins, GitLab CI, and Azure DevOps."
           },
           {
-            question: "Can you help with B2B email campaigns?",
+            question: "Can you manage cloud infrastructure?",
             answer:
-              "Definitely. We run smart, clear B2B email marketing campaigns that build trust, warm up leads, and help close deals, without sounding like spam.",
+              "Definitely. We automate AWS, Azure, and GCP environments using Infrastructure as Code (IaC) to make scaling and managing cloud simple."
           },
           {
-            question: "Will the emails match my brand voice?",
+            question: "Will automation work with my existing setup?",
             answer:
-              "Yes, we do. We offer SEO services in UAE for small businesses that fit your budget and help you grow. Whether you need local SEO services in Dubai or help with content and links, we’ve got you covered.",
+              "Yes. We integrate DevOps automation into your current stack, so you don’t have to rebuild everything. Our approach is flexible and non-disruptive."
           },
           {
-            question: "What tools do you work with?",
+            question: "Which tools do you use?",
             answer:
-              "Yes, we do. We offer SEO services in UAE for small businesses that fit your budget and help you grow. Whether you need local SEO services in Dubai or help with content and links, we’ve got you covered.",
+              "We work with Terraform, Ansible, Docker, Kubernetes, Jenkins, GitHub Actions, Prometheus, Grafana, ELK, and more — depending on your business needs."
           },
         ]}
       />
+
       <Contact
-        heading="We Can Make Your Emails Worth Opening Again."
-        highlightText="We help businesses turn email into a channel that supports leads, sales, and long-term trust. If you're ready to use it the right way, we’re here to help."
-        buttonText="Talk to an email marketing Expert"
+        heading="We Can Make Your Infrastructure Run on Autopilot."
+        highlightText="Our DevOps & automation services help you release faster, scale smarter, and reduce downtime. If you're ready to future-proof your systems, we’re here to help."
+        buttonText="Talk to a DevOps Expert"
       />
     </>
   );

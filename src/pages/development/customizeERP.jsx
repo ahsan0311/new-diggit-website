@@ -1,16 +1,16 @@
-import React from 'react'
-import Hero from '../../components/develpoemnt/Hero'
-import WhatWeBuild from '../../components/develpoemnt/WhatWeBuild'
-import FoldCards from '../../components/develpoemnt/FoldCards'
-import LogoMarquee from '../../components/develpoemnt/Marwuee'
-import BuildMy from '../../components/develpoemnt/BuildMy'
-import WorkCards from '../../components/develpoemnt/WorkCards'
-import AllCards from '../../components/develpoemnt/AllCards'
-import FAQSection from '../../components/develpoemnt/Faqs'
-import Contact from '../../components/Contact'
-import WhyWorkSection from '../../components/develpoemnt/WhyWorkSection'
-import NoMoreSilos from '../../components/NoMoreSilos'
-import InfoSection from '../../components/develpoemnt/InfoSection'
+import React from "react";
+import Hero from "../../components/develpoemnt/Hero";
+import WhatWeBuild from "../../components/develpoemnt/WhatWeBuild";
+import FoldCards from "../../components/develpoemnt/FoldCards";
+import LogoMarquee from "../../components/develpoemnt/Marwuee";
+import BuildMy from "../../components/develpoemnt/BuildMy";
+import WorkCards from "../../components/develpoemnt/WorkCards";
+import AllCards from "../../components/develpoemnt/AllCards";
+import FAQSection from "../../components/develpoemnt/Faqs";
+import Contact from "../../components/Contact";
+import WhyWorkSection from "../../components/develpoemnt/WhyWorkSection";
+import NoMoreSilos from "../../components/NoMoreSilos";
+import InfoSection from "../../components/develpoemnt/InfoSection";
 
 const cardsForPage1 = [
   {
@@ -47,55 +47,103 @@ const cardsForPage1 = [
 const CustomizeErp = () => {
   return (
     <>
-    <Hero/>
-    <WhatWeBuild/>
-    <FoldCards cardsData={cardsForPage1} containerHeight="600px"/>
-    <BuildMy/>
-    <LogoMarquee/>
-    <InfoSection
-      title="Industries We Work With"
-      paragraphs={[
-        `As a leading software development agency in Dubai, we build custom
-         platforms that support how modern businesses operate; whether
-         you're scaling up, simplifying systems, or starting from scratch.`,
-        `Our team delivers end-to-end custom software development services
-         across industries, using the right mix of strategy, tech, and 
-         clean design to build systems that work and grow with you.`,
-      ]}
-    />
-    <AllCards/>
-    <NoMoreSilos heading='Ready to build a mobile app that looks good and works great?' buttonText="Scope Your App"/>
-     <WhyWorkSection
-        title="Why Work With Diggit"
+      <Hero
+      bgImage="https://diggitglobal.com/assets/images/erp_banner.png"
+        smallHeading="Custom ERP Development Services That"
+        mainHeading="Keep Everything in Sync"
+        description={
+          "Our custom ERP solutions are designed around your business, not the other way around. We help you organize data, automate repetitive tasks, and enable smooth team collaboration—all within a system tailored to your unique workflows. From finance and sales to operations and beyond, we build unified ERP platforms that grow with your business and eliminate chaos."
+        }
+        buttonText="Start Custom ERP"
+      />
+      <BuildMy showButton={false} />
+      <LogoMarquee />
+
+      <WhyWorkSection
+        title="Our Customized ERP Development Services"
         description={
           <>
-            We don’t just build websites. We build the stuff that makes work
-            easier - for your team,
-            <br /> your users, and your business.
+            We design and develop ERP solutions tailored to fit your team
+            perfectly—from planning to deployment. As a trusted custom ERP
+            development partner, we focus on clean architecture, seamless
+            scalability, and long-term business growth.
           </>
         }
-        buttonText="Launch Your Site"
+        buttonText="Build a Smarter"
         cards={[
           {
-            title: "We Build Around You",
-            text: "From booking tools to dashboards, we design around how your business actually runs. Every project starts with your goals, not our tech stack.",
+            title: "Custom ERP Development",
+            text: "We build customized ERP systems from the ground up, designed to match your business’s unique workflows. Our tailored ERP solutions streamline key areas like sales, finance, HR, and reporting—delivering only the features you need, without the clutter.",
           },
           {
-            title: "Problem First, Platform Later",
-            text: "We write our own code and build our own systems. Whether it’s custom website services or enterprise web development, we skip the shortcuts and deliver sites that last.",
+            title: "Customized ERP Cloud Services Version",
+            text: "We help migrate your customized ERP to the cloud, giving you easier access, faster scalability, and simpler management. Our cloud-based ERP solutions are secure, flexible, and tailored for teams that want efficiency without the hassle of traditional setups.",
           },
           {
-            title: "Direct Access To The Team",
-            text: "No layers, no account managers translating requirements. You’ll work directly with the designers and developers building your product — quick calls, fast turnarounds, clear updates.",
+            title: "Customized ERP for Professional Services",
+            text: "Whether you run a law firm, consultancy, or agency, we design ERP solutions tailored to your workflows. Our customized ERP systems bring everything together—from time tracking and client billing to resource and team planning—so you can focus on delivering value instead of managing chaos.",
+          },
+          {
+            title : "Customized ERP for IT Services",
+            text: "For IT and technology companies, we design ERP solutions that simplify project management, support ticketing, payments, and more. Our customized ERP systems keep everything organized, easy to track, and aligned with your business processes."
+          },
+          {
+            title : "Customized ERP for Distribution",
+            text: "We create tailored ERP solutions to manage inventory, orders, and shipping with precision. Our customized ERP systems keep your distribution process efficient, reduce errors, and ensure smooth, on-time deliveries."
+          },
+          {
+            title : "Customized ERP Advisory Services",
+            text: "Not sure what kind of ERP fits your business? We provide expert advisory services to help you choose and design the right customized ERP solution—so you get the tools you actually need without wasting time or resources."
+          },
+           
+        ]}
+      />
+
+       <NoMoreSilos
+              heading="Outgrowing Spreadsheets?"
+              paragraph="It’s Time for Customized ERP."
+              buttonText="SGet Custom ERP Support"
+            />
+
+      <FAQSection
+        faqs={[
+          {
+            question: "How much does a Customized ERP system cost?",
+            answer:
+              "The cost of a customized ERP system depends on your business needs, team size, and the features you require. A simple setup may start from a few thousand dollars, while a fully tailored solution with complete implementation and integrations will cost more. Our goal is to design a system that fits your workflow and your budget."
+          },
+          {
+            question:
+              "How much does it cost to implement a Customized ERP system?",
+            answer:
+            "The cost of implementing a customized ERP system depends on factors like business complexity, number of users, and the level of custom features required. We provide transparent pricing with no hidden charges, ensuring you get a solution that fits both your needs and your budget."
+          },
+          {
+            question:
+              "How do I choose the right ERP system?",
+            answer:
+            "Start by identifying your business’s real needs instead of chasing generic features. A customized ERP is built around your goals, size, and workflow—so it grows with you instead of holding you back. Our team evaluates your processes and recommends the right setup tailored to your business."
+          },
+          {
+            question:
+              "How does an ERP system improve customer service?",
+            answer:
+            "A customized ERP system improves customer service by giving your team instant access to accurate data—like order status, inventory availability, or client history. This means faster response times, fewer mistakes, and a smoother customer experience overall. With everything connected in one system, your team can focus on solving customer needs instead of searching for information."
+          },
+          {
+            question: "Why do ERP implementations fail sometimes?",
+            answer:
+            "ERP implementations usually fail when businesses rush the process, skip proper planning, or choose a system that doesn’t match their real needs. Another common reason is lack of user training—if your team doesn’t understand the system, adoption becomes difficult. At Diggit, we focus on careful planning, customization, and hands-on support so your ERP implementation succeeds the first time."
           },
         ]}
       />
-  
-    <WorkCards/>
-    <FAQSection/>
-    <Contact/>
+      <Contact 
+       heading="If You Wait Until It Breaks, It’ll Cost You More"
+  highlightText="Your ERP system is the backbone of your business. Waiting until things fall apart only adds cost, delays, and frustration. At Diggit, we make ERP implementation smooth from day one—replacing scattered tools and messy workflows with a single, reliable platform built to last."
+  buttonText="Book A free ERP Review"
+      />
     </>
-  )
-}
+  );
+};
 
-export default CustomizeErp
+export default CustomizeErp;

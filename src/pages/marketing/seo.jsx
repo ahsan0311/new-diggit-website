@@ -16,6 +16,7 @@ const SeoMarketing = () => {
   return (
     <>
       <Hero
+      bgImage="https://diggitglobal.com/assets/images/seo_banner.png"
         smallHeading="Everyone Promises SEO."
         mainHeading={<>We Actually Deliver It.</>}
         description={

@@ -49,6 +49,8 @@ const SocialMedia = () => {
   return (
     <>
       <Hero
+      bgImage="https://diggitglobal.com/assets/images/social_media_banner.png"
+
         smallHeading="Complete Social Media Management
 "
         mainHeading={<>Services For SMEs</>}

@@ -47,7 +47,7 @@ const cardsForPage1 = [
 const MobileApp = () => {
   return (
     <>
-    <Hero/>
+    <Hero bgImage='https://diggitglobal.com/assets/images/mob_app_banner.png'/>
     <WhatWeBuild/>
     <FoldCards cardsData={cardsForPage1} containerHeight="600px"/>
     <BuildMy/>

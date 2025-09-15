@@ -48,6 +48,8 @@ const WebDevelopment = () => {
   return (
     <>
       <Hero
+      bgImage="https://diggitglobal.com/assets/images/custom_web_banner.png"
+
         mainHeading="Partner You Can Rely On for Growth"
         description={
           "We craft websites, portals, dashboards, and digital platforms tailored for teams that demand more than off-the-shelf templates. Our web development solutions deliver fast, scalable, and fully customized systems—designed to be clean, powerful, and aligned with your business goals."

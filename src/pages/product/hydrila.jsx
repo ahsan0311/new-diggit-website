@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductCard from '../../components/product/ProductCard'
 import Hero from '../../components/about/Hero';
+import Contact from '../../components/Contact';
 
 const Hydrila = () => {
   const products = [
@@ -26,9 +27,11 @@ const Hydrila = () => {
 
   return (
     <div>
+       <Hero/>
       {products.map((product, index) => (
         <ProductCard key={index} product={product} />
       ))}
+      <Contact/>
     </div>
   );
 };

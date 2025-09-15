@@ -15,6 +15,9 @@ import VpsServer from "../pages/branding/providingVPS";
 import CloudSolution from "../pages/branding/cloudSolution";
 import Hosting from "../pages/branding/hosting";
 import Product from "../pages/product/product";
+import PointOfSale from "../pages/product/pointOfSale";
+import Laundary from "../pages/product/laundary";
+import Hydrila from "../pages/product/hydrila";
 
 
 const AppRoutes = () => {
@@ -44,6 +47,12 @@ const AppRoutes = () => {
       <Route path="/hosting-plans" element={<Hosting/>} />
 
       <Route path="/product" element={<Product/>} />
+      <Route path="/Point-Of-Sale" element={<PointOfSale/>} />
+      <Route path="/Laundary-management" element={<Laundary/>} />
+      <Route path="/Hydrila" element={<Hydrila/>} />
+
+
+
 
 
 

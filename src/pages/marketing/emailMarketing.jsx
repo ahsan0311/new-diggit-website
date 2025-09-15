@@ -15,6 +15,8 @@ const EmailMarketing = () => {
   return (
     <>
       <Hero
+      bgImage="https://diggitglobal.com/assets/images/email-marketing-banner.png"
+
         smallHeading="Email Marketing Services"
         mainHeading={<>in Dubai that Reach Inboxes</>}
         description={
