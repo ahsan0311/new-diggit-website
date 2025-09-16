@@ -46,7 +46,7 @@ const OriginStory = () => {
       <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row items-center md:items-center gap-12">
         {/* Left Content */}
         <div className="w-full md:w-1/2 flex flex-col justify-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-6 origin-left">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-6 origin-left">
             Our Origin Story
           </h2>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed origin-left">
@@ -60,13 +60,14 @@ const OriginStory = () => {
             that matter. Whether it’s developing a smart eCommerce platform,
             creating a powerful mobile app, driving growth with SEO, or shaping
             a unified brand identity, our goal remains the same:{" "}
-            <strong className="text-black font-semibold">
+            <strong className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 font-semibold">
               deliver technology that truly fuels business success.
             </strong>
           </p>
 
           <div className="mt-8 origin-left">
-            <button className="bg-[#002D74] hover:bg-[#003D99] text-white font-medium text-lg px-6 py-3 rounded-full transition duration-300">
+            <button className="bg-gradient-to-r from-blue-600 to-sky-500 
+             text-white hover:bg-[#003D99] text-white font-medium text-lg px-6 py-3 rounded-full transition duration-300">
               Contact Us
             </button>
           </div>

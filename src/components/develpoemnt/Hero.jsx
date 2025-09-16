@@ -108,7 +108,7 @@ const Hero = ({
             {smallHeading}
           </h3>
 
-          <h1 className="text-7xl text-[#01a9eb] md:text-8xl font-extrabold mb-6 max-[768px]:text-5xl max-[585px]:text-5xl max-[401px]:text-4xl hero-main-heading">
+          <h1 className="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 md:text-8xl font-extrabold mb-6 max-[768px]:text-5xl max-[585px]:text-5xl max-[401px]:text-4xl hero-main-heading">
             {mainHeading}
           </h1>
 
@@ -117,7 +117,8 @@ const Hero = ({
           </p>
 
           <div className="flex justify-start hero-button">
-            <button className="bg-[#00317B] hover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full text-lg transition duration-300">
+            <button className="bg-gradient-to-r from-blue-600 to-sky-500 
+             text-whitehover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full text-lg transition duration-300">
               {buttonText}
             </button>
           </div>

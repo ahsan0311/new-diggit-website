@@ -78,7 +78,7 @@ const Hero = () => {
           <h3 className="text-3xl md:text-2xl font-semibold hero-heading">
             We Build Business Solutions That Drive Team Success
           </h3>
-          <h1 className="text-5xl text-[#01a9eb] md:text-6xl font-extrabold mb-6 hero-heading">
+          <h1 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 md:text-6xl font-extrabold mb-6 hero-heading">
             Built to Be the Strength
             <br />
             Behind Your Success
@@ -93,7 +93,8 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center hero-button">
-            <button className="bg-[#00317B] hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full text-lg transition duration-300">
+            <button className="bg-gradient-to-r from-blue-600 to-sky-500 
+             text-white hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full text-lg transition duration-300">
               Explore our services
             </button>
           </div>

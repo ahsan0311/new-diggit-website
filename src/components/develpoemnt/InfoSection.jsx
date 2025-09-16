@@ -47,7 +47,7 @@ const InfoSection = ({ title, paragraphs, align = "center" }) => {
       className={`font-sans text-${align} p-6 md:p-10`}
     >
       {/* Heading */}
-      <h1 className="text-4xl max-w-3xl md:text-5xl mx-auto lg:text-[60px] font-bold info-heading">
+      <h1 className="text-4xl  text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-3xl md:text-5xl mx-auto lg:text-[60px] font-bold info-heading">
         {title}
       </h1>
 

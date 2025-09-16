@@ -46,7 +46,7 @@ const WhyWorkSection = ({ title, description, cards, buttonText }) => {
       className="font-sans text-center p-6 md:p-10 mt-10"
     >
       {/* Heading */}
-      <h1 className="whywork-title max-w-5xl mx-auto text-3xl md:text-5xl lg:text-[60px] font-bold">
+      <h1 className="whywork-title text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-5xl mx-auto text-3xl md:text-5xl lg:text-[60px] font-bold">
         {title}
       </h1>
 
@@ -59,15 +59,15 @@ const WhyWorkSection = ({ title, description, cards, buttonText }) => {
   {cards.map((card, index) => (
     <div
       key={index}
-      className="bg-gray-50 rounded-3xl h-[360px] p-6 md:p-8 max-[640px]:h-auto
+      className="bg-gradient-to-r from-cyan-300 to-blue-300 rounded-3xl h-[360px] p-6 md:p-8 max-[640px]:h-auto
                  w-full sm:w-[calc(50%-0.75rem)] lg:w-[22rem] 
                  shadow-md text-center transition-all duration-300 
-                 hover:-translate-y-2 hover:shadow-xl hover:bg-gradient-to-br hover:from-blue-50 hover:to-white"
+                 hover:-translate-y-2 hover:shadow-xl"
     >
-      <h2 className="text-[#00317b] text-xl md:text-2xl lg:text-3xl font-[500] font-sans mb-3">
+      <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 text-xl md:text-2xl lg:text-3xl font-[500] font-sans mb-3">
         {card.title}
       </h2>
-      <p className="text-gray-600 text-sm md:text-base leading-relaxed font-semibold">
+      <p className="text-white text-sm md:text-base leading-relaxed font-semibold">
         {card.text}
       </p>
     </div>
@@ -76,7 +76,7 @@ const WhyWorkSection = ({ title, description, cards, buttonText }) => {
   {/* Button */}
   {buttonText && (
     <div className="w-full flex justify-center mt-8">
-      <button className="bg-[#00317b] text-white rounded-full py-3 md:py-4 font-sans w-[12rem] md:w-[15rem] text-base md:text-xl font-medium hover:bg-blue-700 transition">
+      <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white rounded-full py-3 md:py-4 font-sans w-[12rem] md:w-[15rem] text-base md:text-xl font-medium hover:bg-blue-700 transition">
         {buttonText}
       </button>
     </div>

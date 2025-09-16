@@ -38,19 +38,19 @@ export default function FAQSection({
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 mb-10">
-      <h2 className="text-5xl font-bold text-center mb-10">{heading}</h2>
+      <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 font-bold text-center mb-10">{heading}</h2>
 
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="bg-gray-100 rounded-2xl p-8 shadow-sm transition-all duration-300"
+            className="bg-gradient-to-r from-cyan-300 to-blue-300 rounded-2xl p-8 shadow-sm transition-all duration-300"
           >
             <button
               onClick={() => toggleFAQ(index)}
               className="flex justify-between items-center w-full text-left"
             >
-              <span className="text-lg md:text-3xl font-semibold text-black">
+              <span className="text-lg md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
                 {faq.question}
               </span>
 
@@ -82,7 +82,7 @@ export default function FAQSection({
                   : "grid-rows-[0fr] opacity-0"
               }`}
             >
-              <div className="overflow-hidden text-gray-600 text-sm md:text-base leading-relaxed">
+              <div className="overflow-hidden text-white text-sm md:text-base leading-relaxed">
                 {faq.answer}
               </div>
             </div>

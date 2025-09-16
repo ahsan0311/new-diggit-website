@@ -15,7 +15,7 @@ const BuildMy = ({
           <div className="flex-shrink-0 mt-[10px]">
             <Link
               to={buttonLink}
-              className="bg-[#00317B] text-white text-xl px-12 py-5 rounded-full hover:bg-blue-800 transition duration-300"
+              className="bg-gradient-to-r from-blue-600 to-sky-500 text-white text-xl px-12 py-5 rounded-full hover:bg-blue-800 transition duration-300"
             >
               {buttonText}
             </Link>
@@ -25,7 +25,7 @@ const BuildMy = ({
         {/* Heading */}
         <div className="flex-2">
           <h2
-            className={`text-5xl font-bold text-black mb-4 ${
+            className={`text-5xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-4 ${
               showButton ? "mt-20" : "mt-0"
             }`}
           >

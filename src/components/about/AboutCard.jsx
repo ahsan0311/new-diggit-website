@@ -4,9 +4,11 @@ const AboutCard = () => {
   return (
     <section className="py-10 px-4 bg-white ">
       <div className="text-left md:text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
-          Our Core Values
-        </h2>
+       <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight 
+  text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
+  Our Core Values
+</h2>
+
       </div>
 
       <div className="grid grid-cols-1  grid-cols-2 gap-8 max-w-[1000px] mx-auto">
@@ -43,18 +45,18 @@ const AboutCard = () => {
             >
               {/* Front */}
               <div
-                className="absolute w-full h-full bg-[#002f6c] text-white rounded-2xl p-8 flex flex-col items-center justify-center text-center"
+                className="absolute w-full h-full bg-gradient-to-r from-cyan-300 to-blue-300 text-white rounded-2xl p-8 flex flex-col items-center justify-center text-center"
                 style={{ backfaceVisibility: "hidden" }}
               >
-                <div className="absolute top-4 right-5 text-5xl font-extrabold opacity-80">
+                <div className="absolute top-4 text-white right-5 text-5xl font-extrabold">
                   {card.number}
                 </div>
-                <p className="text-2xl font-semibold mt-6">{card.title}</p>
+                <p className="text-4xl font-semibold">{card.title}</p>
               </div>
 
               {/* Back */}
               <div
-                className="absolute w-full h-full bg-[#002f6c] text-white rounded-2xl p-6 flex items-center justify-center text-center shadow-lg shadow-blue-400/50 rotate-y-180"
+                className="absolute w-full h-full bg-gradient-to-r from-cyan-300 to-blue-300 text-white rounded-2xl p-6 flex items-center justify-center text-center shadow-lg shadow-blue-400/50 rotate-y-180"
                 style={{ backfaceVisibility: "hidden" }}
               >
                 <p className="text-base leading-relaxed">{card.desc}</p>
@@ -65,7 +67,7 @@ const AboutCard = () => {
       </div>
 
       <div className="text-center mt-10 max-[840px]:mb-[100px]">
-        <button className="bg-[#00317B] text-white px-[60px] py-3 rounded-full hover:bg-blue-700 text-[20px]">
+        <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-[60px] py-3 rounded-full hover:bg-blue-700 text-[20px]">
           Explore
         </button>
       </div>

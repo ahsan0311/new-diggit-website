@@ -57,7 +57,7 @@ const MissionVision = () => {
         <div className="w-full md:w-1/2 flex flex-col gap-16 text-end mt-18 md:mt-20 pr-5">
           {/* Mission */}
           <div className="mv-text">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
               Our Mission
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
@@ -70,7 +70,7 @@ const MissionVision = () => {
 
           {/* Vision */}
           <div className="mv-text">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
               Our Vision
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">

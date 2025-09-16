@@ -42,7 +42,7 @@ const SearchSection = ({
 
       {/* Content card */}
       <div className="max-w-3xl text-start mx-auto bg-gray-50 rounded-4xl shadow-sm px-8 py-10 mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-4 ">
           {heading}
         </h2>
         {showParagraph && (
@@ -54,7 +54,7 @@ const SearchSection = ({
       </div>
        <a
           href={buttonLink}
-          className="inline-block bg-[#002f77] text-white font-semibold px-8 py-3 rounded-full text-lg transition-colors hover:bg-[#0045aa]"
+          className="inline-block bg-gradient-to-r from-blue-600 to-sky-500  text-white font-semibold px-8 py-3 rounded-full text-lg transition-colors hover:bg-[#0045aa]"
         >
           {buttonText}
         </a>

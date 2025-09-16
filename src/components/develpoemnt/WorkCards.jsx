@@ -142,7 +142,7 @@ const HowWeWork = ({
   ],
 }) => {
   return (
-    <section className=" home-work-cl bg-[#00317B] text-white rounded-[30px] max-w-7xl mx-auto my-10 flex justify-between items-center py-6 px-2 md:p-10 relative max-[1279px]:w-[96%] ">
+    <section className=" home-work-cl bg-gradient-to-r from-cyan-300 to-blue-300 rounded-[30px] max-w-7xl mx-auto my-10 flex justify-between items-center py-6 px-2 md:p-10 relative max-[1279px]:w-[96%] ">
 
       {/* Left Side Image */}
       <div className="w-[30%] max-[1105px]:w-[400px] how_we_work_mob_app_img">
@@ -161,7 +161,7 @@ const HowWeWork = ({
 
       {/* Right Side Content */}
       <div className="w-[65%] px-4 md:px-10 max-[1147px]:w-[600px] max-[996px]:w-[450px] how-we-work">
-        <h2 className="text-4xl font-extrabold text-[#00B2FF] mb-4">
+        <h2 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 font-extrabold  mb-4">
           {heading}
         </h2>
         <p
@@ -188,10 +188,10 @@ const HowWeWork = ({
 
               {/* Content */}
               <div className="relative z-20">
-                <h3 className="text-xl md:text-2xl font-bold mb-1 text-white group-hover:text-white">
+                <h3 className="text-xl md:text-2xl font-bold mb-1 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 ">
                   {step.title}
                 </h3>
-                <p className="text-sm md:text-base text-white/90 group-hover:text-white/90">
+                <p className="text-sm md:text-base text-white">
                   {step.description}
                 </p>
               </div>

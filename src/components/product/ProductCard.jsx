@@ -4,7 +4,7 @@ const ProductCard = ({ product }) => {
   const [thumbnail, setThumbnail] = React.useState(product.images[0]);
 
   return product && (
-    <div className="max-w-6xl w-full px-6 mx-auto bg-black text-white py-10 rounded-lg shadow-lg mb-10 mt-10">
+    <div className="max-w-6xl w-full px-6 mx-auto bg-gradient-to-r from-cyan-300 to-blue-300 py-10 rounded-lg shadow-lg mb-10 mt-10">
       <div className="flex flex-col md:flex-row gap-16 mt-4">
         {/* Left side images */}
         <div className="flex gap-3">
@@ -13,14 +13,14 @@ const ProductCard = ({ product }) => {
               <div
                 key={index}
                 onClick={() => setThumbnail(image)}
-                className="border max-w-24 border-gray-700 rounded overflow-hidden cursor-pointer hover:border-indigo-500 transition"
+                className=" max-w-24  rounded overflow-hidden cursor-pointer hover:border-indigo-500 transition"
               >
                 <img src={image} alt={`Thumbnail ${index + 1}`} />
               </div>
             ))}
           </div>
 
-          <div className="border border-gray-700 max-w-100 rounded overflow-hidden">
+          <div className=" max-w-100 rounded overflow-hidden">
             <img
               src={thumbnail}
               alt="Selected product"
@@ -31,7 +31,7 @@ const ProductCard = ({ product }) => {
 
         {/* Right side info */}
         <div className="text-sm w-full md:w-1/2">
-          <h1 className="text-3xl font-medium">{product.name}</h1>
+          <h1 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">{product.name}</h1>
 
           {/* Rating */}
           <div className="flex items-center gap-0.5 mt-1">
@@ -46,13 +46,13 @@ const ProductCard = ({ product }) => {
                 </svg>
               )
             ))}
-            <p className="text-base ml-2 text-gray-300">({product.rating})</p>
+            <p className="text-base ml-2 text-white">({product.rating})</p>
           </div>
 
           {/* Description */}
           <div className="mt-6">
             <p className="text-base font-medium">About Product</p>
-            <ul className="list-disc ml-4 text-gray-400">
+            <ul className="list-disc ml-4 text-white">
               {product.description.map((desc, index) => (
                 <li key={index}>{desc}</li>
               ))}
@@ -61,10 +61,10 @@ const ProductCard = ({ product }) => {
 
           {/* Buttons */}
           <div className="flex items-center mt-10 gap-4 text-base">
-            <button className="w-full py-3.5 cursor-pointer font-medium bg-gray-800 text-gray-200 hover:bg-gray-700 transition">
+            <button className="w-full py-3.5 cursor-pointer font-medium bg-black text-white ">
               Add to Cart
             </button>
-            <button className="w-full py-3.5 cursor-pointer font-medium bg-blue-800 text-white hover:bg-blue-800 transition">
+            <button className="w-full py-3.5 cursor-pointer font-medium bg-gradient-to-r from-blue-600 to-sky-500 text-white">
               Buy now
             </button>
           </div>

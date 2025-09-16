@@ -265,19 +265,23 @@ const scrollTrigger = ScrollTrigger.create({
       <div
         key={i}
         ref={(el) => (cardsRef.current[i] = el)}
-        className="absolute w-full h-[400px] rounded-4xl shadow-xl px-10 py-6 text-white flex items-center justify-between border-2 border-gray-800 will-change-transform"
+        className="absolute w-full h-[400px] rounded-4xl shadow-xl px-10 py-6 text-white flex items-center justify-between  will-change-transform"
         style={{
-          backgroundColor: i % 2 === 0 ? "#000" : "#00317B",
+          background: i % 2 === 0 ? "#000" : "linear-gradient(to right, #67e8f9, #2563eb)",
           top: 0,
           left: 0,
           zIndex: i,
         }}
       >
         <div className="w-1/2">
-          <h2 className="text-4xl font-bold mb-4 max-[563px]:text-3xl max-[455px]:text-2xl">
-            {card.title}
-          </h2>
-          <p className="text-gray-300 text-lg max-[563px]:text-sm">
+          <h2
+  className="text-4xl font-bold mb-4 max-[563px]:text-3xl max-[455px]:text-2xl 
+             text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500"
+>
+  {card.title}
+</h2>
+
+          <p className="text-gray-300 text-white text-lg max-[563px]:text-sm">
             {card.description}
           </p>
         </div>

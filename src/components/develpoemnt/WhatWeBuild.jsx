@@ -67,13 +67,13 @@ const WhatWeBuild = ({
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
         {/* Left Content */}
         <div className="flex-2">
-          <h2 className="text-5xl font-bold text-black mb-4 wwb-heading">
+          <h2 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 font-bold  mb-4 wwb-heading">
             {heading}
           </h2>
           <p className="text-lg text-gray-700 mb-4 leading-relaxed wwb-paragraph">
             {para1}
           </p>
-          <p className="text-lg text-gray-700 font-bold leading-relaxed wwb-paragraph">
+          <p className="text-lg  text-gray-700 font-bold leading-relaxed wwb-paragraph">
             {para2}
           </p>
         </div>
@@ -82,7 +82,7 @@ const WhatWeBuild = ({
         <div className="flex-shrink-0 mt-[140px] max-[768px]:mt-[-10px] wwb-button">
           <Link
             to={buttonLink}
-            className="bg-[#00317B] text-white text-base px-8 py-4 rounded-full hover:bg-blue-800 transition duration-300"
+            className="bg-gradient-to-r from-blue-600 to-sky-500 text-white text-base px-8 py-4 rounded-full hover:bg-blue-800 transition duration-300"
           >
             {buttonText}
           </Link>
