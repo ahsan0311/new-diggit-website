@@ -54,16 +54,18 @@ const Home = () => {
       Smart Tech, Built for Growth & Security
     </h2>
 
-    <h1 className="text-9xl md:text-9xl font-extrabold text-[#00B3FF] leading-tight inline-block mt-0 ml-0">
-      <ReactTyped
-        strings={["Simplify", "Secure", "Scale"]}
-        typeSpeed={120}
-        backSpeed={60}
-        backDelay={2000}
-        loop
-        showCursor={false}
-      />
-    </h1>
+    <h1 className="text-9xl md:text-9xl max-[594px]:text-7xl font-extrabold leading-tight inline-block mt-0 ml-0 
+  text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">
+  <ReactTyped
+    strings={["Simplify", "Secure", "Scale"]}
+    typeSpeed={120}
+    backSpeed={60}
+    backDelay={2000}
+    loop
+    showCursor={false}
+  />
+</h1>
+
 
     <p className="text-lg md:text-xl mb-8 max-w-2xl leading-relaxed font-semibold mx-auto md:mx-0">
       We craft enterprise-grade software solutions that streamline your
@@ -72,9 +74,15 @@ const Home = () => {
     </p>
 
     <div className="flex justify-center md:justify-start">
-      <button className="bg-[#00317B] hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300">
-        Simplify Your Tech Stack
-      </button>
+     <button
+  className="group inline-flex items-center justify-center px-10 py-4 
+             bg-gradient-to-r from-blue-600 to-sky-500 
+             text-white font-bold text-xl rounded-full 
+             shadow-lg hover:shadow-xl transform hover:-translate-y-1 
+             transition-all duration-300">
+  Simplify Your Tech Stack
+</button>
+
     </div>
   </div>
 </div>

@@ -3,7 +3,7 @@ import { FaFacebookF,FaInstagram, FaLinkedinIn, FaTiktok, FaTwitter } from "reac
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#0a0a0a]  text-white px-8 md:px-16 py-12 w-full">
+    <footer className="bg-[#101B30] text-white px-8 md:px-16 py-12 w-full">
       <div className="max-w-[1300px] mx-auto">
         <img
           src="/assets/logo.png"

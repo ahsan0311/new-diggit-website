@@ -234,20 +234,21 @@ export default function Contact({
   return (
     <section
       ref={sectionRef}
-      className="relative bg-gradient-to-b from-white to-[#0a0a0a]
+      className="relative bg-gradient-to-b from-white to-[#101B30]
         max-[770px]:bg-[linear-gradient(to_bottom,_white_50%,_#0a0a0a_40%)]"
     >
       <div className="max-w-[1800px] mx-auto">
         <div className="relative flex flex-col mx-auto lg:flex-row max-[1000px]:mt-[50px] ">
           <div className="flex-1">
-            <div className="bg-black text-white border-none rounded-[60px] p-20 py-14 w-[96%] mx-auto max-[770px]:text-center">
-              <h2 className="contact-heading  max-[1260px]:w-[600px] text-4xl max-[1190px]:w-[450px] max-[1050px]:w-[350px] max-w-3xl max-[1200px]:text-4xl max-[980px]:text-2xl max-[770px]:w-[100%] font-bold leading-snug max-[770px]:text-4xl">
+            <div className="bg-gradient-to-r from-cyan-300 to-blue-300
+ text-white border-none rounded-[60px] p-20 py-14 w-[96%] mx-auto max-[770px]:text-center">
+              <h2 className="contact-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500  max-[1260px]:w-[600px] text-4xl max-[1190px]:w-[450px] max-[1050px]:w-[350px] max-w-3xl max-[1200px]:text-4xl max-[980px]:text-2xl max-[770px]:w-[100%] font-bold leading-snug max-[770px]:text-4xl">
                 {heading}
               </h2>
-              <p className=" max-[770px]:w-[100%] contact-subtext mt-4 text-gray-300 max-[1260px]:w-[600px] max-[1050px]:w-[350px] max-[1190px]:w-[450px] max-w-2xl text-lg  max-[980px]:text-[10px] max-[770px]:text-2xl">
+              <p className=" max-[770px]:w-[100%] contact-subtext mt-4 text-white max-[1260px]:w-[600px] max-[1050px]:w-[350px] max-[1190px]:w-[450px] max-w-2xl text-lg  max-[980px]:text-[10px] max-[770px]:text-2xl">
                 {subText} <span className="font-semibold">{highlightText}</span>
               </p>
-              <button className="contact-button mt-6 px-6 py-3 bg-blue-800 text-white font-semibold rounded-4xl shadow-md hover:bg-blue-800 transition">
+              <button className="contact-button mt-6 px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-500 text-white font-semibold rounded-4xl shadow-md hover:bg-blue-800 transition">
                 {buttonText}
               </button>
             </div>
@@ -258,7 +259,7 @@ export default function Contact({
                 max-[770px]:flex max-[770px]:flex-col max-[770px]:items-center max-[770px]:justify-center 
                 max-[770px]:mt-[300px]"
             >
-              <h2 className="vector-heading text-6xl max-[1200px]:text-4xl font-bold text-blue-600">
+              <h2 className="vector-heading text-6xl max-[1200px]:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
                 Get In Touch <br /> With Us Today!
               </h2>
               <p className="vector-paragraph mt-4 text-lg font-bold text-gray-300 w-[40%] max-[770px]:w-full max-[770px]:text-center leading-relaxed">
@@ -301,7 +302,7 @@ export default function Contact({
     max-[770px]:w-[97%] max-[770px]:px-4 
     p-10 pt-14 relative z-30 mt-[183px] max-[770px]:mt-0 max-[770px]:mt-[160px] max-[572px]:mt-[180px] max-[432px]:mt-[200px] max-[425px]:mt-[230px]"
           >
-            <h3 className="text-2xl font-bold text-center mb-8 max-[1000px]:text-xl">
+            <h3 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 font-bold text-center mb-8 max-[1000px]:text-xl">
               Contact Us
             </h3>
 
@@ -338,7 +339,7 @@ export default function Contact({
               ></textarea>
 
               <button
-                className="w-full bg-blue-800 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition 
+                className="w-full bg-gradient-to-r from-blue-600 to-sky-500 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition 
         max-[1000px]:py-3 max-[1000px]:text-sm"
               >
                 Get free consultation

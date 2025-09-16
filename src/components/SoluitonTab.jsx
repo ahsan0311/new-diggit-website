@@ -56,7 +56,7 @@ const SolutionsTabs = () => {
   }, [activeIndex]);
 
   return (
-    <div className="bg-[#0A0A0A] rounded-4xl m-5">
+    <div className="bg-gradient-to-r from-cyan-300 to-blue-300 rounded-4xl m-5">
 
       <div className="max-w-[1400px] mx-auto text-white p-8 rounded-3xl">
 
@@ -72,7 +72,7 @@ const SolutionsTabs = () => {
                     onClick={() => setActiveIndex(index)}
                     ref={(el) => (tabRefs.current[index] = el)}
                     className={`flex-shrink-0 flex flex-col items-center justify-center cursor-pointer mb-5 px-2 py-4 transition-all duration-300 ${
-                      activeIndex === index ? "text-white" : "text-gray-400"
+                      activeIndex === index ? "text-white" : "text-white"
                     }`}
                     style={{ minWidth: "160px" }}
                   >
@@ -82,9 +82,9 @@ const SolutionsTabs = () => {
                       className="w-16 h-16 mb-2 object-contain"
                     />
                     <div className="text-center text-base md:text-lg font-semibold w-full whitespace-normal">
-                      <span>{firstWord}</span>
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">{firstWord}</span>
                       <br />
-                      <span>{restTitle}</span>
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">{restTitle}</span>
                     </div>
                   </div>
                 );
@@ -103,19 +103,19 @@ const SolutionsTabs = () => {
         {/* Tab content */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-4 md:gap-10 items-start px-4 sm:px-10">
           <div className="p-4 md:p-8 rounded-2xl h-full text-left">
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
               {tabsData[activeIndex].title}
             </h2>
           </div>
 
           <div className="flex justify-center">
             <div className="p-4 md:p-8 rounded-2xl flex flex-col justify-between h-full max-w-3xl w-full">
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-6 text-left">
+              <p className="text-white text-base md:text-lg leading-relaxed mb-6 text-left">
                 {tabsData[activeIndex].content}
               </p>
 
               <div className="text-center md:text-right">
-                <button className="bg-[#00317B] text-white px-[60px] py-3 rounded-full hover:bg-blue-700 text-[20px]">
+                <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-[60px] py-3 rounded-full hover:bg-blue-700 text-[20px]">
                   Explore
                 </button>
               </div>

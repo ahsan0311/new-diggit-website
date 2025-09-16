@@ -161,7 +161,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <Link to="#" className="text-white hover:text-blue-500 text-[18px]">
+          <Link to="/contact" className="text-white hover:text-blue-500 text-[18px]">
             Contact
           </Link>
         </div>

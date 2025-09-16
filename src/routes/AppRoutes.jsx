@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import React, { Suspense, useState, useEffect } from "react";
 import Loader from "../components/Loader";
 
+
 // Lazy imports
 const Home = React.lazy(() => import("../pages/home/home"));
 const ServiceIndex = React.lazy(() => import("../pages/service"));
@@ -22,6 +23,10 @@ const Product = React.lazy(() => import("../pages/product/product"));
 const PointOfSale = React.lazy(() => import("../pages/product/pointOfSale"));
 const Laundary = React.lazy(() => import("../pages/product/laundary"));
 const Hydrila = React.lazy(() => import("../pages/product/hydrila"));
+const Contact = React.lazy(() => import("../pages/contact/contact"));
+
+
+
 
 const AppRoutes = () => {
   const [loading, setLoading] = useState(true);
@@ -40,6 +45,9 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+
+
 
         {/* Development */}
         <Route path="/mobile-app" element={<MobileApp />} />

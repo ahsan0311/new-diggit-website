@@ -62,7 +62,7 @@ const Card = () => {
       >
         Your Business Deserves Technology Built Around You
         <br />
-        <span className="text-black">For You. Ours Are.</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">For You. Ours Are.</span>
       </h2>
 
       <p
@@ -76,12 +76,12 @@ const Card = () => {
         the clutter.
       </p>
 
-      <p
+      {/* <p
         ref={blueLineRef}
         className="text-2xl font-semibold text-blue-600"
       >
         We're here to fix that.
-      </p>
+      </p> */}
     </div>
 
         <div className="vector-container">
@@ -164,7 +164,7 @@ const Card = () => {
         </div>
 
         <div className="text-center mt-10">
-          <button className="bg-[#00317B] text-white px-[60px] py-3 rounded-full hover:bg-blue-700 text-[20px]">
+          <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-[60px] py-3 rounded-full hover:bg-blue-700 text-[20px]">
             Explore
           </button>
         </div>

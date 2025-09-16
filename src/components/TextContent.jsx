@@ -45,14 +45,17 @@ const TextContent = ({ heading, subheading, description }) => {
       ref={sectionRef}
       className="text-center w-[1100px] mb-6 max-w-full rounded-xl mx-auto text-black mt-20"
     >
-      <h1
-        ref={headingRef}
-        className="text-3xl md:text-5xl font-bold mb-4"
-      >
-        {heading}
-        <br />
-        {subheading}
-      </h1>
+     <h1
+  ref={headingRef}
+  className="text-3xl md:text-5xl font-bold mb-4"
+>
+  {heading}
+  <br />
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
+    {subheading}
+  </span>
+</h1>
+
 
       <p
         ref={paraRef}

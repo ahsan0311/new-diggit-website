@@ -28,7 +28,6 @@
 .industries-left h2 {
   font-size: 40px;
   font-weight: 700;
-  color: #002d72;
   line-height: 1.2;
   white-space: normal;
 }
@@ -71,8 +70,7 @@
 }
 
 .industry-card {
-  background: #002d72;
-  color: white;
+  background: linear-gradient(to right, #67e8f9, #93c5fd); 
   padding: 40px 30px;
   border-radius: 20px;
   width: 340px;
@@ -101,7 +99,7 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 1.5;
-  color: #ffffff;
+  color: white;
   margin: 0;
 }
 

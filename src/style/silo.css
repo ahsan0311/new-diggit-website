@@ -21,8 +21,7 @@
 /* Full Width Section */
 .silos-section {
   position: relative;
-  background-color: #0A0A0A;
-  color: white;
+ background: linear-gradient(to right, #67e8f9, #93c5fd); /* from-cyan-300 to-blue-300 */
   border-radius: 40px;
   overflow: hidden;
   width: 97%;; 
@@ -56,7 +55,7 @@
 }
 
 .silo-button {
-  background-color: #00317b;
+   background: linear-gradient(to right, #2563eb, #0ea5e9);
   color: white;
   font-size: 18px;
   padding: 14px 40px;

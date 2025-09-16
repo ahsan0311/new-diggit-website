@@ -69,7 +69,7 @@ const NoMoreSilos = ({
 
       <section ref={sectionRef} className="silos-section">
         <div className="silos-content">
-          <h2 ref={headingRef} className="silo-heading">
+          <h2 ref={headingRef} className="silo-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
             {heading}
           </h2>
 

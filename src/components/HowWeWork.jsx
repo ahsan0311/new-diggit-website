@@ -10,25 +10,25 @@ const steps = [
     id: "01",
     title: "Discover",
     desc: "We begin by gaining a clear understanding of your business—your goals, challenges, and vision of success. From the start, our team takes a consultative approach to identify opportunities and uncover what truly drives your operations.",
-    icon: <FaCompass className="text-blue-800 " />,
+    icon: <FaCompass className="text-blue-400 " />,
   },
   {
     id: "02",
     title: "Build",
     desc: " Our development team transforms ideas into working solutions, customizing every feature and interface to match your business needs. Using agile practices and user-focused design, we deliver powerful software that’s scalable, efficient, and built to perform.",
-    icon: <FaCubes className="text-blue-800 " />,
+    icon: <FaCubes className="text-blue-400 " />,
   },
   {
     id: "03",
     title: "Strategize",
     desc: "We craft a clear technology roadmap tailored to your workflows—whether it’s cloud architecture, AI solutions, or smart dashboard integrations. At this stage, business analysis meets digital transformation, ensuring every solution is aligned with your long-term growth.",
-    icon: <FaPuzzlePiece className="text-blue-800 " />,
+    icon: <FaPuzzlePiece className="text-blue-400 " />,
   },
   {
     id: "04",
     title: "Launch",
     desc: "Our partnership doesn’t end at deployment. We stay by your side to optimize, maintain, and enhance your systems as your business evolves. With ongoing support and continuous improvements, we make sure your technology keeps delivering long-term value and lasting results.",
-    icon: <FaRocket className="text-blue-800 " />,
+    icon: <FaRocket className="text-blue-400 " />,
   },
 ];
 
@@ -171,7 +171,7 @@ const Timeline = () => {
     <div className="py-20 ">
       <div className="max-w-7xl mx-auto px-6  ">
         {" "}
-        <h2 className="text-5xl font-bold text-center text-blue-800 mb-6">
+        <h2 className="text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-6">
           {" "}
           Our Approach to Building Smarter Solutions
         </h2>
@@ -197,7 +197,8 @@ const Timeline = () => {
               <div
                 key={idx}
                 id={`line-section-${idx}`}
-                className="absolute w-full bg-black"
+                className="absolute w-full bg-gradient-to-r from-cyan-300 to-blue-300
+"
                 style={{
                   top: `${idx * 25}%`,
                   height: "25%",
@@ -238,7 +239,7 @@ const Timeline = () => {
 
       "
               >
-                <h3 className="text-4xl font-bold text-blue-800 max-[853px]:text-4xl max-[553px]:!text-2xl ">
+                <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-[853px]:text-4xl max-[553px]:!text-2xl ">
                   {step.title}
                 </h3>
                 <p className="text-gray-700 mt-4 text-xl leading-relaxed max-[553px]:text-base  max-[435px]:w-[300px] max-[404px]:w-[260px]">
@@ -252,7 +253,9 @@ const Timeline = () => {
                 className="
         absolute left-1/2 -top-20 -translate-x-1/2
         flex items-center justify-center
-        w-28 h-28 rounded-full bg-black text-white text-3xl font-extrabold
+        w-28 h-28 rounded-full bg-gradient-to-r from-cyan-300 to-blue-300
+        text-white
+ text-3xl font-extrabold
         z-20 border-4 border-white shadow-xl
         max-[853px]:left-[4px] max-[853px]:translate-x-0 
         max-[853px]:z-50
@@ -283,7 +286,7 @@ const Timeline = () => {
      !text-8xl
     max-[853px]:!text-6xl
     max-[553px]:!text-4xl
-    text-blue-600
+    text-blue-300
     "
                 >
                   {step.icon}
