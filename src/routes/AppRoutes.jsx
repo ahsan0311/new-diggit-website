@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import React, { Suspense, useState, useEffect } from "react";
 import Loader from "../components/Loader";
+import ScrollToTop from "../components/ScrollToTop";
 
 
 // Lazy imports
@@ -42,6 +43,7 @@ const AppRoutes = () => {
 
   return (
     <Suspense fallback={<Loader />}>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -73,7 +75,7 @@ const AppRoutes = () => {
         <Route path="/Laundary-management" element={<Laundary />} />
         <Route path="/Hydrila" element={<Hydrila />} />
 
-        <Route path="/service" element={<ServiceIndex />} />
+        {/* <Route path="/service" element={<ServiceIndex />} /> */}
       </Routes>
     </Suspense>
   );

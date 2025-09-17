@@ -1,19 +1,25 @@
 import React from "react";
-import { FaFacebookF,FaInstagram, FaLinkedinIn, FaTiktok, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTiktok,
+  FaTwitter,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-[#101B30] text-white px-8 md:px-16 py-12 w-full">
       <div className="max-w-[1300px] mx-auto">
         <img
-         src="/assets/newLogo.png"
+          src="/assets/newLogo.png"
           alt="DIGGIT Logo"
           className="w-[100px]"
         />
       </div>
 
       <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row justify-between gap-12  ">
-        
         <div className="flex-2 ">
           <h2 className="text-4xl font-bold text-white">
             Empowering Your Business <br />
@@ -42,11 +48,18 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="space-y-3 text-base text-gray-300 font-medium">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Blogs</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/product">Products</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
 
@@ -117,26 +130,25 @@ const Footer = () => {
               Contact
             </h3>
 
-            <p className="mb-1">92 319 2033 051
-</p>
+            <p className="mb-1">92 319 2033 051</p>
             <p>Info@atsglobalsolutions.com </p>
           </div>
 
           <div className="flex gap-3 mb-[-40px] max-[768px]:mb-[10px]">
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-             <FaInstagram/>
+              <FaInstagram />
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaFacebookF/>
+              <FaFacebookF />
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaLinkedinIn/>
+              <FaLinkedinIn />
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaTwitter/>
+              <FaTwitter />
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaTiktok/>
+              <FaTiktok />
             </div>
           </div>
         </div>
