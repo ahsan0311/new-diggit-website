@@ -729,24 +729,32 @@ const ContactForm = () => {
         </div>
         
       <button
-          type="submit"
-          style={{
-            background: "#001994ff",
-            color: "white",
-            border: "none",
-            padding: "14px 20px",
-            fontSize: "16px",
-            fontWeight: "600",
-            borderRadius: "4px",
-            cursor: "pointer",
-            width: "100%",
-            marginTop: "10px",
-          }}
-          onMouseOver={(e) => (e.target.style.background = "#040070fc")}
-          onMouseOut={(e) => (e.target.style.background = "#000e6bff")}
-        >
-          Submit
-        </button>
+  type="submit"
+  style={{
+    backgroundImage: "linear-gradient(to right, #2563eb, #0ea5e9)", // from-blue-600 → to-sky-500
+    color: "white",
+    border: "none",
+    padding: "14px 20px",
+    fontSize: "16px",
+    fontWeight: "600",
+    borderRadius: "4px",
+    cursor: "pointer",
+    width: "100%",
+    marginTop: "10px",
+    transition: "all 0.3s ease", // smooth hover
+  }}
+  onMouseOver={(e) =>
+    (e.target.style.backgroundImage =
+      "linear-gradient(to right, #1d4ed8, #0284c7)") // hover darker
+  }
+  onMouseOut={(e) =>
+    (e.target.style.backgroundImage =
+      "linear-gradient(to right, #2563eb, #0ea5e9)") // normal
+  }
+>
+  Submit
+</button>
+
         
         
     

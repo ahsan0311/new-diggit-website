@@ -8,7 +8,7 @@ const Footer = () => {
         <img
           src="/assets/logo.png"
           alt="DIGGIT Logo"
-          className="w-[150px] mb-4"
+          className="w-[150px]"
         />
       </div>
 

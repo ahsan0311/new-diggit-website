@@ -465,7 +465,7 @@ export default function Navbar() {
           <img
             src="/assets/logo.png"
             alt="Logo"
-            className="w-[150px] h-[70px] object-contain"
+            className="w-[200px] h-[80px] object-contain"
           />
         </div>
 

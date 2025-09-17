@@ -275,8 +275,8 @@ const scrollTrigger = ScrollTrigger.create({
       >
         <div className="w-1/2">
           <h2
-  className="text-4xl font-bold mb-4 max-[563px]:text-3xl max-[455px]:text-2xl 
-             text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500"
+  className="text-4xl font-bold mb-4 max-[563px]:text-3xl max-[455px]:text-2xl max-[480px]:text-xl  max-[395px]:text-sm
+             text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 "
 >
   {card.title}
 </h2>
@@ -285,11 +285,11 @@ const scrollTrigger = ScrollTrigger.create({
             {card.description}
           </p>
         </div>
-        <div className="w-1/2 flex justify-center">
+        <div className="w-1/2 flex justify-center max-[416px]:bg-red-40 max-[480px]:ml-[30px]">
           <img
             src={card.image}
             alt={card.title}
-            className="w-[180px] h-auto object-contain max-[907px]:w-[200px] max-[563px]:w-[160px] max-[490px]:w-[130px]"
+            className="w-[180px] h-auto object-contain max-[907px]:w-[200px] max-[563px]:w-[160px] max-[490px]:w-[130px] max-[480px]:w-[110px]"
           />
         </div>
       </div>

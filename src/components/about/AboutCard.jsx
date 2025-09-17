@@ -4,14 +4,16 @@ const AboutCard = () => {
   return (
     <section className="py-10 px-4 bg-white ">
       <div className="text-left md:text-center mb-16">
-       <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight 
-  text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
-  Our Core Values
-</h2>
-
+        <h2
+          className="text-4xl md:text-5xl font-bold mb-6 leading-tight 
+          text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500"
+        >
+          Our Core Values
+        </h2>
       </div>
 
-      <div className="grid grid-cols-1  grid-cols-2 gap-8 max-w-[1000px] mx-auto">
+      {/* grid fix */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-[1000px] mx-auto">
         {[
           {
             number: "01",
@@ -36,7 +38,7 @@ const AboutCard = () => {
         ].map((card, i) => (
           <div
             key={i}
-            className="relative group w-full sm:max-w-[480px] h-[260px] mx-auto"
+            className="relative group w-full sm:max-w-[480px] max-[560px]:max-w-[90%] h-[260px] mx-auto"
             style={{ perspective: "1000px" }}
           >
             <div
@@ -48,10 +50,12 @@ const AboutCard = () => {
                 className="absolute w-full h-full bg-gradient-to-r from-cyan-300 to-blue-300 text-white rounded-2xl p-8 flex flex-col items-center justify-center text-center"
                 style={{ backfaceVisibility: "hidden" }}
               >
-                <div className="absolute top-4 text-white right-5 text-5xl font-extrabold">
+                <div className="absolute top-4 text-white right-5 text-5xl font-extrabold max-[427px]:text-3xl">
                   {card.number}
                 </div>
-                <p className="text-4xl font-semibold">{card.title}</p>
+                <p className="text-4xl font-semibold max-[619px]:text-3xl max-[481px]:text-2xl">
+                  {card.title}
+                </p>
               </div>
 
               {/* Back */}
