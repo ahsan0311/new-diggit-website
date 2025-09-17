@@ -463,9 +463,9 @@ export default function Navbar() {
       <div className="mx-auto p-4 flex items-center max-w-[90%] justify-between px-10 nav-hd">
         <div className="flex items-center">
           <img
-            src="/assets/logo.png"
+            src="/assets/newLogo.png"
             alt="Logo"
-            className="w-[200px] h-[80px] object-contain"
+            className="w-[100px]  object-contain"
           />
         </div>
 
