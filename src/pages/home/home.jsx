@@ -34,7 +34,7 @@ const Home = () => {
             poster="data:image/gif,AAAA"
           >
             <source
-              src="https://diggitglobal.com/assets/images/vecteezy_sunrise.mp4"
+              src="https://res.cloudinary.com/dqngkcjxg/video/upload/v1758174999/vecteezy_sunrise_uqp8u4.mp4"
               type="video/mp4"
             />
           </video>

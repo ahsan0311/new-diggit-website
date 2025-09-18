@@ -4,9 +4,7 @@ import Loader from "../components/Loader";
 import ScrollToTop from "../components/ScrollToTop";
 
 
-// Lazy imports
 const Home = React.lazy(() => import("../pages/home/home"));
-const ServiceIndex = React.lazy(() => import("../pages/service"));
 const About = React.lazy(() => import("../pages/about/about"));
 const MobileApp = React.lazy(() => import("../pages/development/mobileApp"));
 const WebApp = React.lazy(() => import("../pages/development/webApp"));
@@ -33,7 +31,6 @@ const AppRoutes = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Loader show for 2.5 sec on first load & every route change
     setLoading(true);
     const timer = setTimeout(() => setLoading(false), 2500);
     return () => clearTimeout(timer);
@@ -75,7 +72,6 @@ const AppRoutes = () => {
         <Route path="/Laundary-management" element={<Laundary />} />
         <Route path="/Hydrila" element={<Hydrila />} />
 
-        {/* <Route path="/service" element={<ServiceIndex />} /> */}
       </Routes>
     </Suspense>
   );

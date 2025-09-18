@@ -130,10 +130,12 @@
 
 
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef,useState } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import emailjs from "emailjs-com";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -231,6 +233,73 @@ export default function Contact({
     return () => ctx.revert();
   }, []);
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    organization: "",
+    message: "",
+  });
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // ✅ Basic validation
+  const validateForm = () => {
+    let formErrors = {};
+    if (!formData.name.trim()) formErrors.name = "Name is required";
+    if (!formData.email.trim()) {
+      formErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      formErrors.email = "Email address is invalid";
+    }
+    if (!formData.message.trim()) formErrors.message = "Message is required";
+    return formErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formErrors = validateForm();
+
+    if (Object.keys(formErrors).length === 0) {
+      setLoading(true);
+      emailjs
+        .send(
+          "service_og888iy",
+          "template_h0nx62n", 
+          formData,
+          "zq75j8B8Sl4PLUsOL" 
+        )
+        .then(
+          () => {
+            setLoading(false);
+            console.log("Email sent successfully!");
+            setIsModalOpen(true);
+            setFormData({
+              name: "",
+              email: "",
+              phone: "",
+              organization: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.error("Email sending error:", error.text);
+            alert("Failed to send message. Please try again.");
+          }
+        );
+    } else {
+      setErrors(formErrors);
+    }
+  };
+
   return (
     <section
       ref={sectionRef}
@@ -253,7 +322,7 @@ export default function Contact({
               </button>
             </div>
 
-            {/* 👇 Bottom Black Box */}
+            
             <div
               className="relative z-0 max-[770px]:bg-black text-white max-[960px]:px-[8px] max-[1200px]:px-[30px] px-29 py-12 w-full 
                 max-[770px]:flex max-[770px]:flex-col max-[770px]:items-center max-[770px]:justify-center 
@@ -306,45 +375,79 @@ export default function Contact({
               Contact Us
             </h3>
 
-            <form className="space-y-6">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 
-        max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 
-        max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
-              />
-              <input
-                type="text"
-                placeholder="Phone"
-                className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 
-        max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
-              />
-              <input
-                type="text"
-                placeholder="Organization"
-                className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 
-        max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
-              />
-              <textarea
-                placeholder="Message"
-                rows={5}
-                className="w-full rounded-2xl bg-gray-100 px-6 py-4 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 
-        max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
-              ></textarea>
+            <form onSubmit={handleSubmit} className="space-y-6">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleChange}
+          className={`w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 ${
+            errors.name ? "ring-red-500" : "focus:ring-blue-500"
+          }`}
+        />
+        {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
 
-              <button
-                className="w-full bg-gradient-to-r from-blue-600 to-sky-500 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition 
-        max-[1000px]:py-3 max-[1000px]:text-sm"
-              >
-                Get free consultation
-              </button>
-            </form>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleChange}
+          className={`w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 ${
+            errors.email ? "ring-red-500" : "focus:ring-blue-500"
+          }`}
+        />
+        {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+
+        <input
+          type="text"
+          name="phone"
+          placeholder="Phone"
+          value={formData.phone}
+          onChange={handleChange}
+          className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+        <input
+          type="text"
+          name="organization"
+          placeholder="Organization"
+          value={formData.organization}
+          onChange={handleChange}
+          className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+        <textarea
+          name="message"
+          placeholder="Message"
+          rows={5}
+          value={formData.message}
+          onChange={handleChange}
+          className={`w-full rounded-2xl bg-gray-100 px-6 py-4 resize-none focus:outline-none focus:ring-2 ${
+            errors.message ? "ring-red-500" : "focus:ring-blue-500"
+          }`}
+        ></textarea>
+        {errors.message && (
+          <p className="text-red-500 text-sm">{errors.message}</p>
+        )}
+
+        <button
+            type="submit"
+            disabled={loading}
+            className={`w-full py-4 rounded-full font-semibold transition ${
+              loading
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-gradient-to-r from-blue-600 to-sky-500 text-white hover:bg-blue-800"
+            }`}
+          >
+            {loading ? "Sending..." : "Get free consultation"}
+          </button>
+      </form>
+
+     
+     
+
           </div>
           </div>
         </div>
@@ -352,3 +455,49 @@ export default function Contact({
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+     
+
