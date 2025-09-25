@@ -41,7 +41,6 @@ const Devops_Automation = () => {
           "https://diggitglobal.com/assets/images/logo_21.png",
         ]}
         slidesToShow={6}
-        speed={3000}
       />
 
       <WhyWorkSection

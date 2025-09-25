@@ -53,7 +53,6 @@ const SeoMarketing = () => {
           "https://diggitglobal.com/assets/images/logo_15.png",
         ]}
         slidesToShow={6}
-        speed={3000}
       />
      
 

@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = ({
   bgImage = "https://diggitglobal.com/assets/images/about_banner.png",
+  showSmallHeading = true, // 👈 yeh prop add ki
   smallHeading = "Mobile App Development in Dubai",
   mainHeading = (
     <>
@@ -104,13 +105,15 @@ const Hero = ({
       {/* Content */}
       <div className="relative z-10 max-w-[1300px] mx-auto min-h-screen flex items-center justify-start px-4 sm:px-6 text-white text-start">
         <div className="max-w-5xl mt-15">
-          <h3 className="text-4xl md:text-4xl max-[768px]:text-4xl font-semibold hero-small-heading">
-            {smallHeading}
-          </h3>
+         {showSmallHeading && (
+            <h3 className="text-4xl md:text-4xl max-[768px]:text-4xl font-semibold hero-small-heading">
+              {smallHeading}
+            </h3>
+          )}
+         <h1 className="text-7xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 md:text-7xl font-extrabold mb-6 max-[768px]:text-5xl max-[585px]:text-5xl max-[401px]:text-4xl hero-main-heading">
+  {mainHeading}
+</h1>
 
-          <h1 className="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 md:text-8xl font-extrabold mb-6 max-[768px]:text-5xl max-[585px]:text-5xl max-[401px]:text-4xl hero-main-heading">
-            {mainHeading}
-          </h1>
 
           <p className="text-white mb-8 font-bold hero-description max-[768px]:text-sm">
             {description}

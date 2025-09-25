@@ -605,7 +605,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black text-white w-[280px] h-full shadow-lg right-0">
           <div className="flex justify-between items-center p-4 border-b border-gray-700">
-            <img src="/assets/logo.png" alt="Logo" className="w-[100px]" />
+            <img src="/assets/newLogo.png" alt="Logo" className="w-[100px]" />
             <button onClick={() => setIsOpen(false)}>
               <X size={24} />
             </button>

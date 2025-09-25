@@ -38,7 +38,6 @@ const Hosting = () => {
           "https://diggitglobal.com/assets/images/logo_23.png",
         ]}
         slidesToShow={6}
-        speed={3000}
       />
 
       <WhyWorkSection

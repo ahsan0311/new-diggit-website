@@ -40,7 +40,6 @@ const YearlyCloud = () => {
           "https://diggitglobal.com/assets/images/logo_19.png",
         ]}
         slidesToShow={6}
-        speed={3000}
       />
 
       <WhyWorkSection

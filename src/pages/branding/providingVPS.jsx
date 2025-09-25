@@ -46,7 +46,6 @@ const VpsServer = () => {
           "https://diggitglobal.com/assets/images/logo_21.png",
         ]}
         slidesToShow={6}
-        speed={3000}
       />
       <WhyWorkSection
         title="Our VPS Server Services"

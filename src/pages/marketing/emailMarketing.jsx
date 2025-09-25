@@ -49,7 +49,6 @@ const EmailMarketing = () => {
 
         ]}
         slidesToShow={6}
-        speed={3000}
        />
       <WhyWorkSection
         title="Our Email Marketing Services"

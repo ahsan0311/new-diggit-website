@@ -4,7 +4,7 @@ const ProductCard = ({ product }) => {
   const [thumbnail, setThumbnail] = React.useState(product.images[0]);
 
   return product && (
-    <div className="max-w-6xl w-full px-6 mx-auto bg-gradient-to-r from-cyan-300 to-blue-300 py-10 rounded-lg shadow-lg mb-10 mt-10">
+    <div className="max-w-7xl w-full px-6 mx-auto bg-gradient-to-r from-cyan-300 to-blue-300 py-10 rounded-lg shadow-lg mb-10 mt-10">
       <div className="flex flex-col md:flex-row gap-16 mt-4">
         {/* Left side images */}
         <div className="flex gap-3">

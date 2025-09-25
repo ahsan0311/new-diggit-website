@@ -81,7 +81,6 @@ const SocialMedia = () => {
 
         ]}
         slidesToShow={6}
-        speed={3000}
       />
       <WhyWorkSection
         title="Our Social Media Services"
