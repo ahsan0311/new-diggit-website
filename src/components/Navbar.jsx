@@ -407,6 +407,7 @@ const tabData = [
 ];
 
 import { FaTint, FaCashRegister, FaTshirt } from "react-icons/fa";
+import { createPortal } from "react-dom";
 export const industriesTabData = [
   {
     label: "Products",
@@ -459,9 +460,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-transparent fixed top-0 w-full z-50">
+    <nav className="bg-transparent fixed top-0 w-full z-50 ">
       <div className="mx-auto p-4 flex items-center max-w-[90%] justify-between px-10 nav-hd">
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <img
             src="/assets/newLogo.png"
             alt="Logo"
@@ -470,7 +471,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="nav-desktop items-center justify-between w-[600px] max-[1000px]:w-[500px] h-[60px] relative">
+        <div className="nav-desktop  items-center  justify-between w-[600px] max-[1000px]:w-[500px] h-[60px] relative">
           <Link to="/" className="text-white hover:text-blue-500 text-[18px]">
             Home
           </Link>
@@ -603,7 +604,8 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-black text-white w-[280px] h-full shadow-lg right-0">
+        createPortal(
+           <div className="fixed inset-0 z-[9999] bg-black text-white w-[280px] h-full shadow-lg right-0">
           <div className="flex justify-between items-center p-4 border-b border-gray-700">
             <img src="/assets/newLogo.png" alt="Logo" className="w-[100px]" />
             <button onClick={() => setIsOpen(false)}>
@@ -699,7 +701,9 @@ export default function Navbar() {
               Contact
             </Link>
           </div>
-        </div>
+        </div>,
+        document.body
+        )
       )}
     </nav>
   );

@@ -10,8 +10,124 @@ import WhyWorkSection from "../../components/develpoemnt/WhyWorkSection";
 import SearchSection from "../../components/digitalMarketing/SearchSection";
 import NoMoreSilos from "../../components/NoMoreSilos";
 import InfoSection from "../../components/develpoemnt/InfoSection";
+import PricingPlans from "../../components/hydrila/PricingCard";
 
 const Hosting = () => {
+
+  // Example plansData based on “Shared Hosting / Basic Tier” image data
+
+const sharedHostingPlans = [
+  {
+    title: "Starter Shared",
+    price: "$8 - $12",
+    billing: "monthly",
+    features: [
+      { label: "1 GB RAM / 1 CPU", included: true },
+      { label: "20‑30 GB SSD Storage", included: true },
+      { label: "1 TB Bandwidth / Transfer", included: true },
+      { label: "1 site / small site", included: true },
+      { label: "Free SSL", included: true },
+      { label: "Basic support", included: true },
+      { label: "Daily backup", included: true },
+    ],
+    activationFee: null,
+    buttonText: "Choose Starter",
+  },
+  {
+    title: "Business Shared",
+    price: "$15 - $25",
+    billing: "monthly",
+    features: [
+      { label: "2 GB RAM / 1‑2 CPU", included: true },
+      { label: "50‑60 GB SSD Storage", included: true },
+      { label: "2‑3 TB Bandwidth / Transfer", included: true },
+      { label: "Up to 3 sites", included: true },
+      { label: "Free SSL", included: true },
+      { label: "Staging", included: true },
+      { label: "Moderate support", included: true },
+      { label: "Free migration", included: true },
+    ],
+    activationFee: null,
+    buttonText: "Choose Business",
+  },
+  {
+    title: "Premium Shared",
+    price: "$30 - $50",
+    billing: "monthly",
+    features: [
+      { label: "4 GB RAM / 2 CPUs", included: true },
+      { label: "100‑120 GB SSD Storage", included: true },
+      { label: "5 TB Bandwidth / Transfer", included: true },
+      { label: "Up to 5‑10 sites", included: true },
+      { label: "Faster I/O", included: true },
+      { label: "Caching", included: true },
+      { label: "Higher support (maybe 24/7)", included: true },
+      { label: "Some performance guarantees", included: true },
+    ],
+    activationFee: null,
+    buttonText: "Choose Premium",
+  },
+
+  // ✅ New Plans from the image:
+  {
+    title: "Isolated Small",
+    price: "$60 - $90",
+    billing: "monthly",
+    features: [
+      { label: "4‑8 GB RAM / 2‑4 CPU", included: true },
+      { label: "120‑200 GB SSD Storage", included: true },
+      { label: "5‑6 TB Bandwidth / Transfer", included: true },
+      { label: "Dedicated container or VM", included: true },
+      { label: "Isolated environment", included: true },
+      { label: "Full SSH / root access", included: true },
+      { label: "Backup retention", included: true },
+      { label: "Monitoring", included: true },
+    ],
+    activationFee: null,
+    buttonText: "Choose Isolated",
+  },
+  {
+    title: "Dedicated Standard",
+    price: "$120 - $200",
+    billing: "monthly",
+    features: [
+      { label: "16 GB RAM / 4‑6 CPU", included: true },
+      { label: "300‑500 GB SSD Storage", included: true },
+      { label: "8‑10 TB Bandwidth / Transfer", included: true },
+      { label: "Dedicated server or VM", included: true },
+      { label: "Guaranteed resources", included: true },
+      { label: "Enhanced support", included: true },
+      { label: "Staging environment (maybe)", included: true },
+      { label: "Disaster recovery", included: true },
+      { label: "Load balancing (maybe)", included: true },
+    ],
+    activationFee: null,
+    buttonText: "Choose Dedicated",
+  },
+  {
+    title: "High Performance / Enterprise",
+    price: "$300 - $500+",
+    billing: "monthly",
+    features: [
+      { label: "32‑64 GB RAM / 8‑16 CPU", included: true },
+      { label: "1 TB+ SSD Storage", included: true },
+      { label: "10‑20 TB+ Bandwidth / Transfer", included: true },
+      { label: "Full dedicated server", included: true },
+      { label: "High SLAs", included: true },
+      { label: "Premium network", included: true },
+      { label: "Custom DevOps support", included: true },
+      { label: "Migrations", included: true },
+      { label: "Performance tuning", included: true },
+      { label: "Priority SLA", included: true },
+    ],
+    activationFee: null,
+    buttonText: "Choose Enterprise",
+  },
+];
+
+
+// Phir aap <PricingPlans plans={sharedHostingPlans} /> ka use kar sakte hain
+
   return (
     <>
       <Hero
@@ -92,6 +208,8 @@ Start Scaling with Confidence."
            no matter what.`,
         ]}
       />
+
+      <PricingPlans plans={sharedHostingPlans} />
 
       <SearchSection
         letters={["S", "A", "F", "E"]}

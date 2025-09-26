@@ -149,7 +149,7 @@ const HowWeWork = ({
         <img
           src={image}
           alt="How We Work"
-          className="rounded-[30px] w-[500px] h-[90%] absolute top-10 left-[-80px] z-[9999] 
+          className="rounded-[30px] w-[500px] h-[90%] absolute top-10 left-[-80px] z-10 
           max-[1441px]:w-[450px] max-[1441px]:left-[-50px]
           max-[1381px]:w-[400px] max-[1381px]:left-[-20px]
           max-[1320px]:w-[400px] max-[1320px]:left-[20px]

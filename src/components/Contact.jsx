@@ -303,7 +303,7 @@ export default function Contact({
   return (
     <section
       ref={sectionRef}
-      className="relative bg-gradient-to-b from-white to-[#101B30]
+      className="relative bg-gradient-to-b from-white to-gray-900
         max-[770px]:bg-[linear-gradient(to_bottom,_white_50%,_#0a0a0a_40%)]"
     >
       <div className="max-w-[1800px] mx-auto">
@@ -354,7 +354,7 @@ export default function Contact({
             className="absolute right-4 top-1/2 -translate-y-1/2 -translate-x-[100px] 
               max-[1300px]:right-0 max-[1300px]:-translate-x-[10px] 
               flex justify-center items-center z-30 
-              max-[770px]:static max-[770px]:flex-col max-[770px]:translate-x-0 max-[770px]:translate-y-0 max-[770px]:mt-[-831px] max-[770px]:z-50
+              max-[770px]:static max-[770px]:flex-col max-[770px]:translate-x-0 max-[770px]:translate-y-0 max-[770px]:mt-[-831px] max-[770px]:z-10
               max-[770px]:right-auto  max-[572px]:mt-[-861px] max-[433px]:mt-[-890px] max-[425px]:mt-[-820px]"
           >
             <img

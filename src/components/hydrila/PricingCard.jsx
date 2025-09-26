@@ -3,7 +3,7 @@ import React from "react";
 // ✅ Single Card Component
 const PricingCard = ({ title, price, billing, features, activationFee, buttonText }) => {
   return (
-    <div className="rounded-2xl bg-gradient-to-r from-cyan-300 to-blue-300 p-6 flex flex-col ">
+<div className="w-95 min-h-[600px] rounded-2xl bg-gradient-to-r from-cyan-300 to-blue-300 p-6 flex flex-col">
       {/* Header */}
       <div className="flex flex-col items-center border-b border-gray-300 pb-6">
         <span className="mb-6 text-gray-800 text-lg font-semibold">{title}</span>
@@ -14,7 +14,7 @@ const PricingCard = ({ title, price, billing, features, activationFee, buttonTex
       {/* Features */}
       <div className="space-y-4 py-6 flex-1 ">
         {features.map((feature, idx) => (
-          <div key={idx} className="flex items-start gap-3">
+          <div key={idx} className="flex items-start gap-3 ">
             <span
               className={`grid size-5 place-content-center rounded-full text-sm `}
             >
@@ -53,7 +53,7 @@ const PricingPlans = ({ plans }) => {
         Use it for free for yourself, upgrade when your team needs advanced control.
       </p>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 mt-10  ">
+      <div className="flex justify-around gap-3 flex-wrap mt-10 ">
         {plans.map((plan, idx) => (
           <PricingCard key={idx} {...plan} />
         ))}

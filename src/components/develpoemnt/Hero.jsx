@@ -17,8 +17,8 @@ const Hero = ({
     <>
       We design and develop iOS, Android, and cross-platform apps that feel good
       to use and easy to <br /> maintain. Our mobile app development company in
-      Dubai guarantees simple UX, sharp design, and tech <br /> that doesn’t fall
-      apart.
+      Dubai guarantees simple UX, sharp design, and tech <br /> that doesn’t
+      fall apart.
     </>
   ),
   buttonText = "Explore our services",
@@ -96,7 +96,6 @@ const Hero = ({
       {/* Top Gradient */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black to-transparent z-10"></div>
 
-
       {/* Bottom Gradient */}
       <div className="absolute bottom-[-40px] left-0 w-full h-[200px] z-10 pointer-events-none">
         <div className="w-full h-full bg-gradient-to-t from-white via-white/50 to-transparent"></div>
@@ -105,23 +104,33 @@ const Hero = ({
       {/* Content */}
       <div className="relative z-10 max-w-[1300px] mx-auto min-h-screen flex items-center justify-start px-4 sm:px-6 text-white text-start">
         <div className="max-w-5xl mt-15">
-         {showSmallHeading && (
-            <h3 className="text-4xl md:text-4xl max-[768px]:text-4xl font-semibold hero-small-heading">
+          {showSmallHeading && (
+            <h3 className="text-4xl md:text-4xl max-[768px]:text-4xl font-semibold hero-small-heading
+            max-[595px]:text-3xl
+            max-[474px]:text-2xl
+
+            ">
               {smallHeading}
             </h3>
           )}
-         <h1 className="text-7xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 md:text-7xl font-extrabold mb-6 max-[768px]:text-5xl max-[585px]:text-5xl max-[401px]:text-4xl hero-main-heading">
-  {mainHeading}
-</h1>
+          <h1 className="text-7xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300
+            font-extrabold mb-6 max-[808px]:text-6xl max-[808px]:mt-5 max-[768px]:text-5xl
+             max-[585px]:text-5xl
+             max-[538px]:text-4xl
 
+              max-[401px]:text-4xl hero-main-heading">
+            {mainHeading}
+          </h1>
 
-          <p className="text-white mb-8 font-bold hero-description max-[768px]:text-sm">
+          <p className="text-white mb-8 font-bold hero-description max-[768px]:text-sm max-[768px]:text-sm">
             {description}
           </p>
 
           <div className="flex justify-start hero-button">
-            <button className="bg-gradient-to-r from-blue-600 to-sky-500 
-             text-whitehover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full text-lg transition duration-300">
+            <button
+              className="bg-gradient-to-r from-blue-600 to-sky-500 
+             text-whitehover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full text-lg transition duration-300"
+            >
               {buttonText}
             </button>
           </div>
