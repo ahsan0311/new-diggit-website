@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white px-8 md:px-16 py-12 w-full">
+    <footer className="bg-[#323B42] text-white px-8 md:px-16 py-12 w-full">
       <div className="max-w-[1300px] mx-auto">
         <img
           src="/assets/newLogo.png"
@@ -66,54 +66,21 @@ const Footer = () => {
         {/* Location Columns */}
         <div className="flex-[2] grid max-[770px]:grid-cols-2 grid-cols-2 text-base text-gray-300 font-medium">
           {/* Dubai */}
-          <div>
-            <h4 className="text-[#00AEEF] font-extrabold text-2xl mb-3">
-              Dubai
-            </h4>
-            <p className="font-bold text-xl mb-2">
-              DIGGIT Software Solutions Co LLC
-            </p>
-            <p className="mb-3">807 Ubora Tower, Business Bay Dubai, UAE</p>
-          </div>
-
-          {/* Toronto */}
-          <div className="border-l-2 border-gray-600 pl-4">
-            <h4 className="text-[#00AEEF] font-extrabold text-2xl mb-3">
-              Toronto
-            </h4>
-            <p className="font-bold text-xl mb-2">
-              DIGGIT Software Solutions Canada Inc.
-            </p>
-            <p className="mb-3">
-              5700 Yonge Street, Suite 200, North York, Toronto Ontario M2M 4K2,
-              Canada
-            </p>
-          </div>
-
-          {/* London */}
-          <div className="border-t-2 border-gray-600 pt-4">
-            <h4 className="text-[#00AEEF] font-extrabold text-2xl mb-3">
-              London
-            </h4>
-            <p className="font-bold text-xl mb-2">
-              Diggit Software Solutions UK Limited
-            </p>
-            <p className="mb-3">4/4a Bloomsbury Square, London WCIA 2RP UK</p>
-          </div>
-
-          {/* Pakistan */}
-          <div className="border-t-2 border-l-2 border-gray-600 pt-4 pl-4">
+           <div className="">
             <h4 className="text-[#00AEEF] font-extrabold text-2xl mb-3">
               Pakistan
             </h4>
             <p className="font-bold text-xl mb-2">
-              DIGGIT IT & Software Designs (SMC-PVT) LTD
+              ATS Global Solutions
             </p>
             <p className="mb-3">
               207 Sumya Business Avenue, 11-B, Mohammad Ali Society, Karachi,
               Pakistan
             </p>
           </div>
+
+         
+         
         </div>
       </div>
 

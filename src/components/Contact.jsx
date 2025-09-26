@@ -303,7 +303,7 @@ export default function Contact({
   return (
     <section
       ref={sectionRef}
-      className="relative bg-gradient-to-b from-white to-gray-900
+      className="relative bg-gradient-to-b from-white to-[#323B42]
         max-[770px]:bg-[linear-gradient(to_bottom,_white_50%,_#0a0a0a_40%)]"
     >
       <div className="max-w-[1800px] mx-auto">
