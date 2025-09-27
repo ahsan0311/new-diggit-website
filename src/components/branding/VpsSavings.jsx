@@ -40,7 +40,7 @@ const VpsSavings = ({ plans }) => {
         </div>
 
         {current.providers.map((p, idx) => (
-          <div key={idx} className="text-center border-l md:pl-8 md:border-gray-200">
+          <div key={idx} className="text-center md:pl-8 ">
             <div className="font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">{p.name}</div>
             <div className="text-black font-semibold">{p.save}</div>
             <div className="text-black text-sm">{p.percent}</div>
