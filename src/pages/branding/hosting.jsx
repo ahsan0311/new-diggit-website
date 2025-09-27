@@ -127,7 +127,8 @@ const sharedHostingPlans = [
 
 
 // Phir aap <PricingPlans plans={sharedHostingPlans} /> ka use kar sakte hain
-
+const plansStandard = sharedHostingPlans.slice(0, 3);      // First 3 cards
+const plansPerformance = sharedHostingPlans.slice(3, 6);
   return (
     <>
       <Hero
@@ -209,7 +210,13 @@ Start Scaling with Confidence."
         ]}
       />
 
-      <PricingPlans plans={sharedHostingPlans} />
+      <PricingPlans 
+       plansStandard={plansStandard}
+  plansPerformance={plansPerformance}
+  showToggle={true}
+  showHeader={false}
+  showButtonInCard={true}
+      />
 
       <SearchSection
         letters={["S", "A", "F", "E"]}

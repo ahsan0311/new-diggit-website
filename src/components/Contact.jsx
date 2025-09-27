@@ -304,7 +304,8 @@ export default function Contact({
     <section
       ref={sectionRef}
       className="relative bg-gradient-to-b from-white to-[#323B42]
-        max-[770px]:bg-[linear-gradient(to_bottom,_white_50%,_#0a0a0a_40%)]"
+        max-[770px]:bg-[linear-gradient(to_bottom,_white_0%,_#323B42_100%)]
+"
     >
       <div className="max-w-[1800px] mx-auto">
         <div className="relative flex flex-col mx-auto lg:flex-row max-[1000px]:mt-[50px] ">
@@ -324,10 +325,22 @@ export default function Contact({
 
             
             <div
-              className="relative z-0 max-[770px]:bg-black text-white max-[960px]:px-[8px] max-[1200px]:px-[30px] px-29 py-12 w-full 
-                max-[770px]:flex max-[770px]:flex-col max-[770px]:items-center max-[770px]:justify-center 
-                max-[770px]:mt-[300px]"
-            >
+  className="relative z-0 
+    max-[770px]:bg-[linear-gradient(to_bottom,_white_0%,_#323B42_100%)] 
+    text-white max-[960px]:px-[8px] max-[1200px]:px-[30px] px-29 py-12 w-full 
+    max-[770px]:flex max-[770px]:flex-col max-[770px]:items-center max-[770px]:justify-center 
+    max-[770px]:mt-[300px] 
+    max-[770px]:after:content-[''] 
+    max-[770px]:after:absolute 
+    max-[770px]:after:bottom-0 
+    max-[770px]:after:left-0 
+    max-[770px]:after:w-full 
+    max-[770px]:after:h-8 
+    max-[770px]:after:bg-gradient-to-t 
+    max-[770px]:after:from-black/30 
+    max-[770px]:after:to-transparent 
+    max-[770px]:after:z-10"
+>
               <h2 className="vector-heading text-6xl max-[1200px]:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
                 Get In Touch <br /> With Us Today!
               </h2>

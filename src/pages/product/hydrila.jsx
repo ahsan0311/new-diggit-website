@@ -228,7 +228,13 @@ const Hydrila = () => {
 />
 <HowItWorks />
 
-<PricingPlans plans={plansData} />;
+<PricingPlans 
+ plansStandard={plansData}
+  plansPerformance={[]}
+  showToggle={false}
+  showHeader={true}
+  showButtonInCard={true}
+ />;
 <StatsSection/>
 
       <FeaturesSection />

@@ -84,7 +84,7 @@ const Card = () => {
       </p> */}
     </div>
 
-        <div className="vector-container">
+        {/* <div className="vector-container">
           <img
             className="vector-img-1"
             src="https://diggitglobal.com/assets/images/vector_1.png"
@@ -95,7 +95,7 @@ const Card = () => {
             src="https://diggitglobal.com/assets/images/vector_2.png"
             alt="Vector 2"
           />
-        </div>
+        </div> */}
 
         <div className="cards-container">
           <div className="card flip-card">
