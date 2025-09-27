@@ -115,7 +115,7 @@ const PricingCard = ({ title, price, billing, features, activationFee, buttonTex
 const ToggleSwitch = ({ active, onToggle }) => {
   return (
     <div className="flex mb-6 justify-center">
-      <div className="flex rounded-full bg-gray-800 p-1 w-[340px]">
+      <div className="flex rounded-full bg-gradient-to-tr from-sky-400 to-sky-600 p-1 w-[340px]">
   <button
     onClick={() => onToggle("standard")}
     className={`flex-1 px-4 py-3 rounded-full text-base font-semibold transition ${

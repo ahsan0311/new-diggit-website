@@ -11,6 +11,7 @@ import SearchSection from "../../components/digitalMarketing/SearchSection";
 import NoMoreSilos from "../../components/NoMoreSilos";
 import InfoSection from "../../components/develpoemnt/InfoSection";
 import PricingPlans from "../../components/hydrila/PricingCard";
+import VpsSavings from "../../components/branding/VpsSavings";
 
 const Hosting = () => {
 
@@ -126,6 +127,41 @@ const sharedHostingPlans = [
 ];
 
 
+const myPlans = {
+  "2cpu": {
+    specs: "8GB RAM – 160GB Disk",
+    ssdNodes: "$252",
+    cycle: "3-year cycle",
+    providers: [
+      { name: "Digital Ocean", save: "$1,476", percent: "85% Less!" },
+      { name: "Linode", save: "$1,476", percent: "85% Less!" },
+      { name: "Vultr", save: "$1,188", percent: "83% Less!" },
+    ],
+  },
+  "4cpu": {
+    specs: "16GB RAM – 320GB Disk",
+    ssdNodes: "$393",
+    cycle: "3-year cycle",
+    providers: [
+      { name: "Digital Ocean", save: "$3,063", percent: "89% Less!" },
+      { name: "Linode", save: "$3,063", percent: "89% Less!" },
+      { name: "Vultr", save: "$2,487", percent: "86% Less!" },
+    ],
+  },
+  "8cpu": {
+    specs: "32GB RAM – 480GB Disk",
+    ssdNodes: "$453",
+    cycle: "3-year cycle",
+    providers: [
+      { name: "Digital Ocean", save: "$8,619", percent: "95% Less!" },
+      { name: "Linode", save: "$6,459", percent: "93% Less!" },
+      { name: "Vultr", save: "$5,307", percent: "92% Less!" },
+    ],
+  },
+};
+
+
+
 // Phir aap <PricingPlans plans={sharedHostingPlans} /> ka use kar sakte hain
 const plansStandard = sharedHostingPlans.slice(0, 3);      // First 3 cards
 const plansPerformance = sharedHostingPlans.slice(3, 6);
@@ -169,29 +205,24 @@ const plansPerformance = sharedHostingPlans.slice(3, 6);
         buttonText="Explore Hosting Plans"
         cards={[
           {
-            title: "VPS Hosting",
-            text: "Dedicated resources, full control, and unmatched performance for growing businesses that need more than shared hosting.",
+            title: "State-of-the-Art Processors",
+            text: "  We use the latest enterprise Intel processor architecture for your fastest-growing workloads, real-time inference, and performance where you need it most, to help you build amazing things on the web.",
+            
           },
           {
-            title: "Cloud Hosting",
-            text: "Scalable, reliable, and built to handle traffic spikes. Pay only for what you use and grow without limits.",
+            title: "RAID 10 High Reliability",
+            text: "We stripe and mirror your data to both improve performance and establish redundancy in case of hardware failure or corruption. This blends performance with potentially higher fault tolerance. Get the best of both worlds.",
           },
           {
-            title: "Managed Hosting",
-            text: "Let our experts handle updates, backups, and server monitoring so you can focus on your business.",
+            title: "24/7 Customer Support",
+            text: "Our 24/7 support experts are ready to help you overcome challenges and get back to crafting exciting projects.",
           },
           {
-            title: "Business Hosting",
-            text: "Perfect for eCommerce stores, SaaS, and SMEs who need faster speeds and guaranteed uptime.",
+            title: "14-Days Money-Back Guarantee",
+            text: "Your satisfaction is our priority! Enjoy peace of mind with our 14-Days Money-Back Guarantee. Start experimenting with risk-free commitment.",
           },
-          {
-            title: "Enterprise Hosting",
-            text: "Custom hosting solutions with advanced security, high availability, and dedicated support teams.",
-          },
-          {
-            title: "Reseller Hosting",
-            text: "Launch your own hosting business with our reseller plans, complete with white-label branding.",
-          },
+          
+          
         ]}
       />
 
@@ -226,6 +257,7 @@ Start Scaling with Confidence."
         buttonLink="#plans"
         showParagraph={true}
       />
+<VpsSavings plans={myPlans} />
 
       <FAQSection
         faqs={[
