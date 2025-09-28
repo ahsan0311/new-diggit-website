@@ -28,9 +28,9 @@ const CloudSolution = () => {
       }
       buttonText="Start Cloud Solutions"
     />
-    <BuildMy heading="We Use the Best in Cloud Tech" showButton={false} />
+    {/* <BuildMy heading="We Use the Best in Cloud Tech" showButton={false} /> */}
 
-    <LogoMarquee
+    {/* <LogoMarquee
       logos={[
         "https://diggitglobal.com/assets/images/logo_19.png",
         "https://diggitglobal.com/assets/images/logo_20.png",
@@ -45,7 +45,7 @@ const CloudSolution = () => {
         "https://diggitglobal.com/assets/images/logo_21.png",
       ]}
       slidesToShow={6}
-    />
+    /> */}
 
     <WhyWorkSection
       title="Our Cloud Solutions"

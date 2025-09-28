@@ -29,7 +29,7 @@ const Devops_Automation = () => {
         buttonText="Start DevOps Automation"
       />
 
-      <BuildMy heading="We Use the Best in DevOps Tech" showButton={false} />
+      {/* <BuildMy heading="We Use the Best in DevOps Tech" showButton={false} />
 
       <LogoMarquee
         logos={[
@@ -41,7 +41,7 @@ const Devops_Automation = () => {
           "https://diggitglobal.com/assets/images/logo_21.png",
         ]}
         slidesToShow={6}
-      />
+      /> */}
 
       <WhyWorkSection
         title="Our DevOps & Automation Services"

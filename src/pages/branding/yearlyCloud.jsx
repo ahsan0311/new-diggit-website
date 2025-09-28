@@ -28,7 +28,7 @@ const YearlyCloud = () => {
         }
         buttonText="Start Your Yearly Cloud Plan"
       />
-      <BuildMy heading="We Use the Best in Cloud Tech" showButton={false} />
+      {/* <BuildMy heading="We Use the Best in Cloud Tech" showButton={false} />
 
       <LogoMarquee
         logos={[
@@ -40,7 +40,7 @@ const YearlyCloud = () => {
           "https://diggitglobal.com/assets/images/logo_19.png",
         ]}
         slidesToShow={6}
-      />
+      /> */}
 
       <WhyWorkSection
         title="Our Yearly Cloud Hosting Services"

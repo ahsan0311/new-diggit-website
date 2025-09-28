@@ -180,9 +180,9 @@ const plansPerformance = sharedHostingPlans.slice(3, 6);
         }
         buttonText="View Hosting Plans"
       />
-      <BuildMy heading="We Use the Best in Hosting Tech" showButton={false} />
+      {/* <BuildMy heading="We Use the Best in Hosting Tech" showButton={false} /> */}
 
-      <LogoMarquee
+      {/* <LogoMarquee
         logos={[
           "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
@@ -191,7 +191,7 @@ const plansPerformance = sharedHostingPlans.slice(3, 6);
           "https://diggitglobal.com/assets/images/logo_23.png",
         ]}
         slidesToShow={6}
-      />
+      /> */}
 
       <WhyWorkSection
         title="Our Hosting Services"

@@ -29,7 +29,7 @@ const VpsServer = () => {
         }
         buttonText="Start VPS Hosting"
       />
-      <BuildMy heading="We Use the best in tech" showButton={false} />
+      {/* <BuildMy heading="We Use the best in tech" showButton={false} />
 
       <LogoMarquee
         logos={[
@@ -46,7 +46,7 @@ const VpsServer = () => {
           "https://diggitglobal.com/assets/images/logo_21.png",
         ]}
         slidesToShow={6}
-      />
+      /> */}
       <WhyWorkSection
         title="Our VPS Server Services"
         description={

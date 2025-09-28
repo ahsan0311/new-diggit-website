@@ -238,9 +238,9 @@ const Hydrila = () => {
 <StatsSection/>
 
       <FeaturesSection />
-       {products.map((product, index) => (
+       {/* {products.map((product, index) => (
         <ProductCard key={index} product={product} />
-      ))}
+      ))} */}
       <Contact/>
     </div>
   );
