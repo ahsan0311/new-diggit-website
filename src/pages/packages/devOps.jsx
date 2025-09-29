@@ -58,7 +58,7 @@ const devOpsPlans = [
   },
 ];
      // 3 cards
-const plansPerformance = [                          // 3 cards for second tab
+const plansPerformance = [                          
   {
     title: "Performance Basic",
     price: "$100 - $150",

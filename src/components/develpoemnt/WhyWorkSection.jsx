@@ -46,13 +46,14 @@ const WhyWorkSection = ({ title, description, cards, buttonText }) => {
       className="font-sans text-center p-6 md:p-10 mt-10"
     >
       {/* Heading */}
-      <h1 className="whywork-title text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-5xl mx-auto text-3xl md:text-5xl lg:text-[60px] font-bold">
-        {title}
-      </h1>
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-full mx-auto text-3xl md:text-5xl lg:text-[60px] font-bold leading-tight mb-0">
+  {title}
+</h1>
 
-      <p className="whywork-desc max-w-3xl mx-auto text-sm md:text-lg mt-2 font-medium text-gray-500">
-        {description}
-      </p>
+<p className="max-w-3xl mx-auto text-sm md:text-lg mt-2 font-medium text-gray-500">
+  {description}
+</p>
+
 
       {/* Cards */}
      <div className="flex justify-center items-start gap-6 p-6 md:p-10 flex-wrap">

@@ -611,7 +611,7 @@ export default function Navbar() {
           </div>
 
           {/* Packages Dropdown */}
-          <div
+          {/* <div
             className="relative services-hover"
             onMouseEnter={() => setIsPackagesVisible(true)}
             onMouseLeave={() => setIsPackagesVisible(false)}
@@ -653,7 +653,14 @@ export default function Navbar() {
                 </div>
               </div>
             )}
-          </div>
+          </div> */}
+
+          <Link
+            to="/packages"
+            className="text-white hover:text-blue-500 text-[18px]"
+          >
+            Packages
+          </Link>
 
           <Link
             to="/contact"
@@ -768,7 +775,7 @@ export default function Navbar() {
                 )}
               </div>
 
-              <div>
+              {/* <div>
                 <div
                   className="flex justify-between items-center py-2 cursor-pointer border-b border-gray-700"
                   onClick={() => setIsMobilePackagesOpen(!isMobilePackagesOpen)}
@@ -791,7 +798,15 @@ export default function Navbar() {
                     ))}
                   </div>
                 )}
-              </div>
+              </div> */}
+
+               <Link
+                to="/packages"
+                className="block py-2 border-b border-gray-700 hover:text-blue-400"
+                onClick={() => setIsOpen(false)}
+              >
+                Packages
+              </Link>
 
               <Link
                 to="/contact"
