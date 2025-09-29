@@ -5,9 +5,11 @@ import Hero from '../../components/develpoemnt/Hero';
 import Features from '../../components/hydrila/Features';
 import FeaturesSection from '../../components/hydrila/FeatureCard';
 import InfoSection from '../../components/hydrila/Info';
-import HowItWorks from '../../components/hydrila/HowItWork';
 import PricingPlans from '../../components/hydrila/PricingCard';
 import StatsSection from '../../components/hydrila/StatsSection';
+import HowWeWork from '../../components/develpoemnt/WorkCards';
+import Card from '../../components/Card';
+import Timeline from '../../components/HowWeWork';
 
 const Hydrila = () => {
   const products = [
@@ -214,7 +216,7 @@ const Hydrila = () => {
      
 
       <Features data={featuresData} />
-      <InfoSection
+      {/* <InfoSection
   title="Revolutionize Your Delivery Business"
   description="Hydrila is designed to help you manage every aspect of your mineral water delivery business. From tracking sales to managing workers, our software provides the tools you need to succeed."
   imgSrc="https://www.hydrila.com/assets/images/left-image.png"
@@ -225,8 +227,8 @@ const Hydrila = () => {
   description="With Hydrila, you can focus on growing your business while we handle the complexities. Our software is intuitive, reliable, and tailored to meet the needs of water delivery vendors."
   imgSrc="https://www.hydrila.com/assets/images/right-image.png"
   reverse
-/>
-<HowItWorks />
+/> */}
+<Timeline />
 
 <PricingPlans 
  plansStandard={plansData}

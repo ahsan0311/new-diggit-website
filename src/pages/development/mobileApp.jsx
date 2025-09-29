@@ -50,8 +50,8 @@ const MobileApp = () => {
     <Hero bgImage='https://diggitglobal.com/assets/images/mob_app_banner.png'/>
     <WhatWeBuild/>
     <FoldCards cardsData={cardsForPage1} containerHeight="600px"/>
-    <BuildMy/>
-    <LogoMarquee/>
+    {/* <BuildMy/> */}
+    {/* <LogoMarquee/> */}
     <InfoSection
       title="Industries We Work With"
       paragraphs={[

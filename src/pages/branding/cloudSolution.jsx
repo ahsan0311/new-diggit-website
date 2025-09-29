@@ -16,6 +16,7 @@ const CloudSolution = () => {
   <>
     <Hero
       smallHeading="Cloud Solutions"
+      bgImage="https://cdn.pixabay.com/photo/2022/08/21/12/05/lightning-7401119_1280.jpg"
       mainHeading={<>in Dubai that Power Growth</>}
       description={
         <>

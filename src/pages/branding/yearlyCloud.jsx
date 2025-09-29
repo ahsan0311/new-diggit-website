@@ -16,6 +16,7 @@ const YearlyCloud = () => {
     <>
       <Hero
         smallHeading="Yearly Cloud Plans"
+        bgImage="https://cdn.pixabay.com/photo/2021/10/29/08/17/business-idea-6751339_1280.jpg"
         mainHeading={<>Secure, Scalable & Affordable</>}
         description={
           <>

@@ -31,9 +31,9 @@ const EmailMarketing = () => {
         }
         buttonText="Start Email Marketing"
       />
-      <BuildMy heading="We Use the best in tech" showButton={false} />
+      {/* <BuildMy heading="We Use the best in tech" showButton={false} /> */}
 
-      <LogoMarquee
+      {/* <LogoMarquee
       logos={[
           "https://diggitglobal.com/assets/images/logo_19.png",
           "https://diggitglobal.com/assets/images/logo_20.png",
@@ -49,7 +49,7 @@ const EmailMarketing = () => {
 
         ]}
         slidesToShow={6}
-       />
+       /> */}
       <WhyWorkSection
         title="Our Email Marketing Services"
         description={

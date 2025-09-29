@@ -390,7 +390,7 @@ const tabData = [
     ],
   },
   {
-    label: "Branding",
+    label: "Cloud",
     content: [
       { title: "Providing VPS Server", path: "/providing-vps-server" },
       { title: "Yearly Cloud Plan", path: "/yearly-cloud-plan" },

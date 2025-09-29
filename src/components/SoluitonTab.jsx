@@ -2,12 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 
 const tabsData = [
   {
-    title: "AI & Machine Learning Solutions",
-    img: "https://diggitglobal.com/assets/images/icon_1.png",
-    content:
-      " We develop intelligent AI solutions that simplify processes, automate repetitive tasks, and provide predictive insights tailored to your business needs. Our machine learning models enhance decision-making, boost efficiency, and form a key part of our agile, future-ready software development approach.",
-  },
-  {
     title: "Cloud Computing",
     img: "https://diggitglobal.com/assets/images/icon_2.png",
     content:

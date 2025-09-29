@@ -40,8 +40,8 @@ const SeoMarketing = () => {
         buttonLink="/contact"
       />
 
-      <BuildMy heading="We Use the best in tech" showButton={false} />
-      <LogoMarquee
+      {/* <BuildMy heading="We Use the best in tech" showButton={false} /> */}
+      {/* <LogoMarquee
         logos={[
           "https://diggitglobal.com/assets/images/logo_8.png",
           "https://diggitglobal.com/assets/images/logo_9.png",
@@ -53,7 +53,7 @@ const SeoMarketing = () => {
           "https://diggitglobal.com/assets/images/logo_15.png",
         ]}
         slidesToShow={6}
-      />
+      /> */}
      
 
       <WhyWorkSection

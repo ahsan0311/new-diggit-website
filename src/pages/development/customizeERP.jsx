@@ -56,8 +56,8 @@ const CustomizeErp = () => {
         }
         buttonText="Start Custom ERP"
       />
-      <BuildMy showButton={false} />
-      <LogoMarquee />
+      {/* <BuildMy showButton={false} /> */}
+      {/* <LogoMarquee /> */}
 
       <WhyWorkSection
         title="Our Customized ERP Development Services"

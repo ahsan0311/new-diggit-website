@@ -106,8 +106,8 @@ const WebApp = () => {
       />
 
       <FoldCards cardsData={cardsForPage2} containerHeight="650px" />
-      <BuildMy buttonText="Get A quote" />
-      <LogoMarquee />
+      {/* <BuildMy buttonText="Get A quote" /> */}
+      {/* <LogoMarquee /> */}
       <InfoSection
         title="Industries We Work With"
         paragraphs={[

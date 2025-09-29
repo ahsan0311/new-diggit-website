@@ -16,6 +16,7 @@ const Devops_Automation = () => {
     <>
       <Hero
         smallHeading="DevOps & Automation Services"
+        bgImage="https://cdn.pixabay.com/photo/2019/04/14/18/50/forward-4127468_1280.jpg"
         mainHeading={<>Scale Faster. Deploy Smarter.</>}
         description={
           <>

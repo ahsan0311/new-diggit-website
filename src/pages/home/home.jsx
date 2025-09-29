@@ -25,19 +25,21 @@ const Home = () => {
       <div className="relative min-h-screen overflow-hidden">
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
           <video
-            ref={videoRef}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover rounded-b-[4rem] md:rounded-none"
-            poster="data:image/gif,AAAA"
-          >
-            <source
-              src="https://res.cloudinary.com/dqngkcjxg/video/upload/v1758174999/vecteezy_sunrise_uqp8u4.mp4"
-              type="video/mp4"
-            />
-          </video>
+  ref={videoRef}
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full h-full object-cover rounded-b-[4rem] md:rounded-none"
+  poster="data:image/gif,AAAA"
+>
+  <source
+    src="https://res.cloudinary.com/dqngkcjxg/video/upload/3148317-hd_1920_1080_30fps_liexvp.mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
+
         </div>
 
        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black to-transparent z-10"></div>
@@ -45,7 +47,7 @@ const Home = () => {
 
 
         <div className="absolute bottom-[-40px] left-0 w-full h-[200px] z-10 pointer-events-none">
-          <div className="w-full h-full bg-gradient-to-t from-white via-white/90 to-transparent"></div>
+          <div className="w-full h-full bg-gradient-to-t from-white via-white/60 to-transparent"></div>
         </div>
 
         <div className="relative z-10 min-h-screen flex items-start pt-32 px-4 sm:px-6 md:pl-16 lg:pl-24 xl:pl-32 text-white">

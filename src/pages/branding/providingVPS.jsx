@@ -16,6 +16,7 @@ const VpsServer = () => {
     <>
       <Hero
         smallHeading="VPS Server Services"
+        bgImage="https://th.bing.com/th/id/OIP.Agicwj1qZj77z9KbVAEhagHaE7?w=264&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
         mainHeading={<>in Dubai that Power Performance</>}
         description={
           <>

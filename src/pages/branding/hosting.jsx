@@ -10,8 +10,8 @@ import WhyWorkSection from "../../components/develpoemnt/WhyWorkSection";
 import SearchSection from "../../components/digitalMarketing/SearchSection";
 import NoMoreSilos from "../../components/NoMoreSilos";
 import InfoSection from "../../components/develpoemnt/InfoSection";
-import PricingPlans from "../../components/hydrila/PricingCard";
 import VpsSavings from "../../components/branding/VpsSavings";
+import PricingPlans from "../../components/hosting/HositingPlan";
 
 const Hosting = () => {
 
@@ -169,6 +169,7 @@ const plansPerformance = sharedHostingPlans.slice(3, 6);
     <>
       <Hero
         smallHeading="Cloud & VPS Hosting Services"
+        bgImage="https://th.bing.com/th/id/OIP.xm9aso1qoaort91pb3gSZgHaDe?w=316&h=163&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
         mainHeading={<>Reliable Hosting Plans for Every Business</>}
         description={
           <>

@@ -61,8 +61,8 @@ const WebDevelopment = () => {
         para2="Here’s a look at what we specialize in:"
       />
       <FoldCards cardsData={cardsForPage1} containerHeight="600px" />
-      <BuildMy />
-      <LogoMarquee />
+      {/* <BuildMy /> */}
+      {/* <LogoMarquee /> */}
       <InfoSection
         title="Industries We Work With"
         paragraphs={[

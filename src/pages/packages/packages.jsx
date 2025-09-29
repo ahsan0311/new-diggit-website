@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../../components/develpoemnt/Hero";
 import WhatWeBuild from "../../components/develpoemnt/WhatWeBuild";
 import FoldCards from "../../components/develpoemnt/FoldCards";
 import LogoMarquee from "../../components/develpoemnt/Marwuee";
@@ -12,6 +11,7 @@ import NoMoreSilos from "../../components/NoMoreSilos";
 import InfoSection from "../../components/develpoemnt/InfoSection";
 import PricingPlans from '../../components/package/PricingPlans'
 import VpsSavings from "../../components/branding/VpsSavings";
+import Hero from "../../components/package/Hero";
 
 
 
@@ -172,38 +172,7 @@ const marketingPlans = [
 
 
 
-const myPlans = {
-  "2cpu": {
-    specs: "8GB RAM – 160GB Disk",
-    ssdNodes: "$252",
-    cycle: "3-year cycle",
-    providers: [
-      { name: "Digital Ocean", save: "$1,476", percent: "85% Less!" },
-      { name: "Linode", save: "$1,476", percent: "85% Less!" },
-      { name: "Vultr", save: "$1,188", percent: "83% Less!" },
-    ],
-  },
-  "4cpu": {
-    specs: "16GB RAM – 320GB Disk",
-    ssdNodes: "$393",
-    cycle: "3-year cycle",
-    providers: [
-      { name: "Digital Ocean", save: "$3,063", percent: "89% Less!" },
-      { name: "Linode", save: "$3,063", percent: "89% Less!" },
-      { name: "Vultr", save: "$2,487", percent: "86% Less!" },
-    ],
-  },
-  "8cpu": {
-    specs: "32GB RAM – 480GB Disk",
-    ssdNodes: "$453",
-    cycle: "3-year cycle",
-    providers: [
-      { name: "Digital Ocean", save: "$8,619", percent: "95% Less!" },
-      { name: "Linode", save: "$6,459", percent: "93% Less!" },
-      { name: "Vultr", save: "$5,307", percent: "92% Less!" },
-    ],
-  },
-};
+
 
 
 const Packages = () => {
@@ -215,16 +184,6 @@ const plansStandard = devOpsPlans.slice(0, 3);
   return (
     <>
       <Hero
-        smallHeading="Affordable High-Performance VPS Hosting"
-        mainHeading={<>AFFORDABLE PLANS with
-ENDLESS POSSIBILITIES</>}
-        description={
-          <>
-           At SSD Nodes, our VPS hosting offers unbeatable value.
-No matter your requirements, we're here to help you save money while providing the essential tools you need to kickstart your projects.
-          </>
-        }
-        buttonText="View Plans"
       />
 
        <PricingPlans
@@ -268,26 +227,6 @@ No matter your requirements, we're here to help you save money while providing t
           
         ]}
       />
-{/* 
-      <NoMoreSilos
-        heading="Stop Worrying About Downtime.
-Start Scaling with Confidence."
-        buttonText="Get a Hosting Plan"
-      /> */}
-
-      {/* <InfoSection
-        title="Why Choose Diggit Hosting?"
-        paragraphs={[
-          `Our hosting infrastructure is built to deliver unmatched speed, uptime, and security. 
-           With data centers worldwide and 24/7 monitoring, we ensure your business stays online, 
-           no matter what.`,
-        ]}
-      /> */}
-
-      
-
-     
-<VpsSavings plans={myPlans} />
 
       <FAQSection
         faqs={[

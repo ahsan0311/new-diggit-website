@@ -64,7 +64,7 @@ const SocialMedia = () => {
         }
         buttonText="Manage My Social Media"
       />
-      <BuildMy heading="We Use the best in tech" showButton={false} />
+      {/* <BuildMy heading="We Use the best in tech" showButton={false} />
 
       <LogoMarquee 
       logos={[
@@ -81,7 +81,7 @@ const SocialMedia = () => {
 
         ]}
         slidesToShow={6}
-      />
+      /> */}
       <WhyWorkSection
         title="Our Social Media Services"
         description={
