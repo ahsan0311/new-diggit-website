@@ -422,7 +422,7 @@ export const packagesTabData = [
       },
       {
         title: "DevOps",
-        path: "/devops",
+        path: "/devOps",
         icon: <FaCloud />,
       },
       {
@@ -616,8 +616,8 @@ export default function Navbar() {
             onMouseEnter={() => setIsPackagesVisible(true)}
             onMouseLeave={() => setIsPackagesVisible(false)}
           >
-            <Link
-              to="/packages"
+            <button
+              
               className="text-white hover:text-blue-500 flex items-center text-[18px]"
             >
               Packages
@@ -630,7 +630,7 @@ export default function Navbar() {
               >
                 <path d="M19 9l-7 7-7-7"></path>
               </svg>
-            </Link>
+            </button>
 
             {isPackagesVisible && (
               <div className="services-dropdown absolute top-full left-0 mt-0 bg-white shadow-lg">

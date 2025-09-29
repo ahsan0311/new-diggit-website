@@ -370,12 +370,12 @@ export default function Contact({
               max-[770px]:static max-[770px]:flex-col max-[770px]:translate-x-0 max-[770px]:translate-y-0 max-[770px]:mt-[-831px] max-[770px]:z-10
               max-[770px]:right-auto  max-[572px]:mt-[-861px] max-[433px]:mt-[-890px] max-[425px]:mt-[-820px]"
           >
-            <img
+            {/* <img
               src="https://diggitglobal.com/assets/images/vector_4.png"
               alt="Robot"
               className="absolute -top-32 right-1/2 translate-x-1/2 z-40 w-[450px] 
                 max-[770px]:static max-[770px]:translate-x-0 max-[770px]:top-auto max-[770px]:w-[420px] max-[770px]:mb-6 max-[425px]:w-[320px]"
-            />
+            /> */}
 
             {/* Form */}
             <div

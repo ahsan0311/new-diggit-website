@@ -257,7 +257,7 @@ Start Scaling with Confidence."
         buttonLink="#plans"
         showParagraph={true}
       />
-<VpsSavings plans={myPlans} />
+{/* <VpsSavings plans={myPlans} /> */}
 
       <FAQSection
         faqs={[

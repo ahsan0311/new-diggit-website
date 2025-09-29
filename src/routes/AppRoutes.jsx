@@ -23,6 +23,10 @@ const PointOfSale = React.lazy(() => import("../pages/product/pointOfSale"));
 const Laundary = React.lazy(() => import("../pages/product/laundary"));
 const Hydrila = React.lazy(() => import("../pages/product/hydrila"));
 const Contact = React.lazy(() => import("../pages/contact/contact"));
+const Marketing = React.lazy(() => import("../pages/packages/marketing"));
+const DevOps = React.lazy(() => import("../pages/packages/devOps"));
+const Cloud = React.lazy(() => import("../pages/packages/cloud"));
+
 
 
 
@@ -71,6 +75,13 @@ const AppRoutes = () => {
         <Route path="/Point-Of-Sale" element={<PointOfSale />} />
         <Route path="/Laundary-management" element={<Laundary />} />
         <Route path="/Hydrila" element={<Hydrila />} />
+
+
+        {/* packages */}
+
+        <Route path="/marketing" element={<Marketing />} />
+        <Route path="/devOps" element={<DevOps />} />
+        <Route path="/cloud" element={<Cloud />} />
 
       </Routes>
     </Suspense>

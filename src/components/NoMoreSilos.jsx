@@ -60,12 +60,12 @@ const NoMoreSilos = ({
   return (
     <div className="no-more-silos-container">
       {/* img same rahegi without animation */}
-      <div className="floating-image">
+      {/* <div className="floating-image">
         <img
           src="https://diggitglobal.com/assets/images/vector_3.png"
           alt="Floating Cube"
         />
-      </div>
+      </div> */}
 
       <section ref={sectionRef} className="silos-section">
         <div className="silos-content">
