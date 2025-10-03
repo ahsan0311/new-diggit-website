@@ -1,34 +1,63 @@
 import React from 'react'
 import ProductCard from '../../components/product/ProductCard'
-import Hero from '../../components/about/Hero';
+import Hero from '../../components/develpoemnt/Hero';
 import Contact from '../../components/Contact';
+import Timeline from '../../components/HowWeWork';
+import { FaCompass, FaCubes, FaPuzzlePiece, FaRocket } from "react-icons/fa";
+
+
+const customSteps = [
+  {
+    id: "01",
+    title: "Discover",
+    desc: "We begin by gaining a clear understanding of your business—your goals, challenges, and vision of success. From the start, our team takes a consultative approach to identify opportunities and uncover what truly drives your operations.",
+    icon: <FaCompass className="text-blue-400 " />,
+  },
+  {
+    id: "02",
+    title: "Build",
+    desc: " Our development team transforms ideas into working solutions, customizing every feature and interface to match your business needs. Using agile practices and user-focused design, we deliver powerful software that’s scalable, efficient, and built to perform.",
+    icon: <FaCubes className="text-blue-400 " />,
+  },
+  {
+    id: "03",
+    title: "Strategize",
+    desc: "We craft a clear technology roadmap tailored to your workflows—whether it’s cloud architecture, AI solutions, or smart dashboard integrations. At this stage, business analysis meets digital transformation, ensuring every solution is aligned with your long-term growth.",
+    icon: <FaPuzzlePiece className="text-blue-400 " />,
+  },
+  {
+    id: "04",
+    title: "Launch",
+    desc: "Our partnership doesn’t end at deployment. We stay by your side to optimize, maintain, and enhance your systems as your business evolves. With ongoing support and continuous improvements, we make sure your technology keeps delivering long-term value and lasting results.",
+    icon: <FaRocket className="text-blue-400 " />,
+  },
+];
 
 const PointOfSale = () => {
-  const products = [
-    {
-      name: "Puma Running Shoes",
-      category: "Sports",
-      price: 150,
-      offerPrice: 130,
-      rating: 3,
-      images: [
-        "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/card/productImage3.png",
-        "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/card/productImage.png",
-      ],
-      description: [
-        "Lightweight design",
-        "Good arch support",
-        "Durable outsole",
-      ],
-    },
-  ];
+ 
 
   return (
     <div >
-      <Hero/>
-      {products.map((product, index) => (
-        <ProductCard key={index} product={product} />
-      ))}
+      <Hero  
+      bgImage='https://media.gettyimages.com/id/1349722626/photo/close-up-of-a-males-hand-paying-bill-with-credit-card-contactless-payment-on-smartphone-in-a.jpg?s=612x612&w=0&k=20&c=Fact042AwNkFP7VCMYAUFSNo2Nqw-ys9SNWjKohiA44='
+       mainHeading={<>Empower Your Water Delivery Business with Hydrila</>}
+       showSmallHeading={false}
+       buttonText="Sign Up"
+       description={<>Hydrila is a comprehensive software solution designed to streamline your <br /> mineral water delivery operations. Manage finances, sales, workers, and <br /> more with ease.</>}
+       />
+     <Timeline heading="Custom Heading for This Page"
+  description="Custom description text goes here for this page." steps={customSteps}/>
+
+  <div className="flex justify-center w-full mb-4 ">
+  <button
+    className="w-full max-w-md bg-gradient-to-r from-blue-600 to-sky-500 
+    text-white font-bold py-5  rounded-full text-xl 
+    transition duration-300 hover:brightness-110"
+  >
+    More Details
+  </button>
+</div>
+
       <Contact/>
     </div>
   );
