@@ -488,8 +488,8 @@ export default function Navbar() {
 
   return (
     <nav className="bg-transparent fixed top-0 w-full z-50 ">
-      <div className="mx-auto p-4 flex items-center max-w-[90%] justify-between px-10 nav-hd">
-        <div className="flex items-center h-[70px]">
+      <div className="mx-auto p-2 flex items-center max-w-[90%] justify-between px-10 nav-hd">
+        <div className="flex items-center h-[60px]">
           <img
             src="/assets/newLogo.png"
             alt="Logo"
@@ -498,7 +498,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="nav-desktop  items-center  justify-between w-[600px] max-[1000px]:w-[500px] h-[60px] relative">
+        <div className="nav-desktop  items-center mt-2  justify-between w-[600px] max-[1000px]:w-[500px] h-[60px] relative">
           <Link to="/" className="text-white hover:text-blue-500 text-[18px]">
             Home
           </Link>
@@ -511,11 +511,11 @@ export default function Navbar() {
 
           {/* Services Dropdown */}
           <div
-            className="relative services-hover"
+            className="relative"
             onMouseEnter={() => setIsServicesVisible(true)}
             onMouseLeave={() => setIsServicesVisible(false)}
           >
-            <button className="text-white hover:text-blue-500 flex items-center text-[18px]">
+             <div className="text-white hover:text-blue-500 flex items-center text-[18px] cursor-pointer">
               Services
               <svg
                 className="ml-1 w-4 h-4"
@@ -526,7 +526,7 @@ export default function Navbar() {
               >
                 <path d="M19 9l-7 7-7-7"></path>
               </svg>
-            </button>
+            </div>
 
             {/* Services Dropdown Content */}
             {isServicesVisible && (
@@ -572,7 +572,7 @@ export default function Navbar() {
           >
             <Link
               to="/product"
-              className="text-white hover:text-blue-500 flex items-center text-[18px]"
+              className="text-white hover:text-blue-500 flex items-center text-[18px] cursor-pointer"
             >
               Products
               <svg
