@@ -489,7 +489,7 @@ export default function Navbar() {
   return (
     <nav className="bg-transparent fixed top-0 w-full z-50 ">
       <div className="mx-auto p-4 flex items-center max-w-[90%] justify-between px-10 nav-hd">
-        <div className="flex items-center ">
+        <div className="flex items-center h-[70px]">
           <img
             src="/assets/newLogo.png"
             alt="Logo"
@@ -672,7 +672,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div className="nav-mobile">
-          <button onClick={() => setIsOpen(!isOpen)}>
+          <button className=" mt-3" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
               <X size={24} color="white" />
             ) : (
