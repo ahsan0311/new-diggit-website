@@ -684,24 +684,24 @@ export default function Navbar() {
 
       {isOpen &&
         createPortal(
-          <div className="fixed inset-0 z-[9999] bg-black text-white w-[280px] h-full shadow-lg right-0">
-            <div className="flex justify-between items-center p-4 border-b border-gray-700">
+          <div className="fixed inset-0 z-[9999] bg-black text-white w-[300px] h-full shadow-lg right-0">
+            <div className="flex justify-between items-center p-4  border-b border-gray-700">
               <img src="/assets/newLogo.png" alt="Logo" className="w-[100px]" />
               <button onClick={() => setIsOpen(false)}>
                 <X size={24} />
               </button>
             </div>
-            <div className="p-4 space-y-2">
+            <div className="text-xl">
               <Link
                 to="/"
-                className="block py-2 border-b border-gray-700 hover:text-blue-400"
+                className="block py-2 px-4 border-b border-gray-700 hover:text-blue-400"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="block py-2 border-b border-gray-700 hover:text-blue-400"
+                className="block py-2 px-4 border-b  border-gray-700 hover:text-blue-400"
                 onClick={() => setIsOpen(false)}
               >
                 About
@@ -711,31 +711,28 @@ export default function Navbar() {
                   className="flex justify-between items-center py-2 cursor-pointer border-b border-gray-700"
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                 >
-                  <span>Services</span>
-                  <span>{isMobileServicesOpen ? "×" : "+"}</span>
+                  <span className="px-4">Services</span>
+                  <span className="px-4">{isMobileServicesOpen ? "×" : "+"}</span>
                 </div>
                 {isMobileServicesOpen && (
-                  <div className="pl-4 py-2 bg-gray-900">
+                  <div className="bg-gray-800 px-4">
                     {tabData.map((tab, i) => (
                       <div key={i}>
-                        <div
-                          className="flex justify-between items-center py-2 cursor-pointer"
-                          onClick={() =>
-                            setOpenServiceIndex(
-                              openServiceIndex === i ? null : i
-                            )
-                          }
-                        >
-                          <span>{tab.label}</span>
-                          <span>{openServiceIndex === i ? "×" : "+"}</span>
-                        </div>
+                       <div
+  className="flex justify-between items-center py-2  border-b border-gray-700 hover:text-blue-400 cursor-pointer"
+  onClick={() => setOpenServiceIndex(openServiceIndex === i ? null : i)}
+>
+  <span>{tab.label}</span>
+  <span className="text-lg">{openServiceIndex === i ? "×" : "+"}</span>
+</div>
+
                         {openServiceIndex === i && (
-                          <div className="ml-4 space-y-1">
+                          <div className="space-y-1  ">
                             {tab.content.map((service, idx) => (
                               <Link
                                 key={idx}
                                 to={service.path}
-                                className="block hover:text-blue-400"
+                                className="block py-2 border-b border-gray-700 hover:text-blue-400"
                                 onClick={() => setIsOpen(false)}
                               >
                                 {service.title}
@@ -755,8 +752,8 @@ export default function Navbar() {
                     setIsMobileIndustriesOpen(!isMobileIndustriesOpen)
                   }
                 >
-                  <Link to="/product">Products</Link>
-                  <span>{isMobileIndustriesOpen ? "×" : "+"}</span>
+                  <Link className="px-4" to="/product">Products</Link>
+                  <span className="px-4">{isMobileIndustriesOpen ? "×" : "+"}</span>
                 </div>
                 {isMobileIndustriesOpen && (
                   <div className="pl-6 py-2 space-y-2 bg-gray-900">
@@ -802,7 +799,7 @@ export default function Navbar() {
 
                <Link
                 to="/packages"
-                className="block py-2 border-b border-gray-700 hover:text-blue-400"
+                className="block py-2 px-4 border-b border-gray-700 hover:text-blue-400"
                 onClick={() => setIsOpen(false)}
               >
                 Packages
@@ -810,7 +807,7 @@ export default function Navbar() {
 
               <Link
                 to="/contact"
-                className="block py-2 border-b border-gray-700 hover:text-blue-400"
+                className="block py-2 px-4 border-b border-gray-700 hover:text-blue-400"
                 onClick={() => setIsOpen(false)}
               >
                 Contact

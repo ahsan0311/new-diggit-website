@@ -54,9 +54,9 @@ const SolutionsTabs = () => {
 
       <div className="max-w-[1400px] mx-auto text-white p-8 rounded-3xl">
 
-        <div className="relative overflow-x-auto scrollbar-hide">
-          <div className="inline-flex min-w-full border-b border-gray-700 relative">
-            <div className="flex justify-between w-full">
+        <div className="relative overflow-x-auto max-w-7xl mx-auto scrollbar-hide">
+          <div className="inline-flex  min-w-full border-b-2 border-gray-700 relative ">
+            <div className="flex  justify-between w-full ">
               {tabsData.map((tab, index) => {
                 const [firstWord, ...restWords] = tab.title.split(" ");
                 const restTitle = restWords.join(" ");
@@ -73,7 +73,7 @@ const SolutionsTabs = () => {
                     <img
                       src={tab.img}
                       alt={tab.title}
-                      className="w-16 h-16 mb-2 object-contain"
+                      className="w-13 h-13 mb-2 object-contain"
                     />
                     <div className="text-center text-base md:text-lg font-semibold w-full whitespace-normal">
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">{firstWord}</span>
@@ -83,7 +83,7 @@ const SolutionsTabs = () => {
                   </div>
                 );
               })}
-            </div>
+            </div> 
 
             {/* Underline animation */}
             <div

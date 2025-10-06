@@ -58,7 +58,7 @@ const Card = () => {
          <div ref={sectionRef} className="text-left max-w-3xl mx-auto md:text-center mb-16">
       <h2
         ref={headingRef}
-        className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight"
+        className="text-4xl md:text-4xl font-bold text-black mb-6 leading-tight"
       >
         Your Business Deserves Technology Built Around You
         <br />
@@ -67,7 +67,7 @@ const Card = () => {
 
       <p
         ref={paraRef}
-        className="text-xl text-gray-700 max-w-3xl md:mx-auto mb-8"
+        className="text-base text-gray-700 max-w-3xl md:mx-auto mb-8"
       >
         Growth shouldn’t be held back by outdated tools and disjointed systems.
         Off-the-shelf software often adds complexity instead of solving

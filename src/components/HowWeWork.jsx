@@ -477,12 +477,12 @@ const Timeline = ({
   return (
     <div className="py-20 ">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-6">
+        <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-6">
           {heading}
         </h2>
 
         {/* Dynamic description */}
-        <p className="text-gray-600 text-center max-w-3xl mx-auto mb-16 text-xl">
+        <p className="text-gray-600 text-center max-w-3xl mx-auto mb-16 text-base">
           {description}
         </p>
 

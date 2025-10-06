@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="relative min-h-screen overflow-hidden">
+      <div className="relative min-h-screen overflow-hidden ">
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
           <video
   ref={videoRef}
@@ -56,7 +56,7 @@ const Home = () => {
       Smart Tech, Built for Growth & Security
     </h2>
 
-    <h1 className="text-9xl md:text-9xl max-[594px]:text-7xl font-extrabold leading-tight inline-block mt-0 ml-0 
+    <h1 className="text-8xl md:text-8xl max-[594px]:text-7xl font-extrabold leading-tight inline-block mt-0 ml-0 
   text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">
   <ReactTyped
     strings={["Simplify", "Secure", "Scale"]}

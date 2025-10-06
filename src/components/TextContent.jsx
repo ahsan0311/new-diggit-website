@@ -47,7 +47,7 @@ const TextContent = ({ heading, subheading, description }) => {
     >
      <h1
   ref={headingRef}
-  className="text-3xl md:text-5xl font-bold mb-4"
+  className="text-2xl md:text-4xl font-bold mb-4"
 >
   {heading}
   <br />
