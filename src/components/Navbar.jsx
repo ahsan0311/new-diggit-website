@@ -366,7 +366,7 @@
 //   );
 // }
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import "../style/tabs.css";
@@ -471,6 +471,14 @@ export default function Navbar() {
   const [openServiceIndex, setOpenServiceIndex] = useState(null);
   const [isPackagesVisible, setIsPackagesVisible] = useState(false);
   const [isMobilePackagesOpen, setIsMobilePackagesOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const triggerRef = useRef(null);
+  const productsDropdownRef = useRef(null);
+  const productsTriggerRef = useRef(null);
+
+  const toggleDropdown = () => {
+    setIsServicesVisible((prev) => !prev);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -485,6 +493,42 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        triggerRef.current &&
+        !triggerRef.current.contains(event.target)
+      ) {
+        setIsServicesVisible(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      productsDropdownRef.current &&
+      !productsDropdownRef.current.contains(event.target) &&
+      productsTriggerRef.current &&
+      !productsTriggerRef.current.contains(event.target)
+    ) {
+      setIsIndustriesVisible(false);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
+
 
   return (
     <nav className="bg-transparent fixed top-0 w-full z-50 ">
@@ -512,10 +556,12 @@ export default function Navbar() {
           {/* Services Dropdown */}
           <div
             className="relative"
-            onMouseEnter={() => setIsServicesVisible(true)}
-            onMouseLeave={() => setIsServicesVisible(false)}
+            ref={triggerRef}
+            // onMouseEnter={() => setIsServicesVisible(true)}
+            // onMouseLeave={() => setIsServicesVisible(false)}
+            onClick={toggleDropdown}
           >
-             <div className="text-white hover:text-blue-500 flex items-center text-[18px] cursor-pointer">
+            <div className="text-white hover:text-blue-500 flex items-center text-[18px] cursor-pointer">
               Services
               <svg
                 className="ml-1 w-4 h-4"
@@ -530,7 +576,11 @@ export default function Navbar() {
 
             {/* Services Dropdown Content */}
             {isServicesVisible && (
-              <div className="services-dropdown absolute top-full left-0 mt-0 bg-white shadow-lg">
+              <div
+                ref={dropdownRef}
+                className="services-dropdown absolute top-full left-0 mt-0 bg-white shadow-lg"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <div className="tabs-container">
                   <div className="tab-bar">
                     {tabData.map((tab, index) => (
@@ -552,6 +602,7 @@ export default function Navbar() {
                           <Link
                             to={section.path}
                             className="text-black max-[1315px]:text-2xl"
+                            onClick={() => setIsServicesVisible(false)}
                           >
                             {section.title}
                           </Link>
@@ -567,8 +618,11 @@ export default function Navbar() {
           {/* Industries Dropdown */}
           <div
             className="relative services-hover"
-            onMouseEnter={() => setIsIndustriesVisible(true)}
-            onMouseLeave={() => setIsIndustriesVisible(false)}
+            // onMouseEnter={() => setIsIndustriesVisible(true)}
+            // onMouseLeave={() => setIsIndustriesVisible(false)}
+
+            ref={productsTriggerRef}
+  onClick={() => setIsIndustriesVisible((prev) => !prev)} 
           >
             <Link
               to="/product"
@@ -588,7 +642,7 @@ export default function Navbar() {
 
             {/* Industries Dropdown Content */}
             {isIndustriesVisible && (
-              <div className="services-dropdown absolute top-full left-0 mt-0 bg-white shadow-lg">
+              <div ref={productsDropdownRef} className="services-dropdown absolute top-full left-0 mt-0 bg-white shadow-lg" onClick={(e) => e.stopPropagation()}>
                 <div className="tabs-container">
                   <div className="tab-content-industry">
                     {currentIndustryTab.content.map((section, idx) => (
@@ -596,6 +650,7 @@ export default function Navbar() {
                         <h3>
                           <Link
                             to={section.path}
+                            onClick={() => setIsIndustriesVisible(false)}
                             className="flex items-center gap-2 text-black max-[1315px]:text-2xl"
                           >
                             <span className="text-xl">{section.icon}</span>
@@ -712,19 +767,27 @@ export default function Navbar() {
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                 >
                   <span className="px-4">Services</span>
-                  <span className="px-4">{isMobileServicesOpen ? "×" : "+"}</span>
+                  <span className="px-4">
+                    {isMobileServicesOpen ? "×" : "+"}
+                  </span>
                 </div>
                 {isMobileServicesOpen && (
                   <div className="bg-gray-800 px-4">
                     {tabData.map((tab, i) => (
                       <div key={i}>
-                       <div
-  className="flex justify-between items-center py-2  border-b border-gray-700 hover:text-blue-400 cursor-pointer"
-  onClick={() => setOpenServiceIndex(openServiceIndex === i ? null : i)}
->
-  <span>{tab.label}</span>
-  <span className="text-lg">{openServiceIndex === i ? "×" : "+"}</span>
-</div>
+                        <div
+                          className="flex justify-between items-center py-2  border-b border-gray-700 hover:text-blue-400 cursor-pointer"
+                          onClick={() =>
+                            setOpenServiceIndex(
+                              openServiceIndex === i ? null : i
+                            )
+                          }
+                        >
+                          <span>{tab.label}</span>
+                          <span className="text-lg">
+                            {openServiceIndex === i ? "×" : "+"}
+                          </span>
+                        </div>
 
                         {openServiceIndex === i && (
                           <div className="space-y-1  ">
@@ -752,8 +815,12 @@ export default function Navbar() {
                     setIsMobileIndustriesOpen(!isMobileIndustriesOpen)
                   }
                 >
-                  <Link className="px-4" to="/product">Products</Link>
-                  <span className="px-4">{isMobileIndustriesOpen ? "×" : "+"}</span>
+                  <Link className="px-4" to="/product">
+                    Products
+                  </Link>
+                  <span className="px-4">
+                    {isMobileIndustriesOpen ? "×" : "+"}
+                  </span>
                 </div>
                 {isMobileIndustriesOpen && (
                   <div className="pl-6 py-2 space-y-2 bg-gray-900">
@@ -797,7 +864,7 @@ export default function Navbar() {
                 )}
               </div> */}
 
-               <Link
+              <Link
                 to="/packages"
                 className="block py-2 px-4 border-b border-gray-700 hover:text-blue-400"
                 onClick={() => setIsOpen(false)}
