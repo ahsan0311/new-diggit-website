@@ -98,13 +98,13 @@ const Card = () => {
         </div> */}
 
         <div className="cards-container">
-          <div className="card flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <div className="card-number">01</div>
+          <div className="card flip-card ">
+            <div className="flip-card-inner ">
+              <div className="flip-card-front bg-gradient-to-r from-cyan-300 to-blue-300">
+                <div className="card-number ">01</div>
                 <p>One Size Doesn't Fit Anyone</p>
               </div>
-              <div className="flip-card-back">
+              <div className="flip-card-back bg-gradient-to-r from-cyan-300 to-blue-300">
                 <p>
                   Most platforms try to force your business into a box. We build
                   custom software right from scratch that fits your team,
@@ -116,11 +116,11 @@ const Card = () => {
 
           <div className="card flip-card">
             <div className="flip-card-inner">
-              <div className="flip-card-front">
+              <div className="flip-card-front bg-gradient-to-r from-cyan-300 to-blue-300">
                 <div className="card-number">02</div>
                 <p>Disconnected Systems Waste Time</p>
               </div>
-              <div className="flip-card-back">
+              <div className="flip-card-back bg-gradient-to-r from-cyan-300 to-blue-300">
                 <p>
                   We know you're tired of juggling five tools just to complete
                   one task. That's why we unify your CRM, ERP, dashboards, and
@@ -132,11 +132,11 @@ const Card = () => {
 
           <div className="card flip-card">
             <div className="flip-card-inner">
-              <div className="flip-card-front">
+              <div className="flip-card-front bg-gradient-to-r from-cyan-300 to-blue-300">
                 <div className="card-number">03</div>
                 <p>Generic UX = Lost Customers</p>
               </div>
-              <div className="flip-card-back">
+              <div className="flip-card-back bg-gradient-to-r from-cyan-300 to-blue-300">
                 <p>
                   Your customers deserve more than clunky, outdated interfaces.
                   We craft intuitive, responsive user experiences that boost
@@ -148,11 +148,11 @@ const Card = () => {
 
           <div className="card flip-card">
             <div className="flip-card-inner">
-              <div className="flip-card-front">
+              <div className="flip-card-front bg-gradient-to-r from-cyan-300 to-blue-300">
                 <div className="card-number">04</div>
                 <p>Slow Tech Kills Momentum</p>
               </div>
-              <div className="flip-card-back">
+              <div className="flip-card-back bg-gradient-to-r from-cyan-300 to-blue-300">
                 <p>
                   Whether you need cloud migration, AI-powered dashboards, or
                   smarter automation, we help you scale with speed, security,

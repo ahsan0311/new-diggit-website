@@ -46,7 +46,7 @@ const WhyWorkSection = ({ title, description, cards, buttonText }) => {
       className="font-sans text-center p-6 md:p-10 mt-10"
     >
       {/* Heading */}
-      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-full mx-auto text-3xl md:text-5xl lg:text-[60px] font-bold leading-tight mb-0">
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-full mx-auto text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight mb-0">
   {title}
 </h1>
 

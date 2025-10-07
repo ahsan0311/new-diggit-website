@@ -52,17 +52,15 @@
   justify-content: center;
   align-items: center;
   padding: 40px 30px 20px;
-  background: linear-gradient(to right, #2563eb, #0ea5e9);
   color: white;
   text-align: center;
   flex-direction: column;
 }
 
 .flip-card-front p {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.4;
-  margin-top: 20px;
 }
 
 .flip-card-back {

@@ -307,7 +307,6 @@
 
 
 .industries-section {
-  background: #f8f8f8;
   padding: 80px 0;
   height: auto;
   position: relative;
@@ -342,7 +341,6 @@
 .industries-marquee-wrapper {
   width: 100%;
   padding: 40px 0;
-  background: #f8f8f8;
 }
 
 .marquee-row {
@@ -358,10 +356,10 @@
 
 .industry-card {
   background: linear-gradient(to right, #67e8f9, #93c5fd);
-  padding: 40px 30px;
+  padding: 10px 20px;
   border-radius: 20px;
-  width: 300px;
-  min-height: 260px;
+  width: 200px;
+  min-height: 160px;
   text-align: start;
   transition: transform 0.3s ease;
   display: flex;
@@ -375,14 +373,14 @@
 }
 
 .industry-card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
   object-fit: contain;
 }
 
 .industry-card p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
   color: white;

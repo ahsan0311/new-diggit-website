@@ -103,7 +103,7 @@ const cardsData = [
 ];
 
 const IndustryCard = ({ img, title }) => (
-  <div className="industry-card shrink-0 mx-4">
+  <div className="industry-card  shrink-0 mx-4">
     <img src={img} alt={title} />
     <p>{title}</p>
   </div>
@@ -171,7 +171,7 @@ export default function WhoWeBuildFor() {
         </div>
 
         {/* Horizontal Marquee Section */}
-        <div className="industries-marquee-wrapper max-w-7xl mx-auto px-4">
+        <div className="industries-marquee-wrapper max-w-8xl mx-auto px-4">
           <div className="marquee-row overflow-hidden relative">
             <div className="marquee-inner flex min-w-[200%] py-4">
               {[...cardsData, ...cardsData].map((card, index) => (
