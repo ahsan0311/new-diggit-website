@@ -74,6 +74,7 @@ const MobileApp = () => {
             <br /> your users, and your business.
           </>
         }
+
         buttonText="Launch Your Site"
         cards={[
           {

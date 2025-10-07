@@ -205,6 +205,8 @@ const plansStandard = devOpsPlans.slice(0, 3);
           </>
         }
         buttonText="Explore Hosting Plans"
+        cardHeight="h-[270px]"
+
         cards={[
           {
             title: "State-of-the-Art Processors",

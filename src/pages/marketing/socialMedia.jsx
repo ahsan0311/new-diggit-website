@@ -93,6 +93,8 @@ const SocialMedia = () => {
           </>
         }
         buttonText="Fixed My Social Presence"
+        cardHeight="h-[280px]"
+
         cards={[
           {
             title: "Content Planning & Scheduling",

@@ -67,6 +67,8 @@ const SeoMarketing = () => {
             growing agency.
           </>
         }
+        cardHeight="h-[280px]"
+
         buttonText="Rank Higher Now"
         cards={[
           {

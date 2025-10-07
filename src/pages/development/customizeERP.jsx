@@ -70,6 +70,8 @@ const CustomizeErp = () => {
           </>
         }
         buttonText="Build a Smarter"
+        cardHeight="h-[300px]"
+
         cards={[
           {
             title: "Custom ERP Development",

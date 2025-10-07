@@ -162,8 +162,7 @@ const myPlans = {
 
 
 
-// Phir aap <PricingPlans plans={sharedHostingPlans} /> ka use kar sakte hain
-const plansStandard = sharedHostingPlans.slice(0, 3);      // First 3 cards
+const plansStandard = sharedHostingPlans.slice(0, 3);      
 const plansPerformance = sharedHostingPlans.slice(3, 6);
   return (
     <>
@@ -204,6 +203,7 @@ const plansPerformance = sharedHostingPlans.slice(3, 6);
           </>
         }
         buttonText="Explore Hosting Plans"
+        cardHeight="h-[280px]"
         cards={[
           {
             title: "State-of-the-Art Processors",

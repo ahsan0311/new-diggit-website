@@ -61,6 +61,8 @@ const EmailMarketing = () => {
           </>
         }
         buttonText="Launch an Email Compaign"
+        cardHeight="h-[280px]"
+
         cards={[
           {
             title: "Email Strategy & Planning",

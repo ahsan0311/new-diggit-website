@@ -624,8 +624,8 @@ export default function Navbar() {
             ref={productsTriggerRef}
   onClick={() => setIsIndustriesVisible((prev) => !prev)} 
           >
-            <Link
-              to="/product"
+            <button
+              
               className="text-white hover:text-blue-500 flex items-center text-[18px] cursor-pointer"
             >
               Products
@@ -638,7 +638,7 @@ export default function Navbar() {
               >
                 <path d="M19 9l-7 7-7-7"></path>
               </svg>
-            </Link>
+            </button>
 
             {/* Industries Dropdown Content */}
             {isIndustriesVisible && (
@@ -815,9 +815,9 @@ export default function Navbar() {
                     setIsMobileIndustriesOpen(!isMobileIndustriesOpen)
                   }
                 >
-                  <Link className="px-4" to="/product">
+                  <button className="px-4">
                     Products
-                  </Link>
+                  </button>
                   <span className="px-4">
                     {isMobileIndustriesOpen ? "×" : "+"}
                   </span>
