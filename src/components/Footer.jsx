@@ -3,8 +3,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaTiktok,
-  FaTwitter,
+  FaYoutube
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -103,20 +102,30 @@ const Footer = () => {
 
           <div className="flex gap-3 mb-[-40px] max-[768px]:mb-[10px]">
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaInstagram />
+              <Link to="https://www.instagram.com/ats_globalsolutions
+"><FaInstagram /></Link>
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaFacebookF />
+              
+              <Link to="https://www.facebook.com/profile.php?id=61558656503098
+"><FaFacebookF /></Link>
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaLinkedinIn />
+              
+              <Link to="https://www.linkedin.com/company/real-ats-global-solutions/
+"><FaLinkedinIn /></Link>
+
             </div>
             <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaTwitter />
+              
+              <Link to="https://www.youtube.com/channel/UCAFT_ZzpmSxO0-J_jcTQ_YA "><FaYoutube /></Link>
+
             </div>
-            <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              <FaTiktok />
-            </div>
+            {/* <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
+              
+              <Link to=""><FaTiktok /></Link>
+
+            </div> */}
           </div>
         </div>
 

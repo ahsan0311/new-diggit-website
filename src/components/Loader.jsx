@@ -8,12 +8,12 @@ const Loader = () => {
     let i = 0;
     const interval = setInterval(() => {
       if (i <= message.length) {
-        setText(message.slice(0, i)); // safe slicing
+        setText(message.slice(0, i));
         i++;
       } else {
         clearInterval(interval);
       }
-    }, 150); // typing speed
+    }, 150);
 
     return () => clearInterval(interval);
   }, []);
