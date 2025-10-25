@@ -5,9 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const sliderImages = [
-  "https://res.cloudinary.com/dqngkcjxg/image/upload/v1759132062/WhatsApp_Image_2025-09-29_at_11.48.37_15662466_zhcn3x.jpg",
+  "https://cdn.pixabay.com/photo/2018/02/12/13/58/devops-3148393_1280.png",
   "https://res.cloudinary.com/dqngkcjxg/image/upload/v1759132051/WhatsApp_Image_2025-09-29_at_11.48.35_670994ad_mvwl5r.jpg",
-  "https://res.cloudinary.com/dqngkcjxg/image/upload/v1759132525/WhatsApp_Image_2025-09-29_at_11.48.38_df395df8_e5yqbw.jpg",
+  "https://media.istockphoto.com/id/1404020923/vector/devops-banner-concept-has-8-steps-to-analyze-such-as-plan-code-build-operate-deploy-test.jpg?s=612x612&w=0&k=20&c=KJ90yfWIP3lELbmiTS2Furjv_IOSHrTDYqz-BWhkerU=",
+  "https://media.istockphoto.com/id/1867090031/vector/devops-process-infographics-software-development-lifecycle-operations.jpg?s=612x612&w=0&k=20&c=uQt0TqOJb-kaqutwHu82kQEmkRjU8YayvLL157EAS1g="
 ];
 
 const Hero = () => {
@@ -46,12 +47,10 @@ const Hero = () => {
     return () => ctx.revert();
   }, [currentImageIndex]);
 
-  // Handle dot click
   const handleDotClick = (index) => {
     setCurrentImageIndex(index);
   };
 
-  // Handle next/previous buttons
   const handleNext = () => {
     setCurrentImageIndex((prev) => (prev + 1) % sliderImages.length);
   };
@@ -62,20 +61,17 @@ const Hero = () => {
 
   return (
     <div className="relative w-full min-h-[600px] md:min-h-[720px] overflow-hidden" ref={sliderRef}>
-      {/* Slider Image */}
       <div className="absolute inset-0 w-full h-full">
         <img
           key={currentImageIndex}
           src={sliderImages[currentImageIndex]}
           alt={`Slide ${currentImageIndex + 1}`}
-          className="slider-image w-full h-full object-cover object-center transition-opacity duration-1000"
+          className="slider-image w-full h-full object-contain object-center transition-opacity duration-1000"
         />
       </div>
 
-      {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent" />
 
-      {/* Navigation Dots */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
         {sliderImages.map((_, index) => (
           <button
@@ -89,7 +85,6 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Previous Button */}
       <button
         onClick={handlePrevious}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition-all duration-300 z-10"
@@ -100,7 +95,6 @@ const Hero = () => {
         </svg>
       </button>
 
-      {/* Next Button */}
       <button
         onClick={handleNext}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition-all duration-300 z-10"

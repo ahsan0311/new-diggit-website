@@ -135,6 +135,7 @@ import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
 import emailjs from "emailjs-com";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -318,9 +319,12 @@ export default function Contact({
               <p className=" max-[770px]:w-[100%] contact-subtext mt-4 text-white max-[1260px]:w-[600px] max-[1050px]:w-[350px] max-[1190px]:w-[450px] max-w-2xl text-lg  max-[980px]:text-[10px] max-[770px]:text-2xl">
                 {subText} <span className="font-semibold">{highlightText}</span>
               </p>
-              <button className="contact-button mt-6 px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-500 text-white font-semibold rounded-4xl shadow-md hover:bg-blue-800 transition">
-                {buttonText}
-              </button>
+             <Link
+  to="/contact"
+  className="contact-button mt-6 px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-500 text-white font-semibold rounded-4xl shadow-md hover:bg-blue-800 transition inline-block text-center"
+>
+  {buttonText}
+</Link>
             </div>
 
             

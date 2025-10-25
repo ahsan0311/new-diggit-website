@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const SearchSection = ({
   letters = ["S", "E", "A", "R", "C", "H"],
   heading = "Strategy First",
   paragraph = "We don’t jump into campaigns without a plan. We start by aligning SEO with your business goals, identifying the right keywords, and mapping out opportunities across your market. It’s how we build custom, scalable SEO services in UAE, not cookie-cutter checklists.",
   buttonText = "Let's talk business",
-  buttonLink = "#",
+  buttonLink = "/contact",
   showParagraph = true,
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -42,22 +43,22 @@ const SearchSection = ({
 
       {/* Content card */}
       <div className="max-w-3xl text-start mx-auto bg-gray-50 rounded-4xl shadow-sm px-8 py-10 mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-4 ">
+        <h2 className="text-3xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-4 ">
           {heading}
         </h2>
         {showParagraph && (
-          <p className="text-gray-600 text-base md:text-lg mb-6 leading-relaxed">
+          <p className="text-gray-600 text-sm md:text-lg mb-6 leading-relaxed">
             {paragraph}
           </p>
         )}
        
       </div>
-       <a
-          href={buttonLink}
+       <Link
+          to={buttonLink}
           className="inline-block bg-gradient-to-r from-blue-600 to-sky-500  text-white font-semibold px-8 py-3 rounded-full text-lg transition-colors hover:bg-[#0045aa]"
         >
           {buttonText}
-        </a>
+        </Link>
     </section>
   );
 };

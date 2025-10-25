@@ -9,66 +9,100 @@
 
 .card {
   position: relative;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 22px;
+  background: linear-gradient(to right, #67e8f9, #3b82f6);
+  border-radius: 25px;
+  color: white;
   height: 220px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
   cursor: pointer;
-  perspective: 1000px;
+  transition: all 0.4s ease;
 }
 
+
+
+/* Number styling */
 .card-number {
   position: absolute;
   top: 15px;
   right: 20px;
   font-size: 40px;
   font-weight: 900;
-  line-height: 1;
-  z-index: 2;
-  opacity: 1;
+  opacity: 0.2;
   color: white;
 }
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 30px 20px;
-  color: white;
-  text-align: center;
-  flex-direction: column;
-}
-
-.flip-card-front p {
-  font-size: 28px;
+/* Title text */
+.card p {
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.4;
+  z-index: 2;
+  transition: all 0.4s ease;
 }
 
-.flip-card-back {
-  transform: rotateY(180deg);
-  font-size: 18px;
+.card .card-details {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
   line-height: 1.6;
-  box-shadow: 0 0 20px 5px #2196f3; 
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+  backdrop-filter: blur(0px);
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: inherit;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.65); /* darker, semi-opaque */
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3); /* subtle depth */
 }
+
+/* On hover → strong blur + darker overlay */
+.card:hover .card-details {
+  opacity: 1;
+  transform: translateY(0);
+  backdrop-filter: blur(15px) brightness(0.8); /* blur + dim effect */
+  background: rgba(0, 0, 0, 0.45); /* darker overlay for contrast */
+}
+
+
+/* Also fade out the front text slightly when showing details */
+.card:hover p {
+  opacity: 0.2;
+}
+
+/* Animation on load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.2s; }
+.card:nth-child(4) { animation-delay: 0.3s; }
+
 
 @media (max-width: 786px) {
   .cards-container {
@@ -76,20 +110,21 @@
     margin: 30px auto;
     gap: 15px;
   }
-  
+
   .card {
-    height: 220px;
-    font-size: 18px;
+    height: 200px;
   }
-  
-  .flip-card-front p {
-    font-size: 32px;
+
+  .card p {
+    font-size: 20px;
   }
-  
+
   .card-number {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
+
+
 
 .vector-container {
   position: absolute;

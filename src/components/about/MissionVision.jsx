@@ -43,18 +43,18 @@ const MissionVision = () => {
 
   return (
     <div ref={sectionRef}>
-      <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row items-center md:items-start">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 mt-8 px-4 md:px-8">
         {/* Left Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end -mt-12">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end items-center">
           <img
-            src="https://diggitglobal.com/assets/images/about_img.png"
+            src="https://media.istockphoto.com/id/1355569095/vector/digital-eye-data-network-cyber-security-technology.jpg?s=612x612&w=0&k=20&c=b5moC17mfe_--IMWUnv1ez6sZpXcuWRFw3HwCp5n4Q4="
             alt="Target"
-            className="max-w-[600px] w-full h-auto object-contain mv-image"
+            className="max-w-[600px] w-full h-auto object-contain mv-image rounded-lg "
           />
         </div>
 
-        {/* Text Content */}
-        <div className="w-full md:w-1/2 flex flex-col gap-16 text-end mt-18 md:mt-20 pr-5">
+        {/* Right Text Content */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center text-end gap-16 md:gap-20">
           {/* Mission */}
           <div className="mv-text">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">

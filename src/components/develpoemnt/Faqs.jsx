@@ -50,7 +50,7 @@ export default function FAQSection({
               onClick={() => toggleFAQ(index)}
               className="flex justify-between items-center w-full text-left"
             >
-              <span className="text-lg md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
+              <span className="text-lg md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
                 {faq.question}
               </span>
 

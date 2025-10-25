@@ -87,6 +87,12 @@
 
 
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom"; // ✅ Add this import at the top
+
+import "swiper/css";
+import "swiper/css/pagination";
 import "../style/WhoWeBuildFor.css";
 
 const cardsData = [
@@ -103,7 +109,7 @@ const cardsData = [
 ];
 
 const IndustryCard = ({ img, title }) => (
-  <div className="industry-card  shrink-0 mx-4">
+  <div className="industry-card">
     <img src={img} alt={title} />
     <p>{title}</p>
   </div>
@@ -111,87 +117,62 @@ const IndustryCard = ({ img, title }) => (
 
 export default function WhoWeBuildFor() {
   return (
-    <div style={{ width: "100%", overflowX: "hidden" }}>
-     <style>{`
-  @keyframes marqueeScroll {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-50%); }
-  }
+    <div className="industries-section">
+      <div className="industries-content-center">
+  <div className="industries-left">
+    <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-4">
+      Who We Partner With
+    </h2>
 
-  .marquee-inner {
-    animation: marqueeScroll 30s linear infinite;
-  }
+    <p>
+      We collaborate with businesses that are ready to grow, streamline, or launch something new.
+      If you’re focused on solving real challenges and need technology that adapts as you scale,
+      we’re here to deliver tailored solutions and integrated systems built for your success.
+    </p>
 
-  .marquee-reverse {
-    animation-direction: reverse;
-  }
+    <Link
+      to="/contact"
+      className="bg-gradient-to-r from-blue-600 to-sky-500 hover:bg-blue-700 text-white py-4 px-6 rounded-full text-xl transition duration-300 mt-4 inline-block text-center"
+    >
+      Let’s Build Something
+    </Link>
+  </div>
+</div>
 
-  @media (max-width: 1024px) {
-    .industry-card {
-      width: 260px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .industry-card {
-      width: 220px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .industry-card {
-      width: 180px;
-      padding: 30px 20px;
-    }
-
-    .industry-card p {
-      font-size: 18px;
-    }
-
-    .industry-card img {
-      width: 60px;
-      height: 60px;
-    }
-  }
-`}</style>
-
-      <div className="industries-section">
-        <div className="industries-content-center">
-          <div className="industries-left">
-            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 mb-4">
-              Who We Partner With
-            </h2>
-            <p>
-              We collaborate with businesses that are ready to grow, streamline, or launch something new. If you’re focused on solving real challenges and need technology that adapts as you scale, we’re here to deliver tailored solutions and integrated systems built for your success.
-            </p>
-            <button className="bg-gradient-to-r from-blue-600 to-sky-500 hover:bg-blue-700 text-white py-4 px-6 rounded-full text-xl transition duration-300 mt-4">
-              Let’s Build Something
-            </button>
-          </div>
-        </div>
-
-        {/* Horizontal Marquee Section */}
-        <div className="industries-marquee-wrapper max-w-8xl mx-auto px-4">
-          <div className="marquee-row overflow-hidden relative">
-            <div className="marquee-inner flex min-w-[200%] py-4">
-              {[...cardsData, ...cardsData].map((card, index) => (
-                <IndustryCard key={index} img={card.img} title={card.title} />
-              ))}
-            </div>
-          </div>
-
-          <div className="marquee-row overflow-hidden relative mt-6">
-            <div className="marquee-inner marquee-reverse flex min-w-[200%] py-4">
-              {[...cardsData, ...cardsData].map((card, index) => (
-                <IndustryCard key={index} img={card.img} title={card.title} />
-              ))}
-            </div>
-          </div>
-        </div>
+      {/* Carousel Section */}
+      <div className="industries-carousel max-w-7xl mx-auto px-4 mt-12">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={5}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true, el: '.swiper-pagination' }}
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 10 },
+            480: { slidesPerView: 2, spaceBetween: 15 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 20 },
+            1280: { slidesPerView: 5, spaceBetween: 20 },
+          }}
+        >
+          {cardsData.map((card, index) => (
+            <SwiperSlide key={index}>
+              <IndustryCard img={card.img} title={card.title} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        {/* Pagination dots below */}
+        <div className="swiper-pagination mt-6"></div>
       </div>
     </div>
   );
 }
+
+
 
 
 

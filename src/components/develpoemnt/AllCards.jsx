@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import {
   FaHandsHelping,
@@ -85,7 +86,7 @@ const AllCards = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center gap-6 px-4 md:px-8 max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-center gap-6 px-4 md:px-8 max-w-6xl mx-auto">
         {groups.map((group, colIndex) => (
           <div
             key={colIndex}
@@ -103,10 +104,13 @@ const AllCards = () => {
       </div>
 
       <div className="mb-6 flex justify-center mt-10">
-        <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white rounded-full px-6 md:px-8 py-3 md:py-4 text-amber-50 text-base md:text-lg font-sans font-[500] hover:bg-gray-800 transition">
-          Startups & Saas
-        </button>
-      </div>
+  <Link
+    to="/web-development"
+    className="bg-gradient-to-r from-blue-600 to-sky-500 text-white rounded-full px-6 md:px-8 py-3 md:py-4 text-amber-50 text-base md:text-lg font-sans font-[500] hover:bg-gray-800 transition text-center inline-block"
+  >
+    Startups & Saas
+  </Link>
+</div>
     </>
   );
 };

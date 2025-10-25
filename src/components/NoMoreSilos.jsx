@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom"; // ✅ Import Link
 import "../style/silo.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -9,7 +10,6 @@ const NoMoreSilos = ({
   heading = " Say Goodbye to Disconnected Systems",
   paragraph = "",
   buttonText = " Start Your Project Today",
-  onButtonClick = () => {},
 }) => {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
@@ -21,7 +21,7 @@ const NoMoreSilos = ({
       scrollTrigger: {
         trigger: sectionRef.current,
         start: "top 80%",
-        toggleActions: "play none none none", // sirf ek dafa play
+        toggleActions: "play none none none", // only play once
       },
     });
 
@@ -58,18 +58,13 @@ const NoMoreSilos = ({
   }, []);
 
   return (
-    <div className="no-more-silos-container">
-      {/* img same rahegi without animation */}
-      {/* <div className="floating-image">
-        <img
-          src="https://diggitglobal.com/assets/images/vector_3.png"
-          alt="Floating Cube"
-        />
-      </div> */}
-
+    <div className="no-more-silos-container relative max-w-7xl mx-auto">
       <section ref={sectionRef} className="silos-section">
         <div className="silos-content">
-          <h2 ref={headingRef} className="silo-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
+          <h2
+            ref={headingRef}
+            className="silo-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500"
+          >
             {heading}
           </h2>
 
@@ -79,13 +74,14 @@ const NoMoreSilos = ({
             </p>
           )}
 
-          <button
+          
+          <Link
+            to="/contact"
             ref={buttonRef}
-            className="silo-button"
-            onClick={onButtonClick}
+            className="silo-button inline-block text-center"
           >
             {buttonText}
-          </button>
+          </Link>
         </div>
       </section>
     </div>

@@ -216,18 +216,7 @@ const Hydrila = () => {
      
 
       <Features data={featuresData} />
-      {/* <InfoSection
-  title="Revolutionize Your Delivery Business"
-  description="Hydrila is designed to help you manage every aspect of your mineral water delivery business. From tracking sales to managing workers, our software provides the tools you need to succeed."
-  imgSrc="https://www.hydrila.com/assets/images/left-image.png"
-/>
-
-<InfoSection
-  title="Grow Your Business with Ease"
-  description="With Hydrila, you can focus on growing your business while we handle the complexities. Our software is intuitive, reliable, and tailored to meet the needs of water delivery vendors."
-  imgSrc="https://www.hydrila.com/assets/images/right-image.png"
-  reverse
-/> */}
+     
 <Timeline />
 
 <PricingPlans 
@@ -240,9 +229,7 @@ const Hydrila = () => {
 <StatsSection/>
 
       <FeaturesSection />
-       {/* {products.map((product, index) => (
-        <ProductCard key={index} product={product} />
-      ))} */}
+      
       <Contact/>
     </div>
   );

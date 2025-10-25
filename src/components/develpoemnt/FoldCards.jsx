@@ -182,7 +182,7 @@ export default function FoldCards({ cardsData,containerHeight  }) {
   const cards = cardsRef.current;
   const cardHeight = 400;
   const gap = 50;
-  const peek = 8; // 👈 yahan define karo
+  const peek = 8; 
   const numCards = cardsData.length;
   const numSegments = numCards - 1;
   const sectionDuration = 1 / numSegments;
@@ -197,7 +197,7 @@ export default function FoldCards({ cardsData,containerHeight  }) {
 const scrollTrigger = ScrollTrigger.create({
   trigger: containerRef.current,
   start: "top top",
-  end: () => `+=${(numCards - 1) * (cardHeight + gap) + 200}`, // thoda extra scroll
+  end: () => `+=${(numCards - 1) * (cardHeight + gap) + 200}`,
   scrub: 0.5,
   pin: true,
   anticipatePin: 1,
@@ -256,7 +256,7 @@ const scrollTrigger = ScrollTrigger.create({
 
 >
   <div
-    className="relative w-full max-[1300px]:max-w-6xl max-[1300px]:mx-auto 
+    className="relative max-w-6xl mx-auto max-[1300px]:max-w-6xl max-[1300px]:mx-auto 
       max-[1156px]:max-w-5xl max-[1156px]:mx-auto
       max-[1048px]:max-w-4xl max-[1048px]:mx-auto
       max-[904px]:w-[97%] max-[904px]:mx-auto max-[904px]:m-10"
@@ -289,7 +289,7 @@ const scrollTrigger = ScrollTrigger.create({
           <img
             src={card.image}
             alt={card.title}
-            className="w-[180px] h-auto object-contain max-[907px]:w-[200px] max-[563px]:w-[160px] max-[490px]:w-[130px] max-[480px]:w-[110px]"
+            className="w-[150px] h-auto object-contain max-[907px]:w-[200px] max-[563px]:w-[160px] max-[490px]:w-[130px] max-[480px]:w-[110px]"
           />
         </div>
       </div>

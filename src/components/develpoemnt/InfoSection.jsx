@@ -47,7 +47,7 @@ const InfoSection = ({ title, paragraphs, align = "center" }) => {
       className={`font-sans text-${align} p-6 md:p-10`}
     >
       {/* Heading */}
-      <h1 className="text-4xl  text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-3xl md:text-5xl mx-auto lg:text-[60px] font-bold info-heading">
+      <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-3xl md:text-2xl mx-auto lg:text-[60px] font-bold info-heading">
         {title}
       </h1>
 
@@ -56,7 +56,7 @@ const InfoSection = ({ title, paragraphs, align = "center" }) => {
         <p
           key={index}
           className={`${
-            index === 0 ? "mt-4" : "mt-6"
+            index === 0 ? "mt-4" : "mt-4"
           } text-sm md:text-[16px] text-gray-600 max-w-4xl leading-relaxed mx-auto info-paragraph`}
         >
           {para}

@@ -98,6 +98,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
+
 import "swiper/css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -139,11 +141,11 @@ const WhyWorkSection = ({ title, description, cards, buttonText,cardHeight = "h-
   return (
     <div ref={sectionRef} className="font-sans text-center p-6 md:p-10 mt-10">
       {/* Heading */}
-      <h1 className="whywork-title text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-full mx-auto text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight mb-0">
+      <h1 className="whywork-title text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 max-w-4xl mx-auto text-3xl md:text-3xl lg:text-[50px] font-bold leading-tight mb-0">
         {title}
       </h1>
 
-      <p className="whywork-desc max-w-2xl mx-auto text-sm md:text-lg mt-2 font-medium ">
+      <p className="whywork-desc max-w-2xl mx-auto text-base md:text-lg mt-2 font-medium ">
         {description}
       </p>
 
@@ -166,7 +168,7 @@ const WhyWorkSection = ({ title, description, cards, buttonText,cardHeight = "h-
           >
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className={`bg-gradient-to-r from-cyan-300 to-blue-300 rounded-3xl ${cardHeight} p-6 md:p-8 text-center transition-all duration-300 hover:-translate-y-2`}>
+                <div className={`bg-gradient-to-r from-cyan-300 to-blue-300 rounded-3xl ${cardHeight} p-6 md:p-8 text-center transition-all duration-300 `}>
                   <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 text-xl md:text-xl lg:text-2xl font-[500] mb-3">
                     {card.title}
                   </h2>
@@ -182,7 +184,7 @@ const WhyWorkSection = ({ title, description, cards, buttonText,cardHeight = "h-
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-r from-cyan-300 to-blue-300 rounded-3xl h-[360px] p-6 md:p-8 w-full sm:w-[calc(50%-0.75rem)] lg:w-[22rem] shadow-md text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                className="bg-gradient-to-r from-cyan-300 to-blue-300 rounded-3xl h-[360px] p-6 md:p-8 w-full sm:w-[calc(50%-0.75rem)] lg:w-[22rem] shadow-md text-center transition-all duration-300"
               >
                 <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 text-xl md:text-2xl lg:text-3xl font-[500] mb-3">
                   {card.title}
@@ -196,13 +198,18 @@ const WhyWorkSection = ({ title, description, cards, buttonText,cardHeight = "h-
         )}
       </div>
 
-      {/* Button */}
+      
       {buttonText && (
-        <div className="w-full flex justify-center mt-8">
-          <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white rounded-full py-3 md:py-4 font-sans w-[12rem] md:w-[15rem] text-base md:text-base font-medium hover:bg-blue-700 transition">
-            {buttonText}
-          </button>
-        </div>
+
+<div className="w-full flex justify-center mt-8">
+  <Link
+    to="/contact"
+    className="bg-gradient-to-r from-blue-600 to-sky-500 text-white rounded-full py-3 md:py-4 font-sans w-[12rem] md:w-[15rem] text-base md:text-base font-medium hover:bg-blue-700 transition text-center inline-block"
+  >
+    {buttonText}
+  </Link>
+</div>
+
       )}
     </div>
   );

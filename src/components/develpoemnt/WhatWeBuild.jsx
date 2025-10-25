@@ -78,7 +78,7 @@ const WhatWeBuild = ({
           </p>
         </div>
 
-        {/* Right Button */}
+        
         <div className="flex-shrink-0 mt-[140px] max-[768px]:mt-[-10px] wwb-button">
           <Link
             to={buttonLink}

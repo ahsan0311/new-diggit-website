@@ -1,7 +1,8 @@
-.no-more-silos-container {
+/* .no-more-silos-container {
   position: relative;
-  width: 100%;
-}
+  width: 90%;
+  margin: 0 auto;
+} */
 
 /* Floating Image */
 .floating-image {
@@ -36,7 +37,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
 /* Typography and Button */

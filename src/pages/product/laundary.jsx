@@ -5,6 +5,7 @@ import Contact from '../../components/Contact';
 import Timeline from '../../components/HowWeWork';
 import { FaCompass, FaCubes, FaPuzzlePiece, FaRocket } from "react-icons/fa";
 
+  import { Link } from "react-router-dom";
 
 const customSteps = [
   {
@@ -47,15 +48,18 @@ const Laundary = () => {
        />
      <Timeline heading="Custom Heading for This Page"
   description="Custom description text goes here for this page." steps={customSteps}/>
-  <div className="flex justify-center w-full mb-4 ">
-  <button
+
+<div className="flex justify-center w-full mb-4">
+  <Link
+    to="/contact"
     className="w-full max-w-md bg-gradient-to-r from-blue-600 to-sky-500 
-    text-white font-bold py-5  rounded-full text-xl 
-    transition duration-300 hover:brightness-110"
+    text-white font-bold py-5 rounded-full text-xl 
+    transition duration-300 hover:brightness-110 text-center inline-block"
   >
     More Details
-  </button>
+  </Link>
 </div>
+
       <Contact/>
     </div>
   );
