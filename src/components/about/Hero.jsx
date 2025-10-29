@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+         import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -92,12 +93,18 @@ const Hero = () => {
             achieve success.
           </p>
 
-          <div className="flex justify-center hero-button">
-            <button className="bg-gradient-to-r from-blue-600 to-sky-500 
-             text-white hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full text-lg transition duration-300">
-              Explore our services
-            </button>
-          </div>
+
+<div className="flex justify-center hero-button">
+  <Link
+    to="/contact"
+    className="bg-gradient-to-r from-blue-600 to-sky-500 
+               text-white font-bold py-2 px-5 rounded-full text-lg 
+               hover:bg-blue-700 transition duration-300"
+  >
+    Explore our services
+  </Link>
+</div>
+
         </div>
       </div>
     </div>

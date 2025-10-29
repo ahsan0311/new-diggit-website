@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+         import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,11 +66,18 @@ const OriginStory = () => {
             </strong>
           </p>
 
-          <div className="mt-8 origin-left">
-            <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white hover:bg-[#003D99] font-medium text-lg px-6 py-3 rounded-full transition duration-300">
-              Contact Us
-            </button>
-          </div>
+
+<div className="mt-8 origin-left">
+  <Link
+    to="/contact"
+    className="bg-gradient-to-r from-blue-600 to-sky-500 
+               text-white hover:bg-[#003D99] font-medium text-lg 
+               px-6 py-3 rounded-full transition duration-300"
+  >
+    Contact Us
+  </Link>
+</div>
+
         </div>
 
         {/* Right Image */}

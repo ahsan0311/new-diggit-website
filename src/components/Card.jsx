@@ -129,7 +129,7 @@ const Card = () => {
 
 <div className="text-center mt-10">
   <Link
-    to="/web-development"
+    to="/contact"
     className="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-[60px] py-3 rounded-full hover:bg-blue-700 text-[20px] inline-block"
   >
     Explore

@@ -105,7 +105,7 @@ const AllCards = () => {
 
       <div className="mb-6 flex justify-center mt-10">
   <Link
-    to="/web-development"
+    to="/contact"
     className="bg-gradient-to-r from-blue-600 to-sky-500 text-white rounded-full px-6 md:px-8 py-3 md:py-4 text-amber-50 text-base md:text-lg font-sans font-[500] hover:bg-gray-800 transition text-center inline-block"
   >
     Startups & Saas

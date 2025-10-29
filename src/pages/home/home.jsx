@@ -7,6 +7,8 @@ import NoMoreSilos from "../../components/NoMoreSilos";
 import WhoWeBuildFor from "../../components/WhoWeBuildFor";
 import HowWeWork from "../../components/HowWeWork";
 import Contact from "../../components/Contact";
+     import { Link } from "react-router-dom";
+
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -76,14 +78,18 @@ const Home = () => {
     </p>
 
     <div className="flex justify-center md:justify-start">
-     <button
+
+<Link
+  to="/contact"
   className="group inline-flex items-center justify-center px-10 py-4 
              bg-gradient-to-r from-blue-600 to-sky-500 
              text-white font-bold text-xl rounded-full 
              shadow-lg hover:shadow-xl transform hover:-translate-y-1 
-             transition-all duration-300">
+             transition-all duration-300"
+>
   Simplify Your Tech Stack
-</button>
+</Link>
+
 
     </div>
   </div>

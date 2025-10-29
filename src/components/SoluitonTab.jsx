@@ -267,35 +267,35 @@ const tabsData = [
     img: "https://diggitglobal.com/assets/images/icon_2.png",
     content:
       "We design and deploy scalable cloud systems that grow with your business. From infrastructure setup to seamless application migration, our cloud solutions are secure, flexible, and cost-effective. Built as part of our Agile Software Solutions Stack, these services align closely with our Business Management Consulting goals, ensuring that technology not only supports but also accelerates your business growth.",
-    path: "/cloud-solutions", 
+    path: "/contact", 
   },
   {
     title: "Custom Dashboard",
     img: "https://diggitglobal.com/assets/images/icon_3.png",
     content:
       "We provide visual clarity across every function of your business with real-time performance tracking and interactive BI dashboards. As a core part of dynamic software solutions and custom-integrated business systems, our dashboards transform complex data into simple, actionable insights that empower smarter decision-making.",
-    path: "/web-app",
+    path: "/contact",
   },
   {
     title: "ERP & CRM Integrations",
     img: "https://diggitglobal.com/assets/images/icon_4.png",
     content:
       "We unify your customer, sales, and operations data into one secure system, ensuring a seamless flow of information across departments. By connecting teams through our integrated business solutions, we eliminate data silos, improve collaboration, and help your business operate with clarity and efficiency.",
-    path: "/customize-erp",
+    path: "/contact",
   },
   {
     title: "UI/UX Design",
     img: "https://diggitglobal.com/assets/images/icon_5.png",
     content:
       "We craft digital platforms that prioritize speed, simplicity, and seamless engagement. By transforming clunky tools into intuitive, user-friendly systems, our UI/UX design gives your business an often-overlooked edge, making every interaction smarter, smoother, and more impactful.",
-    path: "/web-development",
+    path: "/contact",
   },
   {
     title: "Website Development",
     img: "https://diggitglobal.com/assets/images/icon_6.png",
     content:
       "We go beyond standard website development to create responsive, conversion-driven sites that truly represent your brand. Every website we build is designed for seamless performance across all devices and powered by agile software solutions, ensuring your online presence works as hard as your business does.",
-    path: "/web-development", 
+    path: "/contact", 
   },
 ];
 
