@@ -2,8 +2,6 @@ import React from "react";
 import Hero from "../../components/develpoemnt/Hero";
 import WhatWeBuild from "../../components/develpoemnt/WhatWeBuild";
 import FoldCards from "../../components/develpoemnt/FoldCards";
-import LogoMarquee from "../../components/develpoemnt/Marwuee";
-import BuildMy from "../../components/develpoemnt/BuildMy";
 import AllCards from "../../components/develpoemnt/AllCards";
 import FAQSection from "../../components/develpoemnt/Faqs";
 import Contact from "../../components/Contact";
@@ -106,8 +104,7 @@ const WebApp = () => {
       />
 
       <FoldCards cardsData={cardsForPage2} containerHeight="650px" />
-      {/* <BuildMy buttonText="Get A quote" /> */}
-      {/* <LogoMarquee /> */}
+   
       <InfoSection
         title="Industries We Work With"
         paragraphs={[
@@ -126,7 +123,7 @@ const WebApp = () => {
         buttonText="Help me fix it"
       />
       <WhyWorkSection
-        title="Why Work With Diggit"
+        title="Why Work With ATS"
         description={
           <>
             We don’t just build websites. We build the stuff that makes work

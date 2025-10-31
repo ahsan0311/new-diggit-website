@@ -41,7 +41,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div className="flex-1 ">
           <h3 className="text-[#00AEEF] font-extrabold text-2xl mb-5">
             Quick Links
@@ -62,9 +61,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Location Columns */}
         <div className="flex-[2] grid max-[770px]:grid-cols-2 grid-cols-2 text-base text-gray-300 font-medium">
-          {/* Dubai */}
            <div className="">
             <h4 className="text-[#00AEEF] font-extrabold text-2xl mb-3">
               Pakistan
@@ -73,8 +70,7 @@ const Footer = () => {
               ATS Global Solutions
             </p>
             <p className="mb-3">
-              207 Sumya Business Avenue, 11-B, Mohammad Ali Society, Karachi,
-              Pakistan
+              109, City Tower, Nishter Road karachi
             </p>
           </div>
 
@@ -84,7 +80,6 @@ const Footer = () => {
       </div>
 
       <div className="max-w-[1300px] mx-auto text-gray-300 text-sm ">
-        {/* Top Section */}
         <div
           className="flex flex-col md:flex-row justify-between items-center  md:items-center gap-6 max-[768px]:border-t-[2px] max-[768px]:border-[#00AEEF]
          max-[768px]:mt-2
@@ -121,20 +116,13 @@ const Footer = () => {
               <Link to="https://www.youtube.com/channel/UCAFT_ZzpmSxO0-J_jcTQ_YA "><FaYoutube /></Link>
 
             </div>
-            {/* <div className="w-10 h-10 bg-[#00AEEF] rounded-full flex items-center justify-center text-white text-lg hover:scale-105 cursor-pointer transition">
-              
-              <Link to=""><FaTiktok /></Link>
-
-            </div> */}
+           
           </div>
         </div>
 
-        {/* Divider Line */}
         <hr className="my-3 border border-[#00A8E7]" />
 
-        {/* Bottom Row */}
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-3">
-          {/* Left Links */}
           <div className="flex gap-4">
             <a href="#" className="hover:text-white">
               Terms and Conditions
@@ -144,8 +132,7 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Right Copyright */}
-          <div>Copyright © 2025 DIGGIT Solution. All rights reserved.</div>
+          <div>Copyright © 2025 ATS GLOBAL. All rights reserved.</div>
         </div>
       </div>
     </footer>

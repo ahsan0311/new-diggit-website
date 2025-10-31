@@ -376,15 +376,14 @@ const SolutionsTabs = () => {
                   {tabsData[activeIndex].content}
                 </p>
 
-                <div className="text-center md:text-right">
-                  {/* ✅ Dynamic Link */}
+                {/* <div className="text-center md:text-right">
                   <Link
                     to={tabsData[activeIndex].path}
                     className="bg-gradient-to-r from-blue-600 to-sky-500 text-white px-6 py-2 md:px-8 md:py-2.5 rounded-full hover:opacity-90 text-sm md:text-base inline-block"
                   >
                     Explore
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

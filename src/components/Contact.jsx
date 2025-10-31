@@ -12,7 +12,7 @@
 // }) {
 //   return (
 //     <section className="
-//     relative 
+//     relative
 //     bg-gradient-to-b from-white to-[#0a0a0a]
 //     max-[770px]:bg-[linear-gradient(to_bottom,_white_50%,_#0a0a0a_40%)]
 //   ">
@@ -32,10 +32,10 @@
 //     </div>
 
 //           {/* Bottom Black Box */}
-//           <div className=" relative z-0 max-[770px]:bg-black  text-white max-[960px]:px-[8px] max-[1200px]:px-[30px] px-29 py-12 w-full 
-//           max-[770px]:flex max-[770px]:flex-col max-[770px]:items-center max-[770px]:justify-center 
+//           <div className=" relative z-0 max-[770px]:bg-black  text-white max-[960px]:px-[8px] max-[1200px]:px-[30px] px-29 py-12 w-full
+//           max-[770px]:flex max-[770px]:flex-col max-[770px]:items-center max-[770px]:justify-center
 //           max-[770px]:mt-[300px]
-         
+
 //           ">
 //             <h2 className="text-6xl max-[1200px]:text-4xl font-bold text-blue-600 ">
 //               Get In Touch <br /> With Us Today!
@@ -56,9 +56,9 @@
 //         </div>
 
 //         <div
-//           className="absolute right-4 top-1/2 -translate-y-1/2 -translate-x-[100px] 
-//   max-[1300px]:right-0 max-[1300px]:-translate-x-[10px] 
-//   flex justify-center items-center z-30 
+//           className="absolute right-4 top-1/2 -translate-y-1/2 -translate-x-[100px]
+//   max-[1300px]:right-0 max-[1300px]:-translate-x-[10px]
+//   flex justify-center items-center z-30
 //   max-[770px]:static max-[770px]:flex-col max-[770px]:translate-x-0 max-[770px]:translate-y-0 max-[770px]:mt-[-831px] max-[770px]:z-50
 //  max-[770px]:right-auto  max-[572px]:mt-[-861px] max-[433px]:mt-[-890px] max-[425px]:mt-[-820px]"
 //         >
@@ -66,15 +66,15 @@
 //           <img
 //             src="https://diggitglobal.com/assets/images/vector_4.png"
 //             alt="Robot"
-//             className="absolute -top-32 right-1/2 translate-x-1/2 z-40 w-[450px] 
+//             className="absolute -top-32 right-1/2 translate-x-1/2 z-40 w-[450px]
 //     max-[770px]:static max-[770px]:translate-x-0 max-[770px]:top-auto max-[770px]:w-[420px] max-[770px]:mb-6 max-[425px]:w-[320px]"
 //           />
 
 //           {/* Form */}
 //           <div
-//             className="bg-white rounded-4xl shadow-2xl w-[650px] 
-//     max-[1133px]:w-[550px] max-[938px]:w-[450px] 
-//     max-[770px]:w-[97%] max-[770px]:px-4 
+//             className="bg-white rounded-4xl shadow-2xl w-[650px]
+//     max-[1133px]:w-[550px] max-[938px]:w-[450px]
+//     max-[770px]:w-[97%] max-[770px]:px-4
 //     p-10 pt-14 relative z-30 mt-[183px] max-[770px]:mt-0 max-[770px]:mt-[160px] max-[572px]:mt-[180px] max-[432px]:mt-[200px] max-[425px]:mt-[230px]"
 //           >
 //             <h3 className="text-2xl font-bold text-center mb-8 max-[1000px]:text-xl">
@@ -85,36 +85,36 @@
 //               <input
 //                 type="text"
 //                 placeholder="Name"
-//                 className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 
+//                 className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500
 //         max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
 //               />
 //               <input
 //                 type="email"
 //                 placeholder="Email"
-//                 className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 
+//                 className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500
 //         max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
 //               />
 //               <input
 //                 type="text"
 //                 placeholder="Phone"
-//                 className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 
+//                 className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500
 //         max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
 //               />
 //               <input
 //                 type="text"
 //                 placeholder="Organization"
-//                 className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 
+//                 className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500
 //         max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
 //               />
 //               <textarea
 //                 placeholder="Message"
 //                 rows={5}
-//                 className="w-full rounded-2xl bg-gray-100 px-6 py-4 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 
+//                 className="w-full rounded-2xl bg-gray-100 px-6 py-4 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500
 //         max-[1000px]:px-4 max-[1000px]:py-3 max-[1000px]:text-sm"
 //               ></textarea>
 
 //               <button
-//                 className="w-full bg-blue-800 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition 
+//                 className="w-full bg-blue-800 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition
 //         max-[1000px]:py-3 max-[1000px]:text-sm"
 //               >
 //                 Get free consultation
@@ -128,13 +128,10 @@
 //   );
 // }
 
-
-
-import React, { useEffect, useRef,useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 
 import emailjs from "emailjs-com";
 
@@ -251,7 +248,6 @@ export default function Contact({
     setFormData({ ...formData, [name]: value });
   };
 
-  // ✅ Basic validation
   const validateForm = () => {
     let formErrors = {};
     if (!formData.name.trim()) formErrors.name = "Name is required";
@@ -273,9 +269,9 @@ export default function Contact({
       emailjs
         .send(
           "service_og888iy",
-          "template_h0nx62n", 
+          "template_h0nx62n",
           formData,
-          "zq75j8B8Sl4PLUsOL" 
+          "zq75j8B8Sl4PLUsOL"
         )
         .then(
           () => {
@@ -311,25 +307,26 @@ export default function Contact({
       <div className="max-w-[1800px] mx-auto">
         <div className="relative flex flex-col mx-auto lg:flex-row max-[1000px]:mt-[50px] ">
           <div className="flex-1">
-            <div className="bg-gradient-to-r from-cyan-300 to-blue-300
- text-white border-none rounded-[60px] p-20 py-14 w-[96%] mx-auto max-[770px]:text-center">
+            <div
+              className="bg-gradient-to-r from-cyan-300 to-blue-300
+ text-white border-none rounded-[60px] p-20 py-14 w-[96%] mx-auto max-[770px]:text-center"
+            >
               <h2 className="contact-heading text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500  max-[1260px]:w-[600px] text-4xl max-[1190px]:w-[450px] max-[1050px]:w-[350px] max-w-3xl max-[1200px]:text-4xl max-[980px]:text-2xl max-[770px]:w-[100%] font-bold leading-snug max-[770px]:text-4xl">
                 {heading}
               </h2>
               <p className=" max-[770px]:w-[100%] contact-subtext mt-4 text-white max-[1260px]:w-[600px] max-[1050px]:w-[350px] max-[1190px]:w-[450px] max-w-2xl text-lg  max-[980px]:text-[10px] max-[770px]:text-2xl">
                 {subText} <span className="font-semibold">{highlightText}</span>
               </p>
-             <Link
-  to="/contact"
-  className="contact-button mt-6 px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-500 text-white font-semibold rounded-4xl shadow-md hover:bg-blue-800 transition inline-block text-center"
->
-  {buttonText}
-</Link>
+              <Link
+                to="/contact"
+                className="contact-button mt-6 px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-500 text-white font-semibold rounded-4xl shadow-md hover:bg-blue-800 transition inline-block text-center"
+              >
+                {buttonText}
+              </Link>
             </div>
 
-            
             <div
-  className="relative z-0 
+              className="relative z-0 
     max-[770px]:bg-[linear-gradient(to_bottom,_white_0%,_#323B42_100%)] 
     text-white max-[960px]:px-[8px] max-[1200px]:px-[30px] px-29 py-12 w-full 
     max-[770px]:flex max-[770px]:flex-col max-[770px]:items-center max-[770px]:justify-center 
@@ -344,7 +341,7 @@ export default function Contact({
     max-[770px]:after:from-black/30 
     max-[770px]:after:to-transparent 
     max-[770px]:after:z-10"
->
+            >
               <h2 className="vector-heading text-6xl max-[1200px]:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
                 Get In Touch <br /> With Us Today!
               </h2>
@@ -355,7 +352,6 @@ export default function Contact({
                 journey!
               </p>
 
-              {/* 👇 Animated Image */}
               <div className="mt-6">
                 <img
                   src="https://diggitglobal.com/assets/images/vector_5.png"
@@ -366,7 +362,6 @@ export default function Contact({
             </div>
           </div>
 
-          {/* 👇 Robot + Form (unchanged) */}
           <div
             className="absolute right-4 top-1/2 -translate-y-1/2 -translate-x-[100px] 
               max-[1300px]:right-0 max-[1300px]:-translate-x-[10px] 
@@ -383,138 +378,92 @@ export default function Contact({
 
             {/* Form */}
             <div
-            className="bg-white rounded-4xl shadow-2xl w-[650px] max-[1190px]:w-[550px] max-[1050px]:w-[450px]
+              className="bg-white rounded-4xl shadow-2xl w-[650px] max-[1190px]:w-[550px] max-[1050px]:w-[450px]
     max-[1133px]:w-[550px] max-[938px]:w-[450px] 
     max-[770px]:w-[97%] max-[770px]:px-4 
     p-10 pt-14 relative z-30 mt-[183px] max-[770px]:mt-0 max-[770px]:mt-[160px] max-[572px]:mt-[180px] max-[432px]:mt-[200px] max-[425px]:mt-[230px]"
-          >
-            <h3 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 font-bold text-center mb-8 max-[1000px]:text-xl">
-              Contact Us
-            </h3>
+            >
+              <h3 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 font-bold text-center mb-8 max-[1000px]:text-xl">
+                Contact Us
+              </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleChange}
-          className={`w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 ${
-            errors.name ? "ring-red-500" : "focus:ring-blue-500"
-          }`}
-        />
-        {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className={`w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 ${
+                    errors.name ? "ring-red-500" : "focus:ring-blue-500"
+                  }`}
+                />
+                {errors.name && (
+                  <p className="text-red-500 text-sm">{errors.name}</p>
+                )}
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          className={`w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 ${
-            errors.email ? "ring-red-500" : "focus:ring-blue-500"
-          }`}
-        />
-        {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className={`w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 ${
+                    errors.email ? "ring-red-500" : "focus:ring-blue-500"
+                  }`}
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm">{errors.email}</p>
+                )}
 
-        <input
-          type="text"
-          name="phone"
-          placeholder="Phone"
-          value={formData.phone}
-          onChange={handleChange}
-          className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
 
-        <input
-          type="text"
-          name="organization"
-          placeholder="Organization"
-          value={formData.organization}
-          onChange={handleChange}
-          className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
+                <input
+                  type="text"
+                  name="organization"
+                  placeholder="Organization"
+                  value={formData.organization}
+                  onChange={handleChange}
+                  className="w-full rounded-full bg-gray-100 px-6 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
 
-        <textarea
-          name="message"
-          placeholder="Message"
-          rows={5}
-          value={formData.message}
-          onChange={handleChange}
-          className={`w-full rounded-2xl bg-gray-100 px-6 py-4 resize-none focus:outline-none focus:ring-2 ${
-            errors.message ? "ring-red-500" : "focus:ring-blue-500"
-          }`}
-        ></textarea>
-        {errors.message && (
-          <p className="text-red-500 text-sm">{errors.message}</p>
-        )}
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
+                  className={`w-full rounded-2xl bg-gray-100 px-6 py-4 resize-none focus:outline-none focus:ring-2 ${
+                    errors.message ? "ring-red-500" : "focus:ring-blue-500"
+                  }`}
+                ></textarea>
+                {errors.message && (
+                  <p className="text-red-500 text-sm">{errors.message}</p>
+                )}
 
-        <button
-            type="submit"
-            disabled={loading}
-            className={`w-full py-4 rounded-full font-semibold transition ${
-              loading
-                ? "bg-gray-400 cursor-not-allowed"
-                : "bg-gradient-to-r from-blue-600 to-sky-500 text-white hover:bg-blue-800"
-            }`}
-          >
-            {loading ? "Sending..." : "Get free consultation"}
-          </button>
-      </form>
-
-     
-     
-
-          </div>
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className={`w-full py-4 rounded-full font-semibold transition ${
+                    loading
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-gradient-to-r from-blue-600 to-sky-500 text-white hover:bg-blue-800"
+                  }`}
+                >
+                  {loading ? "Sending..." : "Get free consultation"}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-     
-

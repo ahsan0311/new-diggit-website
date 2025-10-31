@@ -130,12 +130,12 @@ export default function WhoWeBuildFor() {
       we’re here to deliver tailored solutions and integrated systems built for your success.
     </p>
 
-    <Link
+    {/* <Link
       to="/contact"
       className="bg-gradient-to-r from-blue-600 to-sky-500 hover:bg-blue-700 text-white py-4 px-6 rounded-full text-xl transition duration-300 mt-4 inline-block text-center"
     >
       Let’s Build Something
-    </Link>
+    </Link> */}
   </div>
 </div>
 

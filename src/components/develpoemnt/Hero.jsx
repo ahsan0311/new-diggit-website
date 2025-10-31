@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +23,7 @@ const Hero = ({
     </>
   ),
   buttonText = "Explore our services",
+  showLink = true,
 }) => {
   const heroRef = useRef(null);
 
@@ -105,20 +107,24 @@ const Hero = ({
       <div className="relative z-10 max-w-[1300px] mx-auto min-h-screen flex items-center justify-start px-4 sm:px-6 text-white text-start">
         <div className="max-w-5xl mt-15">
           {showSmallHeading && (
-            <h3 className="text-4xl md:text-4xl max-[768px]:text-4xl font-semibold hero-small-heading
+            <h3
+              className="text-4xl md:text-4xl max-[768px]:text-4xl font-semibold hero-small-heading
             max-[595px]:text-3xl
             max-[474px]:text-2xl
 
-            ">
+            "
+            >
               {smallHeading}
             </h3>
           )}
-          <h1 className="text-7xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300
+          <h1
+            className="text-7xl leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300
             font-extrabold mb-6 max-[808px]:text-6xl max-[808px]:mt-5 max-[768px]:text-5xl
              max-[585px]:text-5xl
              max-[538px]:text-4xl
 
-              max-[401px]:text-4xl hero-main-heading">
+              max-[401px]:text-4xl hero-main-heading"
+          >
             {mainHeading}
           </h1>
 
@@ -127,12 +133,22 @@ const Hero = ({
           </p>
 
           <div className="flex justify-start hero-button">
-            <button
-              className="bg-gradient-to-r from-blue-600 to-sky-500 
-             text-whitehover:bg-blue-700 text-white font-bold py-4 px-7 rounded-full text-lg transition duration-300"
-            >
-              {buttonText}
-            </button>
+           {showLink ? (
+              <Link
+                to="https://app.hydrila.com/Account/Signup"
+                className="bg-gradient-to-r from-blue-600 to-sky-500 
+                  text-white hover:bg-blue-700 font-bold py-4 px-7 rounded-full text-lg transition duration-300"
+              >
+                {buttonText}
+              </Link>
+            ) : (
+              <button
+                className="bg-gradient-to-r from-blue-600 to-sky-500 
+                  text-white hover:bg-blue-700 font-bold py-4 px-7 rounded-full text-lg transition duration-300"
+              >
+                {buttonText}
+              </button>
+            )}
           </div>
         </div>
       </div>

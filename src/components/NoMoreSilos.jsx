@@ -75,13 +75,13 @@ const NoMoreSilos = ({
           )}
 
           
-          <Link
+          {/* <Link
             to="/contact"
             ref={buttonRef}
             className="silo-button inline-block text-center"
           >
             {buttonText}
-          </Link>
+          </Link> */}
         </div>
       </section>
     </div>

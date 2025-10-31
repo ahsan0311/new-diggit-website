@@ -7,8 +7,7 @@ import NoMoreSilos from "../../components/NoMoreSilos";
 import WhoWeBuildFor from "../../components/WhoWeBuildFor";
 import HowWeWork from "../../components/HowWeWork";
 import Contact from "../../components/Contact";
-     import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -27,74 +26,68 @@ const Home = () => {
       <div className="relative min-h-screen overflow-hidden ">
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
           <video
-  ref={videoRef}
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="w-full h-full object-cover rounded-b-[4rem] md:rounded-none"
-  poster="data:image/gif,AAAA"
->
-  <source
-    src="https://res.cloudinary.com/dqngkcjxg/video/upload/3148317-hd_1920_1080_30fps_liexvp.mp4"
-    type="video/mp4"
-  />
-  Your browser does not support the video tag.
-</video>
-
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover rounded-b-[4rem] md:rounded-none"
+            poster="data:image/gif,AAAA"
+          >
+            <source
+              src="https://res.cloudinary.com/dqngkcjxg/video/upload/3148317-hd_1920_1080_30fps_liexvp.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
-       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black to-transparent z-10"></div>
-
-
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black to-transparent z-10"></div>
 
         <div className="absolute bottom-[-40px] left-0 w-full h-[200px] z-10 pointer-events-none">
           <div className="w-full h-full bg-gradient-to-t from-white via-white/60 to-transparent"></div>
         </div>
 
         <div className="relative z-10 min-h-screen flex items-start pt-32 px-4 sm:px-6 md:pl-16 lg:pl-24 xl:pl-32 text-white">
-  <div className="text-center md:text-left max-w-3xl mt-20 rounded-xl mx-auto md:mx-0 ">
-    <h2 className="text-xl md:text-2xl font-bold mb-0 ml-2">
-      Smart Tech, Built for Growth & Security
-    </h2>
+          <div className="text-center md:text-left max-w-3xl mt-20 rounded-xl mx-auto md:mx-0 ">
+            <h2 className="text-xl md:text-2xl font-bold mb-0 ml-2">
+              Smart Tech, Built for Growth & Security
+            </h2>
 
-    <h1 className="text-8xl md:text-8xl max-[594px]:text-7xl font-extrabold leading-tight inline-block mt-0 ml-0 
-  text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">
-  <ReactTyped
-    strings={["Simplify", "Secure", "Scale"]}
-    typeSpeed={120}
-    backSpeed={60}
-    backDelay={2000}
-    loop
-    showCursor={false}
-  />
-</h1>
+            <h1
+              className="text-8xl md:text-8xl max-[594px]:text-7xl font-extrabold leading-tight inline-block mt-0 ml-0 
+  text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300"
+            >
+              <ReactTyped
+                strings={["Simplify", "Secure", "Scale"]}
+                typeSpeed={120}
+                backSpeed={60}
+                backDelay={2000}
+                loop
+                showCursor={false}
+              />
+            </h1>
 
+            <p className="text-lg md:text-xl mb-8 max-w-2xl leading-relaxed font-semibold mx-auto md:mx-0">
+              We craft enterprise-grade software solutions that streamline your
+              operations, integrate AI, deliver real-time dashboards, and create
+              user experiences that truly engage and convert.
+            </p>
 
-    <p className="text-lg md:text-xl mb-8 max-w-2xl leading-relaxed font-semibold mx-auto md:mx-0">
-      We craft enterprise-grade software solutions that streamline your
-      operations, integrate AI, deliver real-time dashboards, and create
-      user experiences that truly engage and convert.
-    </p>
-
-    <div className="flex justify-center md:justify-start">
-
-<Link
-  to="/contact"
-  className="group inline-flex items-center justify-center px-10 py-4 
+            <div className="flex justify-center md:justify-start">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center justify-center px-10 py-4 
              bg-gradient-to-r from-blue-600 to-sky-500 
              text-white font-bold text-xl rounded-full 
              shadow-lg hover:shadow-xl transform hover:-translate-y-1 
              transition-all duration-300"
->
-  Simplify Your Tech Stack
-</Link>
-
-
-    </div>
-  </div>
-</div>
-
+              >
+                Connect With Us
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
 
       <section>
@@ -118,13 +111,12 @@ const Home = () => {
         <WhoWeBuildFor />
       </section>
       <section>
-        <HowWeWork  />
+        <HowWeWork />
       </section>
 
       <section>
         <Contact />
       </section>
-      
     </>
   );
 };
